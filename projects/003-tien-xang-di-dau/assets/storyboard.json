@@ -1,0 +1,526 @@
+{
+  "video": "003-tien-xang-di-dau",
+  "status": "draft-1-awaiting-review",
+  "total_s": 148,
+  "format": {
+    "aspect": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "timing_basis": "Ước tính theo nhịp Tung Dang ~210 từ/phút. Mỗi shot neo vào \"cue\" (cụm từ trong lời đọc) → khi có timestamps từng chữ (ElevenLabs API) thì tính lại start/duration tự động.",
+  "layout": {
+    "safe_area": "Giữ chữ và chi tiết quan trọng cách mép dưới ≥ 320 px và mép phải ≥ 140 px từ y = 900 trở xuống (vùng nút của Reels/Shorts).",
+    "zones": {
+      "header": [
+        0,
+        140
+      ],
+      "money_meter": [
+        140,
+        360
+      ],
+      "headline": [
+        380,
+        560
+      ],
+      "visual": [
+        560,
+        1320
+      ],
+      "subtitle": [
+        1340,
+        1500
+      ],
+      "footnote": [
+        1510,
+        1570
+      ]
+    }
+  },
+  "palette": {
+    "petrol_mode_bg": "#0B1220",
+    "ev_mode_bg": "#08182A",
+    "bill": "#2BB673",
+    "heat": "#FF4D1A",
+    "accessory": "#FFB000",
+    "drivetrain": "#9AA6B8",
+    "ev_flow": "#19B5FF",
+    "text": "#F2F5FA"
+  },
+  "budget": {
+    "higgsfield_credits": 0,
+    "ai_shots": 0,
+    "note": "Không dùng AI-IMAGE/AI-VIDEO."
+  },
+  "shots": [
+    {
+      "scene": 1,
+      "id": "1.1",
+      "duration_s": 3,
+      "type": "ANIMATION-CODE",
+      "cue": "Bạn đổ một triệu",
+      "headline": "Đổ 1 triệu tiền xăng",
+      "description": "Vòi bơm xăng vẽ nét; mười tờ 100 nghìn (xanh lá) lần lượt chảy vào miệng bình. Đồng hồ tiền trượt xuống từ mép trên.",
+      "money_meter": "0 → 1.000.000 đ (đếm lên)",
+      "components": "FuelNozzle, Bill, MoneyMeter",
+      "start_s": 0
+    },
+    {
+      "scene": 1,
+      "id": "1.2",
+      "duration_s": 3,
+      "type": "ANIMATION-CODE",
+      "cue": "Bao nhiêu trong số đó",
+      "headline": "Bao nhiêu thật sự đẩy xe đi?",
+      "description": "Mười tờ xếp thành cột giữa khung; dấu \"?\" lớn nhịp theo câu hỏi.",
+      "money_meter": "1.000.000 đ",
+      "components": "Bill, Headline",
+      "start_s": 3
+    },
+    {
+      "scene": 1,
+      "id": "1.3",
+      "duration_s": 2,
+      "type": "ANIMATION-CODE",
+      "cue": "Khoảng hai trăm nghìn",
+      "headline": "~200.000 đ",
+      "description": "Tám tờ mờ xám, chỉ hai tờ sáng. Chú thích nhỏ xuất hiện và giữ đến hết video: \"ước tính trung bình — DOE/EPA Mỹ\".",
+      "money_meter": "làm nổi 2 tờ cuối",
+      "components": "Bill, Footnote",
+      "start_s": 6
+    },
+    {
+      "scene": 1,
+      "id": "1.4",
+      "duration_s": 2,
+      "type": "ĐỒ HỌA",
+      "cue": "Tám trăm nghìn còn lại",
+      "headline": "800.000 đ ĐI ĐÂU?",
+      "description": "Con dấu đỏ nghiêng \"800.000 đ ĐI ĐÂU?\" đóng xuống; kính lúp lướt qua: \"đi tìm thủ phạm\".",
+      "money_meter": "1.000.000 đ",
+      "components": "Stamp, Icon",
+      "start_s": 8
+    },
+    {
+      "scene": 2,
+      "id": "2.1",
+      "duration_s": 4.5,
+      "type": "ĐỒ HỌA",
+      "cue": "Theo giá cuối tháng mười một",
+      "headline": "1 triệu = ~52 lít",
+      "description": "Can xăng đầy dần, bộ đếm 0 → 52 lít. Nhãn giá: \"E10 RON95 · 19.100 đ/lít · vùng 1 · Petrolimex, từ 15h 19/11/2026\".",
+      "money_meter": "1.000.000 đ",
+      "components": "JerryCan, Chip, Counter",
+      "start_s": 10
+    },
+    {
+      "scene": 2,
+      "id": "2.2",
+      "duration_s": 4.5,
+      "type": "ANIMATION-CODE",
+      "cue": "Năng lượng trong chỗ xăng đó",
+      "headline": "≈ 450 số điện",
+      "description": "Can xăng biến hình thành cột pin; bộ đếm 0 → ~450 kWh. Nhãn \"1 kWh = 1 số điện\".",
+      "money_meter": "1.000.000 đ",
+      "components": "JerryCan, BatteryColumn, Chip",
+      "start_s": 14.5
+    },
+    {
+      "scene": 3,
+      "id": "3.1",
+      "duration_s": 3,
+      "type": "ĐỒ HỌA",
+      "cue": "Nghi phạm đầu tiên",
+      "headline": "NGHI PHẠM #1",
+      "description": "Thẻ hồ sơ nghi phạm; nắp ca-pô (nét) mở lên.",
+      "money_meter": "1.000.000 đ",
+      "components": "SuspectCard, CarSilhouette",
+      "start_s": 19
+    },
+    {
+      "scene": 3,
+      "id": "3.2",
+      "duration_s": 2.5,
+      "type": "ANIMATION-CODE",
+      "cue": "Chính động cơ",
+      "headline": "ĐỘNG CƠ",
+      "description": "Khối động cơ vẽ nét; bảy tờ bay vào khối máy.",
+      "money_meter": "1.000.000 → 300.000 đ (7 tờ chuyển đỏ, rơi khỏi thanh)",
+      "components": "EngineBlock, Bill, MoneyMeter",
+      "start_s": 22
+    },
+    {
+      "scene": 3,
+      "id": "3.3",
+      "duration_s": 2.5,
+      "type": "ANIMATION-CODE",
+      "cue": "Không phải để đẩy xe",
+      "headline": "~700.000 đ → NHIỆT",
+      "description": "Khối máy đổi màu sang đỏ cam (bản đồ nhiệt); sóng nhiệt bốc lên.",
+      "money_meter": "300.000 đ",
+      "components": "EngineBlock, HeatMap",
+      "start_s": 24.5
+    },
+    {
+      "scene": 4,
+      "id": "4.1",
+      "duration_s": 5,
+      "type": "ANIMATION-CODE",
+      "cue": "Mỗi lần xăng cháy",
+      "headline": "Khí nóng đẩy piston",
+      "description": "Mặt cắt một xi lanh, dọc khung: tia lửa, khí cháy (đỏ) giãn nở, piston đi xuống, thanh truyền quay trục khuỷu — động học tay quay–con trượt chính xác.",
+      "money_meter": "300.000 đ",
+      "components": "CylinderSection",
+      "start_s": 27
+    },
+    {
+      "scene": 4,
+      "id": "4.2",
+      "duration_s": 3,
+      "type": "ANIMATION-CODE",
+      "cue": "Nhưng phần lớn nhiệt",
+      "headline": "Phần lớn nhiệt ≠ chuyển động",
+      "description": "Hạt nhiệt (đỏ) trong buồng cháy: chỉ một ít đi theo piston, phần lớn tản ra ngoài.",
+      "money_meter": "300.000 đ",
+      "components": "CylinderSection, HeatParticles",
+      "start_s": 32
+    },
+    {
+      "scene": 4,
+      "id": "4.3",
+      "duration_s": 3,
+      "type": "ANIMATION-CODE",
+      "cue": "Một phần theo khí xả",
+      "headline": "Lò sưởi #1: ỐNG XẢ",
+      "description": "Xu-páp xả mở; hạt đỏ ùa ra cổ xả, chạy theo ống xả ra sau xe.",
+      "money_meter": "300.000 đ",
+      "components": "CylinderSection, ExhaustPipe",
+      "start_s": 35
+    },
+    {
+      "scene": 4,
+      "id": "4.4",
+      "duration_s": 4.5,
+      "type": "ANIMATION-CODE",
+      "cue": "Một phần ngấm vào thành máy",
+      "headline": "Lò sưởi #2: KÉT NƯỚC",
+      "description": "Áo nước quanh xi lanh chuyển cam; nước làm mát chảy tới két nước; quạt thổi luồng nóng ra không khí.",
+      "money_meter": "300.000 đ",
+      "components": "CylinderSection, Radiator, Fan",
+      "start_s": 38
+    },
+    {
+      "scene": 4,
+      "id": "4.5",
+      "duration_s": 3,
+      "type": "ANIMATION-CODE",
+      "cue": "Thêm ma sát bên trong",
+      "headline": "Ma sát · Bơm khí",
+      "description": "Tia ma sát ở xéc-măng; bướm ga khép hờ, mũi tên khí bị \"hút qua khe\". Hai nhãn nhỏ, không số.",
+      "money_meter": "300.000 đ",
+      "components": "CylinderSection, Throttle, Chip",
+      "start_s": 42.5
+    },
+    {
+      "scene": 4,
+      "id": "4.6",
+      "duration_s": 2.5,
+      "type": "ĐỒ HỌA",
+      "cue": "Khi máy còn nổ",
+      "headline": "2 lò sưởi chạy suốt",
+      "description": "Hai biểu tượng lò sưởi nhấp nháy trên bóng xe (ống xả, két nước).",
+      "money_meter": "300.000 đ",
+      "components": "CarSilhouette, Icon",
+      "start_s": 45.5
+    },
+    {
+      "scene": 5,
+      "id": "5.1",
+      "duration_s": 5,
+      "type": "ĐỒ HỌA",
+      "cue": "Bạn có thể đã nghe",
+      "headline": "40%?",
+      "description": "Thước đo số 1 \"ĐỘNG CƠ · điểm tốt nhất\": kim lên 40%. Nhãn nhỏ \"động cơ tốt nhất (Toyota 2.5L)\".",
+      "money_meter": "300.000 đ",
+      "components": "Gauge (từ Speedometer)",
+      "start_s": 48
+    },
+    {
+      "scene": 5,
+      "id": "5.2",
+      "duration_s": 3,
+      "type": "ANIMATION-CODE",
+      "cue": "Nhưng chỉ ở điểm làm việc tốt nhất",
+      "headline": "Chỉ ở 1 điểm",
+      "description": "Bản đồ hiệu suất dạng đường đồng mức (vòng tua × tải), một chấm sáng ở vùng tốt nhất. Ghi \"minh họa\" (hình dạng đường đồng mức không theo số liệu xe cụ thể).",
+      "money_meter": "300.000 đ",
+      "components": "EfficiencyMap",
+      "start_s": 53
+    },
+    {
+      "scene": 5,
+      "id": "5.3",
+      "duration_s": 4.5,
+      "type": "ANIMATION-CODE",
+      "cue": "Đi phố, xe chạy nhẹ tải",
+      "headline": "Đi phố · đèn đỏ",
+      "description": "Đèn đỏ; bóng xe đứng yên, ống xả vẫn phả khói; chấm trên bản đồ hiệu suất trôi về vùng tải thấp.",
+      "money_meter": "300.000 đ",
+      "components": "TrafficLight, CarSilhouette, EfficiencyMap",
+      "start_s": 56
+    },
+    {
+      "scene": 5,
+      "id": "5.4",
+      "duration_s": 5.5,
+      "type": "ĐỒ HỌA",
+      "cue": "Tính trung bình cả quãng đường",
+      "headline": "Thực tế: ~20% tới bánh xe",
+      "description": "Thước đo số 2 **tách riêng** \"TỚI BÁNH XE · trung bình cả chu trình\": ~20%. Chú thích \"DOE/EPA Mỹ: 20,9% (xe đời 2013)\". Không dùng chung kim với thước số 1.",
+      "money_meter": "300.000 đ",
+      "components": "Gauge, Footnote",
+      "start_s": 60.5
+    },
+    {
+      "scene": 6,
+      "id": "6.1",
+      "duration_s": 4.5,
+      "type": "ANIMATION-CODE",
+      "cue": "Nghi phạm thứ hai",
+      "headline": "NGHI PHẠM #2: PHỤ TẢI",
+      "description": "Thẻ nghi phạm; biểu tượng máy phát, điều hòa, bơm; nửa tờ tiền (vàng hổ phách) bị hút đi.",
+      "money_meter": "300.000 → ~250.000 đ",
+      "components": "SuspectCard, Icon, Bill, MoneyMeter",
+      "start_s": 66
+    },
+    {
+      "scene": 6,
+      "id": "6.2",
+      "duration_s": 4.5,
+      "type": "ANIMATION-CODE",
+      "cue": "Rồi hộp số",
+      "headline": "NGHI PHẠM #3: TRUYỀN ĐỘNG",
+      "description": "Thẻ nghi phạm; bánh răng hộp số và trục quay; nửa tờ (xám) bị hút. Tổng kết nhỏ \"+~100.000 đ\".",
+      "money_meter": "~250.000 → ~200.000 đ",
+      "components": "SuspectCard, Icon, Bill, MoneyMeter",
+      "start_s": 70.5
+    },
+    {
+      "scene": 7,
+      "id": "7.1",
+      "duration_s": 3.5,
+      "type": "ANIMATION-CODE",
+      "cue": "Chỉ khoảng hai trăm nghìn",
+      "headline": "~200.000 đ tới bánh xe",
+      "description": "Hai tờ còn lại chạy dọc trục truyền tới bánh xe.",
+      "money_meter": "~200.000 đ",
+      "components": "Bill, CarSilhouette",
+      "start_s": 75
+    },
+    {
+      "scene": 7,
+      "id": "7.2",
+      "duration_s": 6,
+      "type": "ANIMATION-CODE",
+      "cue": "Vào sức cản của gió",
+      "headline": "Gió · Lốp",
+      "description": "Đường dòng khí ôm quanh bóng xe; cận cảnh vết tiếp xúc lốp bị ép xuống mặt đường. Không gắn số tiền cho từng ngả (nguồn không có tỉ lệ).",
+      "money_meter": "~200.000 đ",
+      "components": "CarSilhouette, Airflow, TireContact",
+      "start_s": 78.5
+    },
+    {
+      "scene": 7,
+      "id": "7.3",
+      "duration_s": 2.5,
+      "type": "ANIMATION-CODE",
+      "cue": "Và vào bộ phanh",
+      "headline": "Phanh → nhiệt",
+      "description": "Đĩa phanh đỏ rực dần (tái dùng BrakeDisc, heat 0 → 0,8).",
+      "money_meter": "~200.000 đ",
+      "components": "BrakeDisc (có sẵn)",
+      "start_s": 84.5
+    },
+    {
+      "scene": 7,
+      "id": "7.4",
+      "duration_s": 3,
+      "type": "ĐỒ HỌA",
+      "cue": "Nếu chỉ đi phố",
+      "headline": "Đi phố: 140–200 nghìn",
+      "description": "Thẻ phụ cạnh đồng hồ tiền; thanh tiền co lại thành dải 140–200 nghìn (vùng tô mờ).",
+      "money_meter": "~200.000 đ (dải 140–200k khi đi phố)",
+      "components": "Chip, MoneyMeter",
+      "start_s": 87
+    },
+    {
+      "scene": 8,
+      "id": "8.1",
+      "duration_s": 3,
+      "type": "ĐỒ HỌA",
+      "cue": "Thế còn xe điện?",
+      "headline": "Còn XE ĐIỆN?",
+      "description": "Lau màn hình sang bảng màu xanh (chế độ điện). Đồng hồ tiền đặt lại 1.000.000 đ \"tiền điện\".",
+      "money_meter": "chế độ ĐIỆN: 1.000.000 đ",
+      "components": "Wipe, MoneyMeter",
+      "start_s": 90
+    },
+    {
+      "scene": 8,
+      "id": "8.2",
+      "duration_s": 2,
+      "type": "ANIMATION-CODE",
+      "cue": "Mô-tơ điện không phải đốt gì",
+      "headline": "Không đốt gì",
+      "description": "Mô-tơ điện vẽ nét, màu lạnh; dấu gạch qua biểu tượng ngọn lửa.",
+      "money_meter": "1.000.000 đ",
+      "components": "Motor, Icon",
+      "start_s": 93
+    },
+    {
+      "scene": 8,
+      "id": "8.3",
+      "duration_s": 5,
+      "type": "ANIMATION-CODE",
+      "cue": "Từ ổ cắm tới bánh xe",
+      "headline": "~2/3–3/4 tới bánh xe",
+      "description": "Dòng chấm xanh: ổ cắm → pin → biến tần → mô-tơ → bánh xe; ba nhánh nhỏ rơi ra (sạc, truyền động điện, phụ tải). Thanh tiền còn 6,5–7,5 tờ (tờ thứ 7 tô sọc = dải).",
+      "money_meter": "1.000.000 → ~650.000–750.000 đ",
+      "components": "EVFlow, Bill, MoneyMeter",
+      "start_s": 95
+    },
+    {
+      "scene": 8,
+      "id": "8.4",
+      "duration_s": 6,
+      "type": "ANIMATION-CODE",
+      "cue": "Và khi phanh",
+      "headline": "Phanh tái sinh",
+      "description": "Bánh xe và mô-tơ **vẫn quay cùng chiều** (mũi tên chiều quay giữ nguyên); chỉ dòng chấm xanh đảo hướng, chạy từ bánh xe về pin. Nhãn \"regenerative braking\".",
+      "money_meter": "+ một phần quay về (không ghi số)",
+      "components": "EVFlow, Motor",
+      "start_s": 100
+    },
+    {
+      "scene": 9,
+      "id": "9.1",
+      "duration_s": 4,
+      "type": "ĐỒ HỌA",
+      "cue": "Cùng một trăm cây số",
+      "headline": "100 km",
+      "description": "Hai làn đường dọc song song, cột mốc 0 → 100 km; sedan xăng (trái) và SUV điện (phải) vẽ nét.",
+      "money_meter": "ẩn (nhường chỗ cho 2 đồng hồ ở 9.3)",
+      "components": "RoadStrip, CarSilhouette",
+      "start_s": 106
+    },
+    {
+      "scene": 9,
+      "id": "9.2",
+      "duration_s": 6,
+      "type": "ĐỒ HỌA",
+      "cue": "Một chiếc sedan xăng cỡ nhỏ",
+      "headline": "~50 vs 16–20 số điện",
+      "description": "Hai cột năng lượng: ~50 kWh và 16–20 kWh (vùng tô mờ). Chú thích: \"Toyota Vios 1.5 (5,7 L/100 km) · VinFast VF 6 (15,64 kWh công bố VN – 19,5 theo ADAC) · khác phân khúc, chỉ minh họa\".",
+      "money_meter": "—",
+      "components": "BatteryColumn, Footnote",
+      "start_s": 110
+    },
+    {
+      "scene": 9,
+      "id": "9.3",
+      "duration_s": 6,
+      "type": "ĐỒ HỌA",
+      "cue": "Quy ra tiền",
+      "headline": "~110k vs 60–75k",
+      "description": "Hai đồng hồ tiền nhỏ chạy song song theo km: xăng → ~110.000 đ; sạc trạm → 60.000–75.000 đ. Chú thích giá: \"xăng 19.100 đ/L (19/11/2026) · V-Green 3.858 đ/kWh gồm VAT\".",
+      "money_meter": "chế độ đôi: XĂNG | ĐIỆN",
+      "components": "MoneyMeter ×2, Footnote",
+      "start_s": 116
+    },
+    {
+      "scene": 9,
+      "id": "9.4",
+      "duration_s": 5,
+      "type": "ANIMATION-CODE",
+      "cue": "Còn sạc ở nhà",
+      "headline": "Sạc nhà: tùy bậc điện",
+      "description": "Cầu thang 5 bậc giá điện (1.901 → 3.844 đ/kWh, chưa VAT, từ 1/11/2026); kim công tơ nhà leo lên bậc cao hơn khi cộng thêm điện sạc xe; dấu \"?\".",
+      "money_meter": "—",
+      "components": "TariffStairs, Chip",
+      "start_s": 122
+    },
+    {
+      "scene": 10,
+      "id": "10.1",
+      "duration_s": 3.5,
+      "type": "ĐỒ HỌA",
+      "cue": "Nhưng khoan",
+      "headline": "NHƯNG KHOAN",
+      "description": "Hình đứng hình nửa giây; con dấu \"NHƯNG KHOAN\"; dây cắm kéo dài lên trên khung.",
+      "money_meter": "—",
+      "components": "Stamp, EVFlow",
+      "start_s": 127
+    },
+    {
+      "scene": 10,
+      "id": "10.2",
+      "duration_s": 4.5,
+      "type": "ĐỒ HỌA",
+      "cue": "Năm hai nghìn không trăm hai mươi lăm",
+      "headline": "Gần 1/2 điện từ than",
+      "description": "Biểu đồ vành khuyên: than ~45–48% (tùy nguồn), thủy điện ~33%, tái tạo ~13%, khí ~6% · \"2025, EVN\".",
+      "money_meter": "—",
+      "components": "DonutChart, Footnote",
+      "start_s": 130.5
+    },
+    {
+      "scene": 10,
+      "id": "10.3",
+      "duration_s": 2.5,
+      "type": "ANIMATION-CODE",
+      "cue": "Nhà máy điện cũng thải nhiệt",
+      "headline": "Nhà máy cũng thải nhiệt",
+      "description": "Nhà máy nhiệt điện vẽ nét; sóng nhiệt bốc khỏi ống khói/tháp. Không ghi số hiệu suất (chưa có nguồn).",
+      "money_meter": "—",
+      "components": "PowerPlant, HeatParticles",
+      "start_s": 135
+    },
+    {
+      "scene": 10,
+      "id": "10.4",
+      "duration_s": 2.5,
+      "type": "ĐỒ HỌA",
+      "cue": "Vậy xe điện có thật sạch hơn?",
+      "headline": "Sạch hơn?",
+      "description": "Dấu \"?\" lớn; nhãn \"TẬP SAU\".",
+      "money_meter": "—",
+      "components": "Headline, Chip",
+      "start_s": 137.5
+    },
+    {
+      "scene": 11,
+      "id": "11.1",
+      "duration_s": 5,
+      "type": "ĐỒ HỌA",
+      "cue": "Lần tới đổ xăng",
+      "headline": "5 đồng → 1 đồng",
+      "description": "Thẻ tóm tắt 3 dòng: \"1.000.000 đ xăng → ~200.000 đ tới bánh xe\" · \"~700.000 đ thành nhiệt trong máy\" · \"Xe điện: ~2/3–3/4 tới bánh xe + phanh tái sinh\" · chú thích DOE/EPA Mỹ.",
+      "money_meter": "xăng: ~200.000 đ",
+      "components": "RecapCard",
+      "start_s": 140
+    },
+    {
+      "scene": 11,
+      "id": "11.2",
+      "duration_s": 3,
+      "type": "ANIMATION-CODE",
+      "cue": "Phần còn lại",
+      "headline": "Sưởi ấm bầu trời",
+      "description": "Bốn tờ tiền đỏ bốc lên như sóng nhiệt, tan vào bầu trời; chip \"Theo dõi kênh\".",
+      "money_meter": "—",
+      "components": "Bill, HeatParticles, Chip",
+      "start_s": 145
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "video": "003-tien-xang-di-dau",
+  "status": "draft-2-approved-gate-1",
+  "format": {
+    "aspect": "9:16",
+    "width": 1080,
+    "height": 1920
+  },
+  "voice": {
+    "provider": "elevenlabs",
+    "name": "Tung Dang",
+    "voice_id": "3VnrjnYrskPMDsapTr8X"
+  },
+  "total_words": 515,
+  "est_seconds": 148.5,
+  "scenes": [
+    {
+      "scene": 1,
+      "title": "Hook: một triệu",
+      "voiceover": "Bạn đổ một triệu tiền xăng. Bao nhiêu trong số đó thật sự đẩy chiếc xe đi? ... Khoảng hai trăm nghìn. Tám trăm nghìn còn lại đi đâu? Hãy cùng đi tìm thủ phạm.",
+      "visual": "Nền tối. Mười tờ 100 nghìn xếp thành cột giữa màn hình, chảy vào vòi bơm xăng. Bộ đếm \"1.000.000 đ\" ở trên. Khi nói \"hai trăm nghìn\": tám tờ mờ đi, chỉ còn hai tờ sáng. Chữ lớn: \"800.000 đ đi đâu?\". Chú thích nhỏ cố định từ cảnh này: \"ước tính trung bình — DOE/EPA Mỹ\".",
+      "types": [
+        "ANIMATION-CODE",
+        "ĐỒ HỌA"
+      ],
+      "sources": "S1, [TÍNH TOÁN] research mục 6.2",
+      "words": 34,
+      "est_seconds": 10.4,
+      "approx_timecode": "00:00–00:10"
+    },
+    {
+      "scene": 2,
+      "title": "Một triệu là bao nhiêu năng lượng",
+      "voiceover": "Theo giá cuối tháng mười một, một triệu mua được khoảng năm mươi hai lít xăng E mười. Năng lượng trong chỗ xăng đó tương đương khoảng bốn trăm năm mươi số điện.",
+      "visual": "Can xăng đầy dần, nhãn \"≈ 52 lít E10 RON95 · 19.100 đ/lít (vùng 1, từ 15h 19/11/2026, Petrolimex)\". Can xăng biến thành cột pin \"≈ 450 kWh\". Chú thích nhỏ: \"1 kWh = 1 số điện\".",
+      "types": [
+        "ĐỒ HỌA"
+      ],
+      "sources": "S13, F1, F2 (E10 ≈ 30,9 MJ/lít), [TÍNH TOÁN]",
+      "words": 33,
+      "est_seconds": 9.4,
+      "approx_timecode": "00:10–00:20"
+    },
+    {
+      "scene": 3,
+      "title": "Nghi phạm số một",
+      "voiceover": "Nghi phạm đầu tiên nằm ngay dưới nắp ca-pô. Chính động cơ. Nó lấy đi khoảng bảy trăm nghìn. Không phải để đẩy xe. Mà biến thành nhiệt.",
+      "visual": "Thẻ \"NGHI PHẠM #1: ĐỘNG CƠ\". Bảy tờ tiền bay vào khối động cơ vẽ nét, chuyển sang đỏ cam. Đồng hồ tiền góc trên: 1.000.000 → ~300.000.",
+      "types": [
+        "ANIMATION-CODE"
+      ],
+      "sources": "S1 (mất trong động cơ 68–72%, hỗn hợp)",
+      "words": 28,
+      "est_seconds": 8,
+      "approx_timecode": "00:20–00:28"
+    },
+    {
+      "scene": 4,
+      "title": "Mở nắp ca-pô",
+      "voiceover": "Mỗi lần xăng cháy trong xi lanh, khí nóng giãn nở, đẩy piston đi xuống. Nhưng phần lớn nhiệt không biến thành chuyển động. Một phần theo khí xả, thoát ra ống xả. Một phần ngấm vào thành máy, để nước làm mát mang ra két nước, thổi vào không khí. Thêm ma sát bên trong, thêm sức để bơm không khí ra vào. Khi máy còn nổ, hai chiếc lò sưởi ấy vẫn chạy.",
+      "visual": "Mặt cắt một xi lanh (dọc khung hình): tia lửa, khí nóng đỏ đẩy piston. Hai mũi tên nhiệt tách ra: lên ống xả (đỏ) và vào áo nước → két nước (cam), quạt thổi ra. Biểu tượng \"lò sưởi\" ×2.",
+      "types": [
+        "ANIMATION-CODE"
+      ],
+      "sources": "S1, S8",
+      "words": 75,
+      "est_seconds": 21.4,
+      "approx_timecode": "00:28–00:49"
+    },
+    {
+      "scene": 5,
+      "title": "\"Bốn mươi phần trăm\"?",
+      "voiceover": "Bạn có thể đã nghe: những động cơ xăng tốt nhất hiện nay đạt hiệu suất bốn mươi phần trăm. Đúng. Nhưng chỉ ở điểm làm việc tốt nhất. Đi phố, xe chạy nhẹ tải, dừng đèn đỏ mà máy vẫn nổ. Tính trung bình cả quãng đường, phần năng lượng thật sự tới bánh xe chỉ còn khoảng hai mươi phần trăm.",
+      "visual": "Hai thước đo **tách riêng**, không dùng chung một kim. Thước 1 \"Động cơ, điểm tốt nhất\": 40%, nhãn nhỏ \"động cơ tốt nhất (Toyota 2.5L)\". Rồi cảnh đèn đỏ, xe đứng yên, khói ống xả. Thước 2 \"Tới bánh xe, trung bình cả chu trình\": ~20%.",
+      "types": [
+        "ANIMATION-CODE",
+        "ĐỒ HỌA"
+      ],
+      "sources": "S9, S10, S2, S4, S1",
+      "words": 63,
+      "est_seconds": 18,
+      "approx_timecode": "00:49–01:07"
+    },
+    {
+      "scene": 6,
+      "title": "Nghi phạm số hai và ba",
+      "voiceover": "Nghi phạm thứ hai và thứ ba nhỏ hơn. Máy phát, điều hòa, các loại bơm. Rồi hộp số và trục truyền động. Cùng nhau, chúng lấy thêm khoảng một trăm nghìn.",
+      "visual": "Hai thẻ \"NGHI PHẠM #2: PHỤ TẢI\" và \"NGHI PHẠM #3: TRUYỀN ĐỘNG\"; mỗi thẻ hút đi khoảng nửa tờ tiền. Đồng hồ tiền: ~300.000 → ~200.000.",
+      "types": [
+        "ANIMATION-CODE"
+      ],
+      "sources": "S1 (phụ tải 4–6%, truyền động 3–5%), [TÍNH TOÁN]",
+      "words": 32,
+      "est_seconds": 9.1,
+      "approx_timecode": "01:07–01:16"
+    },
+    {
+      "scene": 7,
+      "title": "Hai trăm nghìn cuối cùng",
+      "voiceover": "Chỉ khoảng hai trăm nghìn tới được bánh xe. Và số tiền ấy lại tiêu tiếp. Vào sức cản của gió. Vào lốp. Và vào bộ phanh, nơi chuyển động lại biến thành nhiệt. Nếu chỉ đi phố, con số còn thấp hơn: chỉ khoảng một trăm rưỡi đến hai trăm nghìn.",
+      "visual": "Hai tờ tiền tới bánh xe. Ba biểu tượng lần lượt: đường gió, lốp, đĩa phanh đỏ (tái dùng đồ họa phanh đĩa). Thẻ phụ: \"Đi phố: 140–200 nghìn\".",
+      "types": [
+        "ANIMATION-CODE"
+      ],
+      "sources": "S1",
+      "words": 52,
+      "est_seconds": 14.9,
+      "approx_timecode": "01:16–01:31"
+    },
+    {
+      "scene": 8,
+      "title": "Còn xe điện?",
+      "voiceover": "Thế còn xe điện? Mô-tơ điện không phải đốt gì. Từ ổ cắm tới bánh xe, khoảng hai phần ba đến ba phần tư năng lượng được dùng. Và khi phanh, mô-tơ đổi vai thành máy phát, lấy lại một phần năng lượng nạp về pin. Gọi là phanh tái sinh, tiếng Anh là regenerative braking.",
+      "visual": "Đổi nền sang xanh. Dòng điện (chấm xanh) từ ổ cắm → pin → mô-tơ → bánh xe; vài nhánh nhỏ rơi ra (sạc, biến tần). Khi phanh: **bánh xe và mô-tơ vẫn quay cùng chiều**, chỉ **dòng năng lượng** (chấm xanh) đảo hướng, chạy từ bánh xe về pin.",
+      "types": [
+        "ANIMATION-CODE"
+      ],
+      "sources": "S3, S12, F5",
+      "words": 56,
+      "est_seconds": 16,
+      "approx_timecode": "01:31–01:47"
+    },
+    {
+      "scene": 9,
+      "title": "Cùng một trăm cây số",
+      "voiceover": "Cùng một trăm cây số. Một chiếc sedan xăng cỡ nhỏ đốt năng lượng tương đương khoảng năm mươi số điện. Một chiếc SUV điện cỡ nhỏ dùng khoảng mười sáu đến hai mươi số. Quy ra tiền: xe xăng khoảng một trăm mười nghìn. Xe điện sạc trạm khoảng sáu mươi đến bảy mươi lăm nghìn. Còn sạc ở nhà có thể rẻ hơn, hoặc không, tùy bậc điện nhà bạn.",
+      "visual": "Hai cột dọc so sánh, đồng hồ tiền chạy song song theo km. Chú thích: \"Ví dụ: Toyota Vios 1.5 (5,7 L/100 km) vs VinFast VF 6 (15,64 kWh/100 km công bố VN – 19,5 kWh/100 km theo ADAC) · khác phân khúc, chỉ minh họa · xăng 19.100 đ/L (Petrolimex, 19/11/2026) · sạc V-Green 3.858 đ/kWh đã gồm VAT\". Khi nói \"sạc ở nhà\": thang 5 bậc giá điện (1.901 → 3.844 đ/kWh, chưa VAT, từ 1/11/2026), kim nhảy lên bậc cao khi cộng thêm điện sạc xe.",
+      "types": [
+        "ĐỒ HỌA"
+      ],
+      "sources": "F7, S18, F8, F1, S14, S15, F9, [TÍNH TOÁN]",
+      "words": 72,
+      "est_seconds": 20.6,
+      "approx_timecode": "01:47–02:08"
+    },
+    {
+      "scene": 10,
+      "title": "Nhưng khoan",
+      "voiceover": "Nhưng khoan. Điện từ đâu ra? Năm hai nghìn không trăm hai mươi lăm, gần một nửa điện ở Việt Nam đến từ than. Nhà máy điện cũng thải nhiệt. Vậy xe điện có thật sạch hơn? Đó là câu chuyện của tập sau.",
+      "visual": "Ổ cắm kéo dài thành đường dây tới nhà máy điện than vẽ nét, ống khói. Biểu đồ tròn: than ~45–48% (tùy nguồn), thủy điện ~33%, tái tạo ~13%, khí ~6% (2025, EVN). Dấu \"?\" lớn.",
+      "types": [
+        "ĐỒ HỌA"
+      ],
+      "sources": "S11, F6",
+      "words": 44,
+      "est_seconds": 12.6,
+      "approx_timecode": "02:08–02:20"
+    },
+    {
+      "scene": 11,
+      "title": "Kết",
+      "voiceover": "Lần tới đổ xăng, hãy nhớ: cứ năm đồng bạn trả, chỉ khoảng một đồng đẩy xe đi. Phần còn lại... đang sưởi ấm bầu trời.",
+      "visual": "Thẻ tóm tắt: \"1.000.000 đ xăng → ~200.000 đ tới bánh xe · ~700.000 đ thành nhiệt trong máy · xe điện: ~2/3–3/4 tới bánh xe + phanh tái sinh · ước tính trung bình, DOE/EPA Mỹ\". Câu chốt lớn: \"5 đồng → 1 đồng\". Gợi ý theo dõi kênh.",
+      "types": [
+        "ĐỒ HỌA"
+      ],
+      "sources": "tổng hợp các cảnh trên",
+      "words": 26,
+      "est_seconds": 8.1,
+      "approx_timecode": "02:20–02:29"
+    }
+  ]
+}

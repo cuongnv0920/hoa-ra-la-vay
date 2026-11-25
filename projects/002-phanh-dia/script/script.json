@@ -1,0 +1,212 @@
+{
+  "video": "002-phanh-dia",
+  "language": "vi",
+  "voice": {
+    "provider": "elevenlabs",
+    "name": "Tung Dang",
+    "voice_id": "3VnrjnYrskPMDsapTr8X"
+  },
+  "status": "draft-2-approved-gate-1",
+  "total_words": 1501,
+  "scenes": [
+    {
+      "scene": 1,
+      "title": "Hook: ba giây",
+      "approx_timecode": "00:00–00:32",
+      "voiceover": "Bạn đang chạy một trăm cây số giờ. Bỗng chiếc xe phía trước sáng đèn phanh, dừng gấp. Bạn đạp phanh. Chỉ khoảng ba giây sau, chiếc xe nặng một tấn rưỡi đứng yên. ... Vậy toàn bộ chuyển động đó đã đi đâu? Nó không biến mất. Nó biến thành nhiệt. Một lượng nhiệt đủ để đun sôi gần hai lít nước. Và phần lớn lượng nhiệt đó dồn vào bộ phanh, nằm ngay sau vành bánh xe của bạn.",
+      "visual": "Đường phố chạng vạng, góc nhìn qua kính lái; cắt nhanh sang đĩa phanh đỏ rực trong bóng tối; chữ \"100 km/h → 0 · ~3 giây (ước tính, chưa tính thời gian phản xạ)\"; \"≈ 1,7 lít nước từ 20 °C\".",
+      "types": [
+        "AI-VIDEO",
+        "ĐỒ HỌA"
+      ],
+      "sources": "[TÍNH TOÁN] research mục \"Ngộ nhận\" 1–2",
+      "words": 80
+    },
+    {
+      "scene": 2,
+      "title": "Phanh mạnh hơn động cơ",
+      "approx_timecode": "00:32–01:03",
+      "voiceover": "Thử so sánh. Trong cú phanh gấp đó, bộ phanh xử lý một công suất khoảng năm trăm mã lực, gấp mấy lần động cơ của một chiếc xe phổ thông. Chiếc xe dừng lại giỏi hơn nhiều so với khả năng nó tăng tốc. Và thứ điều khiển sức mạnh đó... chỉ là bàn chân của bạn. Làm sao có thể như vậy? Câu trả lời bắt đầu từ hơn một trăm hai mươi năm trước.",
+      "visual": "Hai thanh so sánh: \"Động cơ xe phổ thông\" và \"Phanh khi dừng gấp ~500 mã lực\"; chú thích nhỏ \"ước tính: xe 1.500 kg, giảm tốc 0,9 g, công suất đỉnh lúc bắt đầu phanh; động cơ sedan hạng B ~78 kW\".",
+      "types": [
+        "ĐỒ HỌA"
+      ],
+      "sources": "[TÍNH TOÁN] research mục \"Ngộ nhận\" 1",
+      "words": 77
+    },
+    {
+      "scene": 3,
+      "title": "Lanchester, người đi trước nửa thế kỷ",
+      "approx_timecode": "01:03–01:40",
+      "voiceover": "Năm một nghìn chín trăm lẻ hai, ở nước Anh. Kỹ sư Frederick Lanchester đăng ký sáng chế một kiểu phanh lạ: không ép vào lòng một chiếc trống, mà kẹp chặt một chiếc đĩa mỏng từ hai phía. Khi ấy, anh em nhà Wright còn chưa bay chuyến đầu tiên. Phanh của Lanchester kéo bằng dây cáp, chưa có dầu thủy lực. Nhưng nguyên lý thì gần như giống hệt chiếc phanh trên xe bạn hôm nay. ... Nhưng nó không được dùng rộng rãi. Ý tưởng ấy phải chờ gần nửa thế kỷ.",
+      "visual": "Ảnh minh họa xưởng cơ khí đầu thế kỷ 20 tông phim (gắn nhãn AI); bản vẽ sáng chế dạng sơ đồ tự vẽ: đĩa + kẹp + dây cáp.",
+      "types": [
+        "AI-IMAGE",
+        "ANIMATION-CODE"
+      ],
+      "sources": "S1, S3, S4",
+      "words": 94
+    },
+    {
+      "scene": 4,
+      "title": "Crosley và kẻ thù tên là muối",
+      "approx_timecode": "01:40–02:11",
+      "voiceover": "Năm một nghìn chín trăm bốn mươi chín. Crosley, một hãng xe nhỏ của Mỹ, trở thành một trong những hãng đầu tiên bán xe có phanh đĩa ở cả bốn bánh. Rồi mùa đông đến. Muối rải đường ăn mòn các cụm kẹp phanh bằng hợp kim nhẹ. Piston bị kẹt. Khoảng một năm sau, Crosley quay về phanh tang trống. ... Phanh đĩa cần một nơi để chứng minh mình. Và nơi đó là đường đua.",
+      "visual": "Ảnh minh họa xe nhỏ Mỹ cuối thập niên 1940 trên đường tuyết (gắn nhãn AI, không nhận là Crosley thật); cận cảnh kẹp phanh bị gỉ (animation đơn giản).",
+      "types": [
+        "AI-IMAGE",
+        "ANIMATION-CODE"
+      ],
+      "sources": "S1, S5",
+      "words": 77
+    },
+    {
+      "scene": 5,
+      "title": "Le Mans 1953",
+      "approx_timecode": "02:11–02:53",
+      "voiceover": "Năm một nghìn chín trăm năm mươi ba, giải đua hai mươi bốn giờ Le Mans. Jaguar mang tới những chiếc C-Type lắp phanh đĩa của Dunlop, một hãng có kinh nghiệm làm phanh cho máy bay. Chiếc Jaguar của Tony Rolt và Duncan Hamilton về nhất. Tốc độ trung bình hơn một trăm bảy mươi cây số giờ. Lần đầu tiên ở Le Mans, mốc một trăm dặm một giờ bị vượt qua. ... Có người, như John Wyer, cho rằng Jaguar thắng vì cả chiếc xe quá tốt, không chỉ nhờ phanh. Nhưng thông điệp đã rõ: phanh đĩa chịu được cực hình.",
+      "visual": "Ảnh minh họa xe đua thể thao thập niên 1950 chạy đêm, đèn pha, tông phim (gắn nhãn AI, không vẽ logo); thẻ chữ \"Le Mans 1953 · Rolt & Hamilton · ~170 km/h trung bình\". Nếu có ảnh tư liệu phạm vi công cộng thì ưu tiên.",
+      "types": [
+        "AI-IMAGE",
+        "ĐỒ HỌA"
+      ],
+      "sources": "S1, S3, S17, S18",
+      "words": 104
+    },
+    {
+      "scene": 6,
+      "title": "Bước ra khỏi đường đua",
+      "approx_timecode": "02:53–03:14",
+      "voiceover": "Hai năm sau, Citroën DS ra mắt tại Paris, với phanh đĩa trước là trang bị tiêu chuẩn. Nó thường được xem là chiếc xe đầu tiên đưa phanh đĩa hiện đại vào sản xuất hàng loạt một cách lâu dài. Từ đây, phanh đĩa rời đường đua, đi vào gara của mọi người.",
+      "visual": "Dòng thời gian ba điểm: 1902 Lanchester → 1953 Le Mans → 1955 Citroën DS; ảnh minh họa sedan Pháp thập niên 1950 (gắn nhãn AI, không nhận là DS thật) hoặc ảnh tư liệu hợp lệ.",
+      "types": [
+        "ĐỒ HỌA",
+        "AI-IMAGE"
+      ],
+      "sources": "S1, S19, S20",
+      "words": 54
+    },
+    {
+      "scene": 7,
+      "title": "Bốn trạm của lực",
+      "approx_timecode": "03:14–03:34",
+      "voiceover": "Giờ hãy mở nó ra. Từ lúc chân bạn chạm bàn đạp cho tới khi má phanh chạm đĩa, lực đi qua bốn trạm. Bàn đạp. Bầu trợ lực. Dầu phanh. Và cụm kẹp phanh. Ở ba trạm đầu, lực được nhân lên. Ta đi từng trạm một.",
+      "visual": "Sơ đồ toàn hệ thống: bàn đạp → bầu trợ lực → xi lanh chính → ống dầu → kẹp phanh ở bánh; bốn trạm lần lượt sáng lên.",
+      "types": [
+        "ANIMATION-CODE"
+      ],
+      "sources": "S7, S8, S10",
+      "words": 48
+    },
+    {
+      "scene": 8,
+      "title": "Trạm 1: đòn bẩy bàn đạp",
+      "approx_timecode": "03:34–03:56",
+      "voiceover": "Trạm thứ nhất: bàn đạp phanh. Nó là một chiếc đòn bẩy, giống cái xà beng. Bạn đạp ở đầu dài, cần đẩy nằm ở đầu ngắn. Trên xe có trợ lực, tỉ lệ đòn bẩy có thể vào khoảng bốn trên một. Nghĩa là bạn đạp hai mươi ký lực, cần đẩy nhận khoảng tám mươi.",
+      "visual": "Bàn đạp xoay quanh chốt, hai cánh tay đòn có số đo; mũi tên lực 20 → 80 kgf.",
+      "types": [
+        "ANIMATION-CODE"
+      ],
+      "sources": "S6, S7",
+      "words": 57
+    },
+    {
+      "scene": 9,
+      "title": "Trạm 2: mượn sức động cơ",
+      "approx_timecode": "03:56–04:39",
+      "voiceover": "Trạm thứ hai: bầu trợ lực chân không, tiếng Anh là brake booster. Bên trong, một tấm màng mềm chia nó làm hai khoang. Bầu này nối với đường nạp của động cơ, nên khi chưa phanh, cả hai khoang đều là chân không. Khi bạn đạp, một van nhỏ mở ra, cho không khí tràn vào một bên. Một bên là áp suất khí quyển. Bên kia vẫn là chân không. Tấm màng bị đẩy về phía trước... và đẩy giúp bạn. ... Vì thế, khi tắt máy rồi đạp phanh vài lần, bàn đạp sẽ cứng hẳn lại. Hết chân không, không còn ai đẩy giúp.",
+      "visual": "Mặt cắt bầu trợ lực: hai khoang, màng ngăn, van; không khí (chấm xanh) tràn vào một khoang, màng đẩy cần sang phải.",
+      "types": [
+        "ANIMATION-CODE"
+      ],
+      "sources": "S8, S9",
+      "words": 107
+    },
+    {
+      "scene": 10,
+      "title": "Trạm 3: dầu phanh và hai ống tiêm",
+      "approx_timecode": "04:39–05:42",
+      "voiceover": "Trạm thứ ba là nơi điều kỳ diệu xảy ra: dầu phanh. Chất lỏng gần như không thể nén. Đẩy ở đầu này, áp suất truyền đi khắp hệ thống. Đó là nguyên lý Pascal. ... Hãy tưởng tượng hai ống tiêm nối với nhau, một ống nhỏ, một ống to. Bạn ấn ống nhỏ. Áp suất hai bên như nhau. Nhưng piston ống to có diện tích lớn hơn, nên lực đẩy ra cũng lớn hơn đúng bấy nhiêu lần. Trong xe, ống nhỏ là xi lanh chính, tiếng Anh là master cylinder, nhiều người gọi là tổng phanh. Ống to là các piston trong cụm kẹp phanh. Ví dụ, diện tích gấp sáu thì lực nhân sáu. ... Nhưng không có gì miễn phí. Lực tăng bao nhiêu lần, quãng đường giảm bấy nhiêu lần. Bạn đạp sâu vài phân, còn piston ở bánh xe chỉ nhích một chút. Vừa đủ để ép má phanh vào đĩa.",
+      "visual": "Hai ống tiêm trong suốt nối bằng ống dầu (màu hổ phách); piston nhỏ đi dài, piston to đi ngắn; hiện \"áp suất như nhau\", \"diện tích × 6 → lực × 6\", \"quãng đường ÷ 6\". Chuyển sang xi lanh chính và kẹp phanh thật.",
+      "types": [
+        "ANIMATION-CODE"
+      ],
+      "sources": "S6, S7, S10",
+      "words": 157
+    },
+    {
+      "scene": 11,
+      "title": "Cộng lại: bảy mươi lần",
+      "approx_timecode": "05:42–06:08",
+      "voiceover": "Thử cộng lại, bằng một ví dụ minh họa. Hai mươi ký lực từ bàn chân. Đòn bẩy nhân bốn. Bầu trợ lực nhân thêm khoảng ba. Dầu phanh nhân sáu. Kết quả: gần một tấn rưỡi lực, ép lên chỉ một cụm kẹp phanh. Mỗi chiếc xe một khác. Nhưng ý tưởng là vậy: bàn chân bạn được nhân lên khoảng bảy mươi lần.",
+      "visual": "Phép nhân hiện từng bước: 20 × 4 × 3 × 6 ≈ 1.440 kgf; chữ \"ví dụ minh họa — mỗi xe khác nhau\".",
+      "types": [
+        "ĐỒ HỌA"
+      ],
+      "sources": "[TÍNH TOÁN] research mục \"Ngộ nhận\" 3; S6, S9",
+      "words": 65
+    },
+    {
+      "scene": 12,
+      "title": "Trạm 4: chiếc kẹp tự cân bằng",
+      "approx_timecode": "06:08–06:50",
+      "voiceover": "Trạm cuối cùng: cụm kẹp phanh, tiếng Anh là caliper, nhiều người gọi là heo phanh. Nó ôm lấy mép đĩa như một cái kẹp. Có hai kiểu. Kẹp cố định có piston ở cả hai bên đĩa, ép từ hai phía cùng lúc, hay gặp trên xe hiệu suất cao. Kẹp trượt thì gọn và rẻ hơn. Piston chỉ nằm ở một bên. Khi nó đẩy má phanh phía trong vào đĩa, phản lực đẩy cả thân kẹp trượt ngược lại, kéo má phía ngoài ép vào mặt kia. ... Một piston, hai má phanh. Đó là kiểu bạn gặp trên phần lớn xe con.",
+      "visual": "Hai mặt cắt cạnh nhau. Kẹp cố định: piston hai bên cùng tiến vào. Kẹp trượt: piston đẩy má trong, thân kẹp trượt trên chốt dẫn hướng theo chiều ngược, má ngoài áp vào đĩa.",
+      "types": [
+        "ANIMATION-CODE"
+      ],
+      "sources": "S11, S12",
+      "words": 105
+    },
+    {
+      "scene": 13,
+      "title": "Câu trả lời: nhiệt",
+      "approx_timecode": "06:50–07:24",
+      "voiceover": "Và giờ là câu trả lời cho câu hỏi lúc đầu. Má phanh ma sát với chiếc đĩa đang quay. Gần như toàn bộ động năng của chiếc xe biến thành nhiệt. Chiếc đĩa, thường làm bằng gang, nóng lên rất nhanh. Vì vậy nhiều chiếc đĩa được làm thành hai lớp, nối với nhau bằng các gân, ở giữa là những rãnh gió. Khi đĩa quay, không khí luồn qua lõi và mang nhiệt đi. Người ta gọi đó là đĩa thông gió.",
+      "visual": "Đĩa phanh chuyển dần sang màu cam đỏ (bản đồ nhiệt); mặt cắt đĩa thông gió với gân và luồng khí.",
+      "types": [
+        "ANIMATION-CODE"
+      ],
+      "sources": "S1, S2, S13",
+      "words": 84
+    },
+    {
+      "scene": 14,
+      "title": "Khi nhiệt trở thành kẻ thù",
+      "approx_timecode": "07:24–08:25",
+      "voiceover": "Nhưng nhiệt cũng là kẻ thù. Khi má phanh vượt quá nhiệt độ làm việc, vật liệu ma sát mất dần độ bám. Bạn đạp, nhưng xe không chậm lại như mong đợi. Đó là phai phanh, tiếng Anh là brake fade. ... Kẻ thù thứ hai kín đáo hơn: nước. Phần lớn dầu phanh hút hơi ẩm từ không khí. Theo tiêu chuẩn, dầu DOT bốn mới phải sôi ở ít nhất hai trăm ba mươi độ C. Khi đã ngậm nước, mức tối thiểu chỉ còn một trăm năm mươi lăm độ. Dầu sôi thì sinh bọt khí, mà khí thì nén được. Bàn đạp lún sâu, mềm hẳn đi. ... Vì thế, các nhà sản xuất phụ tùng khuyên thay dầu phanh khoảng hai năm một lần, hoặc theo sổ bảo dưỡng. Và khi đổ đèo dài, đừng để phanh làm việc một mình: hãy về số thấp để động cơ hãm bớt.",
+      "visual": "Đường cong nhiệt độ–ma sát, ma sát tụt khi qua \"điểm gãy\"; cốc dầu phanh hút hơi nước (chấm xanh), thẻ \"FMVSS 116 — DOT 4: tối thiểu 230 °C (khô) / 155 °C (ướt)\"; bọt khí trong ống, bàn đạp lún; cần số về số thấp.",
+      "types": [
+        "ANIMATION-CODE",
+        "ĐỒ HỌA"
+      ],
+      "sources": "S2, S10, S13, S14, F6, F7, F8 (factcheck.md)",
+      "words": 154
+    },
+    {
+      "scene": 15,
+      "title": "Vì sao đĩa thắng tang trống",
+      "approx_timecode": "08:25–09:08",
+      "voiceover": "Vậy vì sao phanh đĩa thay thế phanh tang trống ở bánh trước? Phanh tang trống giấu má phanh bên trong một chiếc trống kín, nhiệt bị nhốt lại. Trống quay còn kéo guốc phanh ép chặt hơn vào chính nó, gọi là tự trợ lực. Nghe thì có lợi. Nhưng nó khiến phanh nhạy với thay đổi ma sát, và phai nặng hơn khi nóng. Phanh đĩa thì hở, mát hơn, ổn định hơn. Đổi lại, nó không tự trợ lực, nên cần bầu trợ lực. Còn tang trống vẫn ở lại bánh sau của nhiều chiếc xe, vì nó rẻ và làm phanh tay rất tốt.",
+      "visual": "Mặt cắt tang trống: trống quay kéo guốc phanh (mũi tên tự trợ lực), nhiệt tích tụ bên trong; đặt cạnh đĩa hở tỏa nhiệt.",
+      "types": [
+        "ANIMATION-CODE"
+      ],
+      "sources": "S2, S16",
+      "words": 108
+    },
+    {
+      "scene": 16,
+      "title": "Kết",
+      "approx_timecode": "09:08–10:00",
+      "voiceover": "Lần tới, khi bạn đạp phanh trước một ngã tư, hãy nhớ điều đang diễn ra. Một chiếc đòn bẩy. Một tấm màng mượn sức động cơ. Một dòng dầu không thể bị nén. Một chiếc kẹp tự cân bằng. Bàn chân bạn được nhân lên khoảng bảy mươi lần, và chiếc xe biến tốc độ thành nhiệt chỉ trong vài giây. ... Một ý tưởng từ năm một nghìn chín trăm lẻ hai, phải chờ nửa thế kỷ và một cuộc đua hai mươi bốn giờ, mới được cả thế giới tin dùng. ... Phanh giúp chiếc xe dừng lại. Nhưng để xe lăn bánh, động cơ phải nối với bánh xe, rồi tách ra đúng lúc. Đó là việc của ly hợp. Và đó là câu chuyện của tập sau.",
+      "visual": "Camera kéo ra từ cụm kẹp phanh thành toàn bộ hệ thống; bốn trạm sáng lần lượt; cảnh kết xe dừng đèn đỏ lúc chạng vạng, đèn phanh sáng; gợi ý tập sau \"Ly hợp\".",
+      "types": [
+        "ANIMATION-CODE",
+        "AI-VIDEO"
+      ],
+      "sources": "tổng hợp các cảnh trên",
+      "words": 130
+    }
+  ]
+}
