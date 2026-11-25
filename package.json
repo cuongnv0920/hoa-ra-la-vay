@@ -5,7 +5,7 @@
   "description": "Hóa Ra Là Vậy — kênh giải thích kiến thức quanh ta do AI vận hành: nghiên cứu, kịch bản, fact-check, storyboard và pipeline dựng video.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cuongnv0920/car-channel.git"
+    "url": "git+https://github.com/cuongnv0920/hoa-ra-la-vay.git"
   },
   "scripts": {
     "studio": "remotion studio pipeline/remotion/index.jsx --public-dir=projects/002-phanh-dia/assets",
