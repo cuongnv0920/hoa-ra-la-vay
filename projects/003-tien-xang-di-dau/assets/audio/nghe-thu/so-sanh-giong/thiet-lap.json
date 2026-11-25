@@ -1,0 +1,44 @@
+{
+  "model": "eleven_v4",
+  "language_code": "vi",
+  "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "speed": 0.9,
+    "use_speaker_boost": true
+  },
+  "text": "Bạn đổ mười đồng tiền vào bình xăng. Số tiền cụ thể tùy xe tiêu thụ bao nhiêu và bạn sạc ở đâu.",
+  "samples": [
+    {
+      "file": "1-tung-dang.mp3",
+      "name": "Tung Dang - Deep, Warm and Resonant",
+      "voice_id": "3VnrjnYrskPMDsapTr8X",
+      "seconds": 6.32
+    },
+    {
+      "file": "2-trieu-duong.mp3",
+      "name": "Trieu Duong - Deep, Calm and Resonant",
+      "voice_id": "UsgbMVmY3U59ijwK5mdh",
+      "seconds": 6.72
+    },
+    {
+      "file": "3a-trung-caha-bac.mp3",
+      "name": "Trung Caha - Clear, Firm and Informative",
+      "voice_id": "ueSxRO0nLF1bj93J2hVt",
+      "seconds": 6.08
+    },
+    {
+      "file": "3b-trung-caha-chuan.mp3",
+      "name": "Trung Caha - Articulate and Informative",
+      "voice_id": "FfC8yOt3HaUlZaet6DPx",
+      "seconds": 6.4
+    },
+    {
+      "file": "4-nhat-phong.mp3",
+      "name": "Nhật Phong - Narrative & Compelling",
+      "voice_id": "6adFm46eyy74snVn6YrT",
+      "seconds": 6.16
+    }
+  ]
+}

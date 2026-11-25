@@ -1,0 +1,125 @@
+{
+  "model": "eleven_v4",
+  "scenes": {
+    "1": {
+      "file": "scene-01.mp3",
+      "seconds": 10.24,
+      "chars": 162,
+      "words": 35,
+      "words_per_min": 205,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0,
+        "speed": 0.9,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-25T04:18:51.140Z"
+    },
+    "2": {
+      "file": "scene-02.mp3",
+      "seconds": 20.72,
+      "chars": 328,
+      "words": 70,
+      "words_per_min": 203,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0,
+        "speed": 0.9,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-25T04:23:18.124Z"
+    },
+    "3": {
+      "file": "scene-03.mp3",
+      "seconds": 15.04,
+      "chars": 234,
+      "words": 54,
+      "words_per_min": 215,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0,
+        "speed": 0.9,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-25T04:23:22.875Z"
+    },
+    "4": {
+      "file": "scene-04.mp3",
+      "seconds": 15.2,
+      "chars": 248,
+      "words": 53,
+      "words_per_min": 209,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0,
+        "speed": 0.9,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-25T04:23:27.963Z"
+    },
+    "5": {
+      "file": "scene-05.mp3",
+      "seconds": 17.04,
+      "chars": 264,
+      "words": 57,
+      "words_per_min": 201,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0,
+        "speed": 0.9,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-25T04:23:33.406Z"
+    },
+    "6": {
+      "file": "scene-06.mp3",
+      "seconds": 13.52,
+      "chars": 210,
+      "words": 48,
+      "words_per_min": 213,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0,
+        "speed": 0.9,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-25T04:18:56.045Z"
+    },
+    "7": {
+      "file": "scene-07.mp3",
+      "seconds": 16.56,
+      "chars": 256,
+      "words": 57,
+      "words_per_min": 207,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0,
+        "speed": 0.9,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-25T04:23:38.828Z"
+    },
+    "8": {
+      "file": "scene-08.mp3",
+      "seconds": 8.64,
+      "chars": 133,
+      "words": 28,
+      "words_per_min": 194,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0,
+        "speed": 0.9,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-25T04:23:41.982Z"
+    }
+  }
+}

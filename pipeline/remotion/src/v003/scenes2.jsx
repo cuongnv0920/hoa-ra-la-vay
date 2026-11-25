@@ -18,7 +18,7 @@ const R = 70;
 const L = 230;
 const pinY = (th) => YC - (R * Math.cos(th) + Math.sqrt(L * L - R * R * Math.sin(th) ** 2));
 
-const Cylinder = ({ theta, gas = 0, exhaustLift = 0, jacket = 0, sparks = 0, throttle = 0, f }) => {
+export const Cylinder = ({ theta, gas = 0, exhaustLift = 0, jacket = 0, sparks = 0, throttle = 0, f }) => {
   const th = rad(theta);
   const py = pinY(th);
   const top = py - 60;
@@ -77,7 +77,7 @@ const Cylinder = ({ theta, gas = 0, exhaustLift = 0, jacket = 0, sparks = 0, thr
   );
 };
 
-const Particles = ({ f, n, path, o, color = C.heat, speed = 0.02, r = 9 }) => (
+export const Particles = ({ f, n, path, o, color = C.heat, speed = 0.02, r = 9 }) => (
   <g opacity={o}>
     {Array.from({ length: n }, (_, i) => {
       const p = (f * speed + i / n) % 1;

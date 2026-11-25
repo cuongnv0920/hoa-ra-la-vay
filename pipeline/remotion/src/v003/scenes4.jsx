@@ -6,14 +6,14 @@ import { M, vnd } from '../vertical/layout';
 import { Bill, Chip, Stamp, T } from './parts';
 import { shotAt } from './timeline';
 
-const Sedan = ({ x, y, c }) => (
+export const Sedan = ({ x, y, c }) => (
   <g transform={`translate(${x},${y})`}>
     <path d="M-80 20 L-74 -6 Q-60 -18 -30 -20 L-14 -44 L34 -44 L52 -20 Q78 -16 80 4 L80 20 Z" fill="#101c33" stroke={c} strokeWidth="4" />
     <circle cx={-46} cy={22} r={14} fill={C.navy} stroke={c} strokeWidth="4" />
     <circle cx={46} cy={22} r={14} fill={C.navy} stroke={c} strokeWidth="4" />
   </g>
 );
-const Suv = ({ x, y, c }) => (
+export const Suv = ({ x, y, c }) => (
   <g transform={`translate(${x},${y})`}>
     <path d="M-80 20 L-80 -10 Q-72 -26 -48 -28 L-34 -54 L46 -54 L64 -28 Q80 -24 80 0 L80 20 Z" fill="#08182A" stroke={c} strokeWidth="4" />
     <circle cx={-46} cy={22} r={16} fill={C.navy} stroke={c} strokeWidth="4" />

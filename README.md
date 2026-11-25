@@ -1,33 +1,37 @@
 # Hóa Ra Là Vậy
 
-Kênh YouTube nghiêm túc do AI vận hành, giải thích những điều quanh ta mà ít người để ý: ô tô, công nghệ thông tin, xây dựng, đời sống. Mỗi video trả lời một câu hỏi, giải thích cơ chế bên trong. Ngôn ngữ chính: tiếng Việt.
+Kênh video tiếng Việt giải thích những điều quanh ta bằng cách kể chuyện và làm rõ cơ chế bên trong. Mỗi video trả lời một câu hỏi. Các loạt hiện tại gồm ô tô, công nghệ thông tin, xây dựng và kiến thức đời sống.
+
+## Cách làm hiện tại
+
+`research → script → fact-check → duyệt #1 → storyboard → tạo giọng/asset → dựng Remotion → xem và sửa → QA → duyệt #2 → đăng thủ công`
+
+Claude Code hỗ trợ viết mã và làm việc với tài liệu. Video được dựng bằng Remotion; giọng đọc được tạo qua script ElevenLabs trong repo. MCP và tự động hóa thêm chỉ được đưa vào khi giải quyết một nhu cầu cụ thể. Hai lần duyệt của người dùng không tự động hóa; không tự đăng video.
 
 ## Cấu trúc
 
 | Thư mục | Nội dung |
 |---|---|
-| `.claude/skills/` | Skill của các agent: researcher, scriptwriter, fact-checker, storyboarder |
-| `projects/NNN-ten-video/` | `research/`, `script/`, `assets/` cho từng video |
-| `brand/` | Nhận diện kênh (giọng, phong cách hình ảnh) |
-| `pipeline/` | Mã pipeline tự động (về sau) |
-| `docs/` | Kế hoạch và ghi chú |
+| `projects/NNN-ten-video/` | Nghiên cứu, kịch bản, storyboard và tài sản của từng video |
+| `pipeline/remotion/` | Composition và thành phần dựng video |
+| `pipeline/tts.js` | Tạo giọng qua ElevenLabs API và lưu thời lượng |
+| `.claude/skills/`, `.agents/skills/` | Hướng dẫn cho các công việc nội dung |
+| `brand/` | Giọng đọc và nhận diện kênh |
+| `docs/` | Kế hoạch và ghi chú theo từng dòng nội dung |
 
-## Quy trình mỗi video
+## Trạng thái hiện tại
 
-research → script → fact-check → **[duyệt #1]** → storyboard → assets → giọng/nhạc → ráp → QA → **[duyệt #2]** → upload
+- Video mở đầu **“Tiền xăng của bạn đi đâu?”** (`projects/003-tien-xang-di-dau/`) **đã đăng ngày 2026-11-25** trên trang Facebook của kênh, theo bản 3.2 (`script/script-v3.2.md`). Còn kiểm lại giá xăng và giá sạc sau kỳ điều hành 26/11/2026.
+- `projects/002-phanh-dia/` được giữ làm kho tư liệu.
+- `projects/001-hop-so-tu-dong/` tạm hoãn đến sau các video nền về ly hợp, hộp số sàn và vi sai.
 
-Hai cổng duyệt của người không tự động hóa. Không bao giờ tự đăng.
+## Tài liệu bắt đầu
 
-## Tài liệu
-
-- Kế hoạch tổng thể: [`docs/00-ke-hoach-tong-the.md`](docs/00-ke-hoach-tong-the.md)
-- Nhánh Facebook (phụ, tách riêng): [`docs/01-nhanh-facebook-khao-sat-doi-thu.md`](docs/01-nhanh-facebook-khao-sat-doi-thu.md)
-- Quy tắc cho agent: [`CLAUDE.md`](CLAUDE.md)
-
-## Trạng thái
-
-Video #1 (hộp số tự động / bánh răng hành tinh): research, kịch bản, fact-check và storyboard đã xong; đã qua duyệt #1. Chưa dựng animation và chưa sinh asset AI.
+- Hướng dẫn chính cho Claude Code: [`CLAUDE.md`](CLAUDE.md)
+- Kế hoạch và trạng thái dự án: [`docs/00-ke-hoach-tong-the.md`](docs/00-ke-hoach-tong-the.md)
+- Dòng xe điện và xe xăng/dầu: [`docs/02-dong-xe-dien-vs-xe-xang.md`](docs/02-dong-xe-dien-vs-xe-xang.md)
+- Nhánh Facebook phụ: [`docs/01-nhanh-facebook-khao-sat-doi-thu.md`](docs/01-nhanh-facebook-khao-sat-doi-thu.md)
 
 ## Bí mật
 
-Khóa API (Higgsfield, ElevenLabs, YouTube) đặt trong `.env`, không commit. Xem `.gitignore`.
+Khóa API lưu trong `.env`, không đưa vào Git. Xem `.gitignore`.

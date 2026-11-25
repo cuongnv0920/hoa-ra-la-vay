@@ -3,6 +3,7 @@
 // Chạy:
 //   node --env-file=.env pipeline/tts.js <project-dir> [--scenes 1,10] [--model eleven_turbo_v2_5]
 //        [--stability 0.5] [--similarity 0.75] [--style 0] [--speed 1.0] [--force]
+//        [--script script.json] [--out <model>] [--voice <voice_id>]   (phiên bản riêng, ví dụ --script script-v3.json --out v3)
 //
 // Đầu vào : <project-dir>/script/script.json (voice.voice_id + scenes[].voiceover)
 // Đầu ra  : <project-dir>/assets/audio/<model>/scene-NN.mp3
@@ -21,8 +22,9 @@ if (!projectDir) { console.error('Cần đường dẫn thư mục dự án, ví
 const opt = (name, def) => { const i = args.indexOf('--' + name); return i >= 0 ? args[i + 1] : def; };
 const flag = name => args.includes('--' + name);
 
-const script = JSON.parse(fs.readFileSync(path.join(projectDir, 'script', 'script.json'), 'utf8'));
-const voiceId = script.voice && script.voice.voice_id;
+const script = JSON.parse(fs.readFileSync(path.join(projectDir, 'script', opt('script', 'script.json')), 'utf8'));
+const voiceArg = args.indexOf('--voice');
+const voiceId = voiceArg >= 0 ? args[voiceArg + 1] : script.voice && script.voice.voice_id;
 if (!voiceId) { console.error('script.json thiếu voice.voice_id'); process.exit(1); }
 
 const model = opt('model', 'eleven_turbo_v2_5');
@@ -35,7 +37,7 @@ const settings = {
 };
 const wanted = opt('scenes', null);
 const scenes = script.scenes.filter(s => !wanted || wanted.split(',').map(Number).includes(s.scene));
-const outDir = path.join(projectDir, 'assets', 'audio', model);
+const outDir = path.join(projectDir, 'assets', 'audio', opt('out', model));
 fs.mkdirSync(outDir, { recursive: true });
 
 const timingsPath = path.join(outDir, 'timings.json');
@@ -61,6 +63,8 @@ async function tts(text, previous, next) {
     const idx = all.findIndex(x => x.scene === s.scene);
     const res = await tts(s.voiceover, all[idx - 1] && all[idx - 1].voiceover, all[idx + 1] && all[idx + 1].voiceover);
     fs.writeFileSync(file, Buffer.from(res.audio_base64, 'base64'));
+    // mốc thời gian từng ký tự, dùng cho phụ đề
+    if (res.alignment) fs.writeFileSync(file.replace('.mp3', '.alignment.json'), JSON.stringify(res.alignment));
     const ends = (res.alignment && res.alignment.character_end_times_seconds) || [];
     const dur = ends.length ? ends[ends.length - 1] : null;
     const words = s.voiceover.split(/\s+/).filter(x => x && x !== '...').length;
