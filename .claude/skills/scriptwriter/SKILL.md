@@ -1,6 +1,6 @@
 ---
 name: scriptwriter
-description: Viết kịch bản video tiếng Việt cho kênh xe (hook → lịch sử → cơ chế → kết truyền cảm hứng), dài tối đa 15 phút, dựa trên research.md. Dùng sau khi có research.
+description: Viết kịch bản video tiếng Việt cho kênh Hóa Ra Là Vậy (hook → lịch sử → cơ chế → kết truyền cảm hứng), video dọc 1–3 phút, dựa trên research.md. Dùng sau khi có research.
 ---
 
 # Scriptwriter
@@ -11,10 +11,11 @@ description: Viết kịch bản video tiếng Việt cho kênh xe (hook → l�
 1. **Hook (0–30s):** một câu hỏi/nghịch lý/con số gây tò mò. Không chào hỏi dài dòng, không "xin chào các bạn".
 2. **Lịch sử ngắn (~15–20% thời lượng):** kể như câu chuyện có nhân vật và vấn đề cần giải.
 3. **Cơ chế (~55–65%):** đi từng bước, mỗi bước 1 ý. Dùng so sánh đời thường. Nhắc lại tóm tắt sau mỗi phần lớn.
-4. **Kết (~10%):** ý nghĩa, cảm hứng cho người yêu xe, gợi tập tiếp theo.
+4. **Kết (~10%):** ý nghĩa, cảm hứng cho người xem tò mò, gợi tập tiếp theo.
 
 ## Quy tắc
-- Độ dài: giọng đọc tiếng Việt ≈ 150 từ/phút → 15 phút ≈ **tối đa 2.200 từ**. Bộ phận đơn giản có thể 5–8 phút.
+- Độ dài (chốt 2026-11-23): video dọc **1–3 phút**. Nhịp đọc thật của Tung Dang ≈ 210 từ/phút → **200–600 từ**. Chủ đề lớn → tách thành chuỗi, mỗi video một câu hỏi.
+- Video ngắn: lịch sử chỉ dùng khi phục vụ hook; mỗi 3–6 giây một ý mới để hình đổi theo.
 - Câu ngắn, dễ đọc thành tiếng. Tránh câu lồng nhiều mệnh đề.
 - Thuật ngữ: lần đầu nhắc ghi cả tiếng Việt và tên gốc (vd: bánh răng hành tinh – planetary gear).
 - **Không thêm sự kiện ngoài research.md.** Cần thêm → quay lại researcher.

@@ -31,7 +31,7 @@ Nguồn: Reel turbo (`facebook.com/reel/1062484260175155`) và ảnh chụp tran
 | Xe điện vẫn cần hộp số | 7,4K |
 | Vì sao xe điện hao pin trên cao tốc | 26K |
 
-Ngoài ra có nhiều reel về chủ đề công nghệ (Wi-Fi 299K, HTTP/3, RAM...) nằm ngoài phạm vi kênh xe của chúng ta.
+Ngoài ra có nhiều reel về chủ đề công nghệ (Wi-Fi 299K, HTTP/3, RAM...) nằm ngoài phạm vi kênh xe của chúng ta. *(Cập nhật 2026-11-25: kênh đã mở rộng sang công nghệ thông tin, nên nhận định này không còn đúng.)*
 
 ### Nhận xét
 

@@ -1,6 +1,6 @@
-# car-channel
+# Hóa Ra Là Vậy
 
-Kênh YouTube nghiêm túc về ô tô do AI vận hành. Mỗi video giải thích chi tiết vận hành của một bộ phận, kèm lịch sử ngắn. Ngôn ngữ chính: tiếng Việt.
+Kênh YouTube nghiêm túc do AI vận hành, giải thích những điều quanh ta mà ít người để ý: ô tô, công nghệ thông tin, xây dựng, đời sống. Mỗi video trả lời một câu hỏi, giải thích cơ chế bên trong. Ngôn ngữ chính: tiếng Việt.
 
 ## Cấu trúc
 
