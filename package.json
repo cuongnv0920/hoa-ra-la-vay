@@ -1,11 +1,20 @@
 {
-  "name": "car-channel",
+  "name": "hoa-ra-la-vay",
   "version": "0.1.0",
   "private": true,
-  "description": "Kênh YouTube về xe do AI vận hành: nghiên cứu, kịch bản, fact-check, storyboard và pipeline dựng video.",
+  "description": "Hóa Ra Là Vậy — kênh giải thích kiến thức quanh ta do AI vận hành: nghiên cứu, kịch bản, fact-check, storyboard và pipeline dựng video.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cuongnv0920/car-channel.git"
   },
-  "scripts": {}
+  "scripts": {
+    "studio": "remotion studio pipeline/remotion/index.jsx --public-dir=projects/002-phanh-dia/assets",
+    "demo002": "remotion render pipeline/remotion/index.jsx Demo002 projects/002-phanh-dia/assets/demo/demo-002.mp4 --public-dir=projects/002-phanh-dia/assets"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.545",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.545"
+  }
 }

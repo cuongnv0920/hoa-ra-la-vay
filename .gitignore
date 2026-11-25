@@ -20,3 +20,6 @@ npm-debug.log*
 # Media dựng/xuất
 *.mov
 *.webm
+
+# Giong mau tai ve de nghe thu (cua ben thu ba, khong commit)
+brand/thu-giong/
