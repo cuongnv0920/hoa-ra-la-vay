@@ -1,0 +1,686 @@
+{
+  "video": "007-subaru-may-boxer",
+  "version": "sb1",
+  "status": "approved-storyboard-2026-11-26",
+  "script": "script/script-v2.2.md",
+  "format": {
+    "aspect": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "credits_higgsfield": 0,
+  "levels_db": {
+    "vua": -8,
+    "nhe": -13,
+    "nen": -21
+  },
+  "shots": [
+    {
+      "scene": 1,
+      "id": "1.1",
+      "start_s": 0,
+      "est_dur_s": 4.3,
+      "type": "ANIMATION-CODE",
+      "cue": "Mở nắp ca-pô",
+      "headline": "Thường: xi-lanh đứng",
+      "description": "Máy thẳng hàng 4 xi-lanh (xanh) nhìn nghiêng, nét vẽ; bốn xi-lanh sáng lần lượt từ trái sang phải.",
+      "components": "InlineEngine, EngineBlock"
+    },
+    {
+      "scene": 1,
+      "id": "1.2",
+      "start_s": 4.3,
+      "est_dur_s": 4,
+      "type": "ANIMATION-CODE",
+      "cue": "Nhưng ở hầu hết",
+      "headline": "Subaru: nằm ngang",
+      "description": "Máy boxer (hổ phách) trượt vào cạnh máy thẳng hàng; xi-lanh của nó nằm ngang sang hai bên. Chú thích nhỏ \"hầu hết xe Subaru chạy xăng\".",
+      "components": "BoxerEngine, Footnote"
+    },
+    {
+      "scene": 1,
+      "id": "1.3",
+      "start_s": 8.3,
+      "est_dur_s": 2.6,
+      "type": "ĐỒ HỌA",
+      "cue": "Vì sao",
+      "headline": "Vì sao vẫn giữ?",
+      "description": "Máy boxer ở giữa, dấu hỏi lớn.",
+      "components": "Headline"
+    },
+    {
+      "scene": 2,
+      "id": "2.1",
+      "start_s": 10.9,
+      "est_dur_s": 3.7,
+      "type": "ANIMATION-CODE",
+      "cue": "Kiểu máy này",
+      "headline": "Động cơ boxer",
+      "description": "Máy boxer xoay về góc nhìn từ trên xuống; hai thẻ chữ \"boxer\" và \"đối đỉnh nằm ngang\".",
+      "components": "BoxerEngine, Chip"
+    },
+    {
+      "scene": 2,
+      "id": "2.2",
+      "start_s": 14.6,
+      "est_dur_s": 4,
+      "type": "ANIMATION-CODE",
+      "cue": "Các xi-lanh nằm",
+      "headline": "Trục khuỷu ở giữa",
+      "description": "Vỏ máy mờ đi, lộ trục khuỷu nằm dọc giữa; xi-lanh hai bên. Nhãn \"trục khuỷu (crankshaft)\", trục bắt đầu quay chậm.",
+      "components": "BoxerEngine, Chip"
+    },
+    {
+      "scene": 2,
+      "id": "2.3",
+      "start_s": 18.6,
+      "est_dur_s": 4.3,
+      "type": "ANIMATION-CODE",
+      "cue": "Hai piston đối diện",
+      "headline": "Cùng vào, cùng ra",
+      "description": "Quay chậm: một cặp piston đối diện cùng tiến vào tâm rồi cùng lùi ra; cặp còn lại đi ngược pha. Tô sáng một cặp.",
+      "components": "BoxerEngine"
+    },
+    {
+      "scene": 2,
+      "id": "2.4",
+      "start_s": 22.9,
+      "est_dur_s": 2,
+      "type": "ANIMATION-CODE",
+      "cue": "Trông như",
+      "headline": "Như hai võ sĩ",
+      "description": "Hai găng đấm nét vẽ chồng lên cặp piston, hướng vào nhau rồi lùi ra cùng nhịp; găng **không chạm** nhau, piston không chạm nhau.",
+      "components": "BoxerEngine, icon găng"
+    },
+    {
+      "scene": 2,
+      "id": "2.5",
+      "start_s": 24.9,
+      "est_dur_s": 2.5,
+      "type": "ANIMATION-CODE",
+      "cue": "Porsche 911",
+      "headline": "Porsche 911: 6 xi-lanh",
+      "description": "Khối boxer 6 xi-lanh nét vẽ (3 mỗi bên); thẻ chữ \"Porsche 911\", không logo, không vẽ xe.",
+      "components": "BoxerEngine (6), Chip"
+    },
+    {
+      "scene": 3,
+      "id": "3.1",
+      "start_s": 27.4,
+      "est_dur_s": 3.5,
+      "type": "ANIMATION-CODE",
+      "cue": "Piston chạy qua lại",
+      "headline": "Đổi chiều liên tục",
+      "description": "Một piston chạy qua lại; mỗi lần tới đầu hành trình hiện một chấm sáng \"đổi chiều\". Không ghi số lần.",
+      "components": "BoxerEngine (1 xi-lanh tách ra)"
+    },
+    {
+      "scene": 3,
+      "id": "3.2",
+      "start_s": 30.9,
+      "est_dur_s": 3.4,
+      "type": "ANIMATION-CODE",
+      "cue": "Mỗi lần đổi chiều",
+      "headline": "Mỗi lần: một cú giật",
+      "description": "Mỗi lần piston đổi chiều, một mũi tên trắng bật ra theo hướng piston, khối máy nhích nhẹ theo.",
+      "components": "ForceArrow"
+    },
+    {
+      "scene": 3,
+      "id": "3.3",
+      "start_s": 34.3,
+      "est_dur_s": 3.4,
+      "type": "ANIMATION-CODE",
+      "cue": "Ở máy boxer",
+      "headline": "Đi ngược chiều nhau",
+      "description": "Trở lại cặp piston đối diện; hai piston đi ngược chiều, mỗi bên một mũi tên.",
+      "components": "BoxerEngine, ForceArrow"
+    },
+    {
+      "scene": 3,
+      "id": "3.4",
+      "start_s": 37.7,
+      "est_dur_s": 3.2,
+      "type": "ANIMATION-CODE",
+      "cue": "Cú giật bên này",
+      "headline": "Bù nhau phần lớn",
+      "description": "Hai mũi tên bằng nhau, ngược chiều, gặp nhau rồi gần như triệt tiêu; khối máy gần như đứng yên (vẫn nhích rất nhẹ).",
+      "components": "BoxerEngine, ForceArrow"
+    },
+    {
+      "scene": 3,
+      "id": "3.5",
+      "start_s": 40.9,
+      "est_dur_s": 3.1,
+      "type": "ANIMATION-CODE",
+      "cue": "Máy thẳng hàng",
+      "headline": "Thẳng hàng: còn một kiểu rung",
+      "description": "Máy thẳng hàng (xanh) nhìn nghiêng, piston 1–4 lên khi 2–3 xuống (đúng thứ tự); một mũi tên rung dọc nhấp nháy **nhanh gấp đôi** nhịp quay; khối máy rung lên xuống.",
+      "components": "InlineEngine, ForceArrow"
+    },
+    {
+      "scene": 3,
+      "id": "3.6",
+      "start_s": 44,
+      "est_dur_s": 2.6,
+      "type": "ANIMATION-CODE",
+      "cue": "Máy lớn đôi khi",
+      "headline": "Có khi thêm trục cân bằng",
+      "description": "Một cặp trục cân bằng nhỏ có quả lệch hiện dưới máy thẳng hàng, quay ngược chiều nhau; rung giảm. Chú thích \"ở một số máy lớn\".",
+      "components": "InlineEngine, BalanceShaft, Footnote"
+    },
+    {
+      "scene": 3,
+      "id": "3.7",
+      "start_s": 46.6,
+      "est_dur_s": 2,
+      "type": "ANIMATION-CODE",
+      "cue": "Máy boxer 4 xi-lanh",
+      "headline": "Boxer 4: không cần",
+      "description": "Máy boxer cạnh đó, chỗ trục cân bằng để trống, dấu tích.",
+      "components": "BoxerEngine"
+    },
+    {
+      "scene": 3,
+      "id": "3.8",
+      "start_s": 48.6,
+      "est_dur_s": 4.3,
+      "type": "ANIMATION-CODE",
+      "cue": "Nhưng không phải",
+      "headline": "Vẫn rung nhẹ",
+      "description": "Phóng sát máy boxer đang chạy: khối máy lắc rất nhẹ quanh tâm. Không vẽ máy đứng yên tuyệt đối; không ghi giải thích bậc rung.",
+      "components": "BoxerEngine"
+    },
+    {
+      "scene": 4,
+      "id": "4.1",
+      "start_s": 52.9,
+      "est_dur_s": 2.8,
+      "type": "ANIMATION-CODE",
+      "cue": "Máy nằm ngang nên",
+      "headline": "Dáng thấp",
+      "description": "Hai máy nhìn từ phía trước, đặt cạnh nhau trên cùng một vạch nền; thước chiều cao cho thấy boxer thấp hơn. Không ghi số.",
+      "components": "InlineEngine, BoxerEngine"
+    },
+    {
+      "scene": 4,
+      "id": "4.2",
+      "start_s": 55.7,
+      "est_dur_s": 4.3,
+      "type": "ANIMATION-CODE",
+      "cue": "Nó có thể được đặt thấp",
+      "headline": "Hạ trọng tâm",
+      "description": "Mặt cắt ngang đầu xe; khối boxer hạ thấp vào khoang máy; chấm trọng tâm của khối máy hạ theo.",
+      "components": "CarSection, CoGMarker"
+    },
+    {
+      "scene": 4,
+      "id": "4.3",
+      "start_s": 60,
+      "est_dur_s": 5.4,
+      "type": "ANIMATION-CODE",
+      "cue": "Nhưng trọng tâm cả chiếc xe",
+      "headline": "Cả xe mới quyết định",
+      "description": "Thu ra: hiện thân xe, gầm, hệ treo, bánh xe; nhãn từng phần. Chấm trọng tâm **của cả xe** hiện ở vị trí riêng, lớn hơn chấm của máy.",
+      "components": "CarSection, CoGMarker, Chip"
+    },
+    {
+      "scene": 4,
+      "id": "4.4",
+      "start_s": 65.4,
+      "est_dur_s": 2.9,
+      "type": "ANIMATION-CODE",
+      "cue": "Một chiếc Subaru gầm cao",
+      "headline": "Gầm cao vẫn là gầm cao",
+      "description": "Hình bóng một xe gầm cao chung chung (không dáng mẫu cụ thể), thước khoảng sáng gầm.",
+      "components": "CarSection"
+    },
+    {
+      "scene": 4,
+      "id": "4.5",
+      "start_s": 68.3,
+      "est_dur_s": 2.6,
+      "type": "ĐỒ HỌA",
+      "cue": "Động cơ chỉ là",
+      "headline": "Một phần câu chuyện",
+      "description": "Các mảnh \"thân xe\", \"gầm\", \"hệ treo\", \"động cơ\" xếp cạnh nhau; mảnh động cơ sáng nhẹ, không lớn hơn mảnh khác.",
+      "components": "Chip"
+    },
+    {
+      "scene": 5,
+      "id": "5.1",
+      "start_s": 70.9,
+      "est_dur_s": 2.5,
+      "type": "ĐỒ HỌA",
+      "cue": "Với Subaru",
+      "headline": "Còn một lý do: chiều dài",
+      "description": "Thước dài nằm ngang.",
+      "components": "Headline"
+    },
+    {
+      "scene": 5,
+      "id": "5.2",
+      "start_s": 73.4,
+      "est_dur_s": 2,
+      "type": "ANIMATION-CODE",
+      "cue": "Máy boxer ngắn",
+      "headline": "Ngắn theo chiều trước sau",
+      "description": "Hai máy nhìn từ trên, đặt dọc cùng hướng; thước trước sau cho thấy boxer ngắn hơn. Không ghi số.",
+      "components": "InlineEngine, BoxerEngine"
+    },
+    {
+      "scene": 5,
+      "id": "5.3",
+      "start_s": 75.4,
+      "est_dur_s": 4.3,
+      "type": "ANIMATION-CODE",
+      "cue": "Subaru giải thích",
+      "headline": "Đặt dọc vẫn gọn",
+      "description": "Nhìn từ trên xuống đầu xe: thử đặt dọc máy thẳng hàng, nó lấn tới vách ngăn khoang lái; thay bằng boxer, vừa khoang. Chú thích \"theo Subaru\".",
+      "components": "CarTopView, Footnote"
+    },
+    {
+      "scene": 5,
+      "id": "5.4",
+      "start_s": 79.7,
+      "est_dur_s": 3.2,
+      "type": "ĐỒ HỌA",
+      "cue": "Năm 1966",
+      "headline": "1966: Subaru 1000",
+      "description": "Sơ đồ nhìn từ trên: đầu xe với máy boxer đặt dọc, nhãn \"1966\", \"Subaru 1000\", \"dẫn động cầu trước\". **Không vẽ hộp số** (chưa có nguồn vị trí). Không dùng ảnh xe.",
+      "components": "CarTopView, Chip"
+    },
+    {
+      "scene": 5,
+      "id": "5.5",
+      "start_s": 82.9,
+      "est_dur_s": 4.5,
+      "type": "ANIMATION-CODE",
+      "cue": "Subaru xem bố cục ấy",
+      "headline": "Nền móng cho AWD (theo Subaru)",
+      "description": "Sơ đồ 1966 sáng viền; một đường thời gian ngắn kéo về phía sau, chữ \"hệ dẫn động bốn bánh về sau\". Chú thích \"theo Subaru\".",
+      "components": "CarTopView, Footnote"
+    },
+    {
+      "scene": 5,
+      "id": "5.6",
+      "start_s": 87.4,
+      "est_dur_s": 4,
+      "type": "ANIMATION-CODE",
+      "cue": "Trên các xe Subaru sau này",
+      "headline": "Hộp số ngay sau máy",
+      "description": "Sơ đồ xe đời sau: hộp số \"click\" vào ngay sau máy boxer; trục truyền ra phía sau chỉ hiện mờ, không giải thích (để tập sau).",
+      "components": "CarTopView"
+    },
+    {
+      "scene": 6,
+      "id": "6.1",
+      "start_s": 91.4,
+      "est_dur_s": 2.6,
+      "type": "ANIMATION-CODE",
+      "cue": "Nhưng máy boxer",
+      "headline": "Bè rộng",
+      "description": "Máy boxer nhìn từ trước trong khoang máy; thước chiều ngang mở ra, gần chạm hai bên khoang.",
+      "components": "CarSection, WidthBracket"
+    },
+    {
+      "scene": 6,
+      "id": "6.2",
+      "start_s": 94,
+      "est_dur_s": 3.4,
+      "type": "ANIMATION-CODE",
+      "cue": "Nó có hai nắp máy",
+      "headline": "Hai nắp máy",
+      "description": "Hai nắp máy hai bên sáng lên, chữ \"×2\"; máy thẳng hàng nhỏ ở góc chỉ có một nắp máy.",
+      "components": "BoxerEngine, InlineEngine"
+    },
+    {
+      "scene": 6,
+      "id": "6.3",
+      "start_s": 97.4,
+      "est_dur_s": 4.9,
+      "type": "ANIMATION-CODE",
+      "cue": "Ở một số mẫu xe",
+      "headline": "Bugi khó tiếp cận",
+      "description": "Phóng vào một bên máy: bugi nằm sát thành khoang máy, khoảng trống hẹp; một cờ lê nét vẽ không xoay đủ vòng. Chú thích \"ở một số mẫu xe\". Không vẽ thành hướng dẫn tháo lắp.",
+      "components": "CarSection, SparkPlug, Footnote"
+    },
+    {
+      "scene": 7,
+      "id": "7.1",
+      "start_s": 102.3,
+      "est_dur_s": 5.7,
+      "type": "ĐỒ HỌA",
+      "cue": "Hóa ra là vậy",
+      "headline": "Hóa ra là vậy",
+      "description": "Bàn cân: một bên \"thấp, ngắn, ít rung\", bên kia \"rộng, phức tạp, khó sửa\"; cân không nghiêng hẳn về bên nào.",
+      "components": "Stamp, Chip"
+    },
+    {
+      "scene": 7,
+      "id": "7.2",
+      "start_s": 108,
+      "est_dur_s": 2.9,
+      "type": "ANIMATION-CODE",
+      "cue": "Mà vì nó hợp",
+      "headline": "Hợp với cách bố trí xe",
+      "description": "Mảnh máy boxer khớp vào sơ đồ xe nhìn từ trên.",
+      "components": "CarTopView"
+    },
+    {
+      "scene": 7,
+      "id": "7.3",
+      "start_s": 110.9,
+      "est_dur_s": 3.1,
+      "type": "ĐỒ HỌA",
+      "cue": "Lựa chọn ấy",
+      "headline": "Nhiều thập kỷ",
+      "description": "Đường thời gian \"1966 → nay\", máy boxer ở hai đầu.",
+      "components": "Chip"
+    },
+    {
+      "scene": 7,
+      "id": "7.4",
+      "start_s": 114,
+      "est_dur_s": 4.9,
+      "type": "ANIMATION-CODE",
+      "cue": "Còn hệ dẫn động",
+      "headline": "AWD hoạt động ra sao?",
+      "description": "Sơ đồ xe từ trên: đường truyền lực sáng dần từ hộp số ra bốn bánh rồi mờ đi; thẻ chữ \"Audi quattro?\" (không logo); dấu hỏi.",
+      "components": "CarTopView, Chip"
+    },
+    {
+      "scene": 7,
+      "id": "7.5",
+      "start_s": 118.9,
+      "est_dur_s": 2,
+      "type": "ĐỒ HỌA",
+      "cue": "Tập sau.",
+      "headline": "Tập sau: AWD",
+      "description": "Thẻ \"Tập sau: hệ dẫn động bốn bánh\", tên kênh. Có 1,5 s không lời ở cuối.",
+      "components": "Headline"
+    }
+  ],
+  "sfx": [
+    {
+      "id": "A01",
+      "shot": "1.1",
+      "layer": "chuyen-dong",
+      "sound": "\"tick\" nhỏ, khô, bốn lần cao dần",
+      "trigger": "từng xi-lanh sáng",
+      "offset_s": 0.4,
+      "dur_s": 0.08,
+      "level": "nhe",
+      "file": null,
+      "reuse_from_005": null,
+      "note": "+0,4 s, cách 0,5 s | 4 × 0,08 s | CẦN TẠO"
+    },
+    {
+      "id": "A02",
+      "shot": "1.2",
+      "layer": "chuyen-dong",
+      "sound": "trượt nhẹ rồi \"cộp\" êm",
+      "trigger": "máy boxer trượt vào và dừng",
+      "offset_s": 0.3,
+      "dur_s": 0.6,
+      "level": "nhe",
+      "file": null,
+      "reuse_from_005": null,
+      "note": "+0,3 s | 0,6 s | CẦN TẠO"
+    },
+    {
+      "id": "A03",
+      "shot": "2.2",
+      "layer": "chuyen-dong",
+      "sound": "\"click\" kim loại nhỏ",
+      "trigger": "nhãn trục khuỷu bật ra",
+      "offset_s": 0.8,
+      "dur_s": 0.12,
+      "level": "nhe",
+      "file": null,
+      "reuse_from_005": [
+        "audio/sfx/click.wav"
+      ],
+      "note": "+0,8 s | 0,12 s | dùng lại `click` (005)"
+    },
+    {
+      "id": "A04",
+      "shot": "2.3",
+      "layer": "chuyen-dong",
+      "sound": "\"thụp\" mềm, trầm, **một tiếng mỗi lần cặp piston tới điểm trong cùng**",
+      "trigger": "cặp piston tô sáng chạm điểm trong",
+      "offset_s": 0,
+      "dur_s": 0.1,
+      "level": "nen",
+      "file": null,
+      "reuse_from_005": null,
+      "note": "theo hình, 2–3 lần | 0,1 s mỗi lần | CẦN TẠO"
+    },
+    {
+      "id": "A05",
+      "shot": "2.4",
+      "layer": "chuyen-dong",
+      "sound": "\"bụp\" găng đấm, hai bên cùng lúc, nhỏ",
+      "trigger": "hai găng đưa ra cùng nhịp",
+      "offset_s": 0.5,
+      "dur_s": 0.15,
+      "level": "nhe",
+      "file": null,
+      "reuse_from_005": null,
+      "note": "+0,5 s | 0,15 s | CẦN TẠO"
+    },
+    {
+      "id": "A06",
+      "shot": "2.5",
+      "layer": "chuyen-dong",
+      "sound": "\"click\" cao",
+      "trigger": "thẻ \"Porsche 911\" hiện",
+      "offset_s": 0.3,
+      "dur_s": 0.12,
+      "level": "nhe",
+      "file": null,
+      "reuse_from_005": [
+        "audio/sfx/click-cao.wav"
+      ],
+      "note": "+0,3 s | 0,12 s | dùng lại `click-cao` (005)"
+    },
+    {
+      "id": "A07",
+      "shot": "3.2",
+      "layer": "chuyen-dong",
+      "sound": "\"thịch\" ngắn, trầm, mỗi lần piston đổi chiều",
+      "trigger": "mũi tên bật ra, khối máy nhích",
+      "offset_s": 0,
+      "dur_s": 0.12,
+      "level": "nhe",
+      "file": null,
+      "reuse_from_005": null,
+      "note": "theo hình, 2 lần | 0,12 s mỗi lần | CẦN TẠO"
+    },
+    {
+      "id": "A08",
+      "shot": "3.4",
+      "layer": "chuyen-dong",
+      "sound": "hai \"thịch\" cùng lúc, tiếng nhỏ dần như bị dập",
+      "trigger": "hai mũi tên gặp và triệt tiêu",
+      "offset_s": 1,
+      "dur_s": 0.3,
+      "level": "nhe",
+      "file": null,
+      "reuse_from_005": null,
+      "note": "+1,0 s | 0,3 s | CẦN TẠO (biến thể A07)"
+    },
+    {
+      "id": "A09",
+      "shot": "3.5",
+      "layer": "chuyen-dong",
+      "sound": "rè rung ngắn, nhịp nhanh gấp đôi nhịp quay của hình",
+      "trigger": "máy thẳng hàng rung",
+      "offset_s": 0.4,
+      "dur_s": 0.8,
+      "level": "nhe",
+      "file": null,
+      "reuse_from_005": null,
+      "note": "+0,4 s | 0,8 s, fade ra 0,2 s | CẦN TẠO"
+    },
+    {
+      "id": "A10",
+      "shot": "3.6",
+      "layer": "chuyen-dong",
+      "sound": "\"cạch\" cơ khí trầm",
+      "trigger": "trục cân bằng gắn vào",
+      "offset_s": 0.3,
+      "dur_s": 0.15,
+      "level": "nhe",
+      "file": null,
+      "reuse_from_005": [
+        "audio/sfx/cach-co-khi.wav"
+      ],
+      "note": "+0,3 s | 0,15 s | dùng lại `cach-co-khi` (005)"
+    },
+    {
+      "id": "A11",
+      "shot": "3.7",
+      "layer": "chuyen-dong",
+      "sound": "\"ting\" ngắn, sáng",
+      "trigger": "dấu tích hiện",
+      "offset_s": 0.6,
+      "dur_s": 0.3,
+      "level": "nhe",
+      "file": null,
+      "reuse_from_005": null,
+      "note": "+0,6 s | 0,3 s | CẦN TẠO"
+    },
+    {
+      "id": "A12",
+      "shot": "4.2",
+      "layer": "chuyen-dong",
+      "sound": "\"thả\" trầm, êm",
+      "trigger": "khối máy hạ vào khoang",
+      "offset_s": 0.6,
+      "dur_s": 0.3,
+      "level": "nhe",
+      "file": null,
+      "reuse_from_005": null,
+      "note": "+0,6 s | 0,3 s | CẦN TẠO"
+    },
+    {
+      "id": "A13",
+      "shot": "4.3",
+      "layer": "chuyen-dong",
+      "sound": "\"whoosh\" ngắn, êm",
+      "trigger": "thu ra cả chiếc xe",
+      "offset_s": 0,
+      "dur_s": 0.4,
+      "level": "nhe",
+      "file": null,
+      "reuse_from_005": [
+        "audio/sfx/whoosh.wav"
+      ],
+      "note": "+0 s | 0,4 s | dùng lại `whoosh` (005)"
+    },
+    {
+      "id": "A14",
+      "shot": "5.3",
+      "layer": "chuyen-dong",
+      "sound": "\"cộp\" đục khi máy thẳng hàng chạm vách, rồi \"click\" khi boxer vừa chỗ",
+      "trigger": "hai sự kiện trên hình",
+      "offset_s": 1.2,
+      "dur_s": 0.15,
+      "level": "nhe",
+      "file": null,
+      "reuse_from_005": [
+        "audio/sfx/click.wav"
+      ],
+      "note": "+1,2 s và +2,8 s | 0,15 s + 0,12 s | CẦN TẠO + dùng lại `click`"
+    },
+    {
+      "id": "A15",
+      "shot": "5.4",
+      "layer": "chuyen-dong",
+      "sound": "\"whoosh\" như A13",
+      "trigger": "chuyển sang sơ đồ 1966",
+      "offset_s": 0,
+      "dur_s": 0.4,
+      "level": "nhe",
+      "file": null,
+      "reuse_from_005": [
+        "audio/sfx/whoosh.wav"
+      ],
+      "note": "+0 s | 0,4 s | dùng lại `whoosh`"
+    },
+    {
+      "id": "A16",
+      "shot": "5.6",
+      "layer": "chuyen-dong",
+      "sound": "\"click\" chắc hơn A03, trầm hơn",
+      "trigger": "hộp số gắn vào sau máy",
+      "offset_s": 0.6,
+      "dur_s": 0.15,
+      "level": "vua",
+      "file": null,
+      "reuse_from_005": null,
+      "note": "+0,6 s | 0,15 s | CẦN TẠO"
+    },
+    {
+      "id": "A17",
+      "shot": "6.2",
+      "layer": "chuyen-dong",
+      "sound": "hai \"click\" lần lượt",
+      "trigger": "từng nắp máy sáng",
+      "offset_s": 0.4,
+      "dur_s": 0.12,
+      "level": "nhe",
+      "file": null,
+      "reuse_from_005": [
+        "audio/sfx/click.wav",
+        "audio/sfx/click-cao.wav"
+      ],
+      "note": "+0,4 s và +0,8 s | 2 × 0,12 s | dùng lại `click`, `click-cao`"
+    },
+    {
+      "id": "A18",
+      "shot": "6.3",
+      "layer": "chuyen-dong",
+      "sound": "cờ lê chạm kim loại, \"keng\" nhỏ, cụt",
+      "trigger": "cờ lê vướng thành khoang",
+      "offset_s": 1.5,
+      "dur_s": 0.2,
+      "level": "nhe",
+      "file": null,
+      "reuse_from_005": null,
+      "note": "+1,5 s | 0,2 s | CẦN TẠO"
+    },
+    {
+      "id": "A19",
+      "shot": "7.2",
+      "layer": "chuyen-dong",
+      "sound": "\"khớp\" gọn, có chút ngân",
+      "trigger": "mảnh boxer khớp vào sơ đồ",
+      "offset_s": 0.5,
+      "dur_s": 0.5,
+      "level": "vua",
+      "file": null,
+      "reuse_from_005": [
+        "audio/sfx/khop-manh.wav"
+      ],
+      "note": "+0,5 s | 0,5 s | dùng lại `khop-manh` (005)"
+    },
+    {
+      "id": "A20",
+      "shot": "7.5",
+      "layer": "chuyen-dong",
+      "sound": "chuông ngắn",
+      "trigger": "tên kênh hiện",
+      "offset_s": 0.4,
+      "dur_s": 0.8,
+      "level": "nhe",
+      "file": null,
+      "reuse_from_005": [
+        "audio/sfx/chuong.wav"
+      ],
+      "note": "+0,4 s | 0,8 s | dùng lại `chuong` (005)"
+    }
+  ]
+}
