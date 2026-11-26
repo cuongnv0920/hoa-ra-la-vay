@@ -33,6 +33,31 @@
 
 Không xây website điều phối hay tự động hóa toàn bộ quy trình ở giai đoạn này. Ghi nhận điểm nghẽn qua vài video trước, rồi mới tự động hóa bước lặp lại.
 
+## Thiết kế âm thanh cho animation (chốt 2026-11-26)
+
+Animation Remotion có âm thanh đi kèm: ngắn, tinh tế, khớp với hành động nhìn thấy (ví dụ “click” khi một chi tiết bật vào vị trí, “whoosh” khi chuyển cảnh lớn, tiếng máy hoặc dòng chảy khi minh họa cơ chế). Mục tiêu là giúp người xem cảm nhận chuyển động và hiểu cơ chế, không phải lấp đầy video bằng tiếng.
+
+- **Không bắt buộc mọi chuyển động có tiếng.** Chỉ thêm khi âm thanh giúp cảm nhận hành động hoặc hiểu cơ chế rõ hơn.
+- **Giọng Tung Dang luôn rõ và nổi bật.** Hiệu ứng ngắn, sạch, tiết chế; không che chữ quan trọng của lời đọc. Nghe không rõ lời thì hạ, dời hoặc bỏ hiệu ứng, không tăng giọng để bù.
+- **Ba lớp tách riêng** ngoài giọng đọc: hiệu ứng chuyển động, âm thanh môi trường, nhạc nền. Mỗi lớp là component/`<Sequence>` riêng, chỉnh hoặc tắt được độc lập; không trộn sẵn vào file giọng.
+- **Storyboard ghi cue âm thanh** theo bảng trong skill `storyboarder`.
+- **Nguồn rõ ràng:** chỉ dùng file có quyền sử dụng rõ (cho phép đăng mạng xã hội và dùng thương mại) hoặc asset tự tạo. Mỗi file có một dòng trong `projects/NNN-ten-video/assets/audio/NGUON-AM-THANH.md`: tên file, lớp, nguồn (URL hoặc lệnh/công cụ đã tạo), tác giả, giấy phép, yêu cầu ghi công, ngày lấy. File `.mp3`/`.wav` bị `.gitignore`, nên sổ này phải được giữ trong git.
+- **Chưa có asset phù hợp:** ghi rõ cần tìm hoặc tạo âm thanh gì; không lấy file không rõ nguồn. Tạo âm thanh bằng dịch vụ tốn credits thì theo cùng quy tắc với asset khác (sau khi storyboard được duyệt).
+- **Khi dựng:** frame của cue lấy từ cùng mốc điều khiển animation (hằng số, `T(id)`, `at(cảnh, cụm)`), không gõ tay giây ước tính, để đổi giọng hay đổi nhịp thì tiếng vẫn khớp hình. Kiểm âm lượng, điểm vào/ra (fade ngắn, không lụp bụp, không cụt đuôi) và nghe lại cùng giọng đọc.
+- **Nghe là việc của người.** Claude đo được mức âm và soát mốc frame nhưng không nghe được; không ghi “đã nghe, đạt” khi người dùng chưa nghe.
+- Áp dụng cho video dựng từ nay. Không thêm âm thanh vào video đã qua duyệt (gồm bản 003 đã đăng) nếu người dùng chưa yêu cầu; khi có yêu cầu thì làm thành bản mới.
+
+Thư mục (tạo khi cần, nằm trong `--public-dir` của video):
+
+```
+projects/NNN-ten-video/assets/audio/
+  <model-giọng>/      # giọng đọc (pipeline/tts.js)
+  sfx/                # hiệu ứng chuyển động
+  moi-truong/         # âm thanh môi trường
+  nhac/               # nhạc nền
+  NGUON-AM-THANH.md   # nguồn và giấy phép từng file
+```
+
 ## Trạng thái và thứ tự video ô tô
 
 - Video mở đầu **“Tiền xăng của bạn đi đâu?”** (`projects/003-tien-xang-di-dau/`) **đã đăng ngày 2026-11-25** dạng Thước phim trên trang Facebook của kênh. Bản đăng là 3.2: `script/script-v3.2.md` (đã qua Cổng #1 và #2, fact-check ở `script/factcheck-v3.md`), composition `Video003V32Dang`, giọng Tung Dang bằng `eleven_v4`, speed 0.90.
