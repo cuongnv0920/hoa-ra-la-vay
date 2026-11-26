@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Ảnh đại diện B</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>body{margin:0}</style>
+</helmet>
+<div style="width: 1080px; height: 1080px; overflow: hidden; background: #0B1220">
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-label="Biểu tượng kính lúp nhìn vào bánh răng" style="display: block">
+<defs>
+<pattern id="bGrid" width="90" height="90" patternUnits="userSpaceOnUse"><path d="M90 0H0V90" fill="none" stroke="#19B5FF" stroke-opacity="0.12" stroke-width="3"></path></pattern>
+<clipPath id="bLens"><circle cx="490" cy="490" r="310"></circle></clipPath>
+</defs>
+<rect width="1080" height="1080" fill="#0B1220"></rect>
+<rect width="1080" height="1080" fill="url(#bGrid)"></rect>
+<path d="M730 730L850 850" stroke="#19B5FF" stroke-width="100" stroke-linecap="round" fill="none"></path>
+<circle cx="490" cy="490" r="330" fill="#101a2e"></circle>
+<g clip-path="url(#bLens)" fill="none">
+<circle cx="440" cy="450" r="168" stroke="#FFD23F" stroke-width="64" pathLength="200" stroke-dasharray="11 9"></circle>
+<circle cx="440" cy="450" r="120" stroke="#FFD23F" stroke-width="44"></circle>
+<circle cx="440" cy="450" r="38" stroke="#FFD23F" stroke-width="28"></circle>
+<circle cx="668" cy="632" r="90" stroke="#FF4D1A" stroke-width="48" pathLength="140" stroke-dasharray="11 9"></circle>
+<circle cx="668" cy="632" r="54" stroke="#FF4D1A" stroke-width="36"></circle>
+</g>
+<circle cx="490" cy="490" r="330" fill="none" stroke="#19B5FF" stroke-width="48"></circle>
+</svg>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1080}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

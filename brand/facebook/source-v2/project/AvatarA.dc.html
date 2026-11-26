@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Ảnh đại diện v2-A — À! trong kính lúp</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@900&display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="width: 1080px; height: 1080px; overflow: hidden; background: #0B1220; font-family: 'Be Vietnam Pro', 'Segoe UI', sans-serif">
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-label="Hóa Ra Là Vậy: chữ À! trong kính lúp" style="display: block">
+<defs>
+<pattern id="avaGrid" width="180" height="180" x="-50" y="-50" patternUnits="userSpaceOnUse"><path d="M180 0H0V180" fill="none" stroke="#19B5FF" stroke-opacity="0.10" stroke-width="2"></path></pattern>
+</defs>
+<rect width="1080" height="1080" fill="#0B1220"></rect>
+<rect width="1080" height="1080" fill="url(#avaGrid)"></rect>
+<path d="M690 690L830 830" stroke="#19B5FF" stroke-width="104" stroke-linecap="round" fill="none"></path>
+<circle cx="500" cy="500" r="268" fill="#101A2E"></circle>
+<text x="500" y="610" text-anchor="middle" font-size="300" font-weight="900" letter-spacing="-6"><tspan fill="#F2F5FA">À</tspan><tspan fill="#FFD23F">!</tspan></text>
+<circle cx="500" cy="500" r="268" fill="none" stroke="#19B5FF" stroke-width="72"></circle>
+</svg>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1080}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

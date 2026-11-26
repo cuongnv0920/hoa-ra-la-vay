@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Ảnh đại diện v2 — kính lúp và bánh răng</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>body{margin:0}</style>
+</helmet>
+<div style="width: 1080px; height: 1080px; overflow: hidden; background: #0B1220">
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-label="Hóa Ra Là Vậy: kính lúp soi một bánh răng" style="display: block">
+<defs>
+<pattern id="avbGrid" width="180" height="180" x="-50" y="-50" patternUnits="userSpaceOnUse"><path d="M180 0H0V180" fill="none" stroke="#19B5FF" stroke-opacity="0.10" stroke-width="2"></path></pattern>
+</defs>
+<rect width="1080" height="1080" fill="#0B1220"></rect>
+<rect width="1080" height="1080" fill="url(#avbGrid)"></rect>
+<path d="M690 690L830 830" stroke="#19B5FF" stroke-width="104" stroke-linecap="round" fill="none"></path>
+<circle cx="500" cy="500" r="268" fill="#101A2E"></circle>
+<circle cx="500" cy="500" r="150" fill="none" stroke="#FFD23F" stroke-width="56" pathLength="160" stroke-dasharray="10 10" stroke-dashoffset="5"></circle>
+<circle cx="500" cy="500" r="136" fill="#FFD23F"></circle>
+<circle cx="500" cy="500" r="50" fill="#101A2E"></circle>
+<circle cx="500" cy="500" r="268" fill="none" stroke="#19B5FF" stroke-width="72"></circle>
+</svg>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1080}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
