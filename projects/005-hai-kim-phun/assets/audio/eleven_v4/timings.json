@@ -1,0 +1,110 @@
+{
+  "model": "eleven_v4",
+  "scenes": {
+    "1": {
+      "file": "scene-01.mp3",
+      "seconds": 15.52,
+      "chars": 238,
+      "words": 51,
+      "words_per_min": 197,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0,
+        "speed": 0.9,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-26T00:56:38.963Z"
+    },
+    "2": {
+      "file": "scene-02.mp3",
+      "seconds": 18,
+      "chars": 274,
+      "words": 59,
+      "words_per_min": 197,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0,
+        "speed": 0.9,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-26T00:56:43.957Z"
+    },
+    "3": {
+      "file": "scene-03.mp3",
+      "seconds": 22.72,
+      "chars": 336,
+      "words": 77,
+      "words_per_min": 203,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0,
+        "speed": 0.9,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-26T00:56:49.487Z"
+    },
+    "4": {
+      "file": "scene-04.mp3",
+      "seconds": 27.52,
+      "chars": 423,
+      "words": 92,
+      "words_per_min": 201,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0,
+        "speed": 0.9,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-26T00:56:57.082Z"
+    },
+    "5": {
+      "file": "scene-05.mp3",
+      "seconds": 31.28,
+      "chars": 467,
+      "words": 111,
+      "words_per_min": 213,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0,
+        "speed": 0.9,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-26T00:57:05.384Z"
+    },
+    "6": {
+      "file": "scene-06.mp3",
+      "seconds": 22.08,
+      "chars": 341,
+      "words": 75,
+      "words_per_min": 204,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0,
+        "speed": 0.9,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-26T00:57:11.520Z"
+    },
+    "7": {
+      "file": "scene-07.mp3",
+      "seconds": 17.12,
+      "chars": 256,
+      "words": 56,
+      "words_per_min": 196,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0,
+        "speed": 0.9,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-26T00:57:16.116Z"
+    }
+  }
+}

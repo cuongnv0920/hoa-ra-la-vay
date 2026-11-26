@@ -1,0 +1,594 @@
+{
+  "video": "005-hai-kim-phun",
+  "version": "sb1",
+  "status": "approved-storyboard-2026-11-26",
+  "script": "script/script-v1.4.md",
+  "format": {
+    "aspect": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "shots": [
+    {
+      "scene": 1,
+      "id": "1.1",
+      "cue": "Trong động cơ",
+      "type": "ANIMATION-CODE",
+      "headline": "Bên trong xi-lanh",
+      "description": "Khối động cơ nét vẽ, phóng vào một xi-lanh; mặt cắt: pít-tông chạy, một đốm cháy đẩy pít-tông xuống."
+    },
+    {
+      "scene": 1,
+      "id": "1.2",
+      "cue": "Thường mỗi",
+      "type": "ANIMATION-CODE",
+      "headline": "Thường: 1 kim",
+      "description": "Một kim phun bật vào vị trí trên mặt cắt, nhãn \"kim phun\"."
+    },
+    {
+      "scene": 1,
+      "id": "1.3",
+      "cue": "Một kim phun xăng",
+      "type": "ANIMATION-CODE",
+      "headline": "Có máy dùng 2 kim",
+      "description": "Kim thứ nhất (xanh) gắn trên đường dẫn khí, rồi kim thứ hai (hổ phách) chĩa thẳng vào xi-lanh; hai đường đi lần lượt sáng."
+    },
+    {
+      "scene": 1,
+      "id": "1.4",
+      "cue": "Vì sao",
+      "type": "ĐỒ HỌA",
+      "headline": "Sao lại cần cả hai?",
+      "description": "Hai kim sáng cùng lúc, dấu hỏi lớn giữa chúng."
+    },
+    {
+      "scene": 2,
+      "id": "2.1",
+      "cue": "Kim thứ nhất",
+      "type": "ANIMATION-CODE",
+      "headline": "Phun gián tiếp",
+      "description": "Phóng vào đường nạp; nhãn \"phun gián tiếp\", \"đường nạp\"; luồng khí chạy về phía xi-lanh, kim xanh phun một xung vào luồng khí."
+    },
+    {
+      "scene": 2,
+      "id": "2.2",
+      "cue": "Chỗ phun",
+      "type": "ANIMATION-CODE",
+      "headline": "Trước xu-páp nạp",
+      "description": "Xu-páp nạp sáng viền, nhãn \"xu-páp nạp\"; tia xăng nhắm vào lưng xu-páp đang đóng."
+    },
+    {
+      "scene": 2,
+      "id": "2.3",
+      "cue": "Van mở",
+      "type": "ANIMATION-CODE",
+      "headline": "Van mở, cùng vào",
+      "description": "Kỳ nạp: xu-páp mở, pít-tông đi xuống, chấm xăng và đường khí cùng chui vào xi-lanh."
+    },
+    {
+      "scene": 2,
+      "id": "2.4",
+      "cue": "Xăng có thêm",
+      "type": "ANIMATION-CODE",
+      "headline": "Thêm thời gian hòa trộn",
+      "description": "Chấm xăng tản đều trong khí; đồng hồ cát nhỏ cạnh đường đi."
+    },
+    {
+      "scene": 3,
+      "id": "3.1",
+      "cue": "Kim thứ hai",
+      "type": "ANIMATION-CODE",
+      "headline": "Phun trực tiếp",
+      "description": "Kim hổ phách phun mạnh thẳng vào xi-lanh ở kỳ nạp; nhãn \"phun trực tiếp\", \"áp suất rất cao\"."
+    },
+    {
+      "scene": 3,
+      "id": "3.2",
+      "cue": "Xăng bay hơi",
+      "type": "ANIMATION-CODE",
+      "headline": "Bay hơi, lấy bớt nhiệt",
+      "description": "Giọt xăng tan thành hơi; vùng khí chuyển từ cam sang xanh dịu. Biểu tượng giọt cồn trên mu bàn tay ở góc."
+    },
+    {
+      "scene": 3,
+      "id": "3.3",
+      "cue": "Khí mát hơn",
+      "type": "ANIMATION-CODE",
+      "headline": "Mát hơn, khó kích nổ",
+      "description": "Nhiệt kế nhỏ hạ xuống (không ghi số); nhãn \"kích nổ\" mờ đi."
+    },
+    {
+      "scene": 3,
+      "id": "3.4",
+      "cue": "Kích nổ là",
+      "type": "ANIMATION-CODE",
+      "headline": "Kích nổ là gì?",
+      "description": "Hai xu-páp đóng, pít-tông gần đỉnh. Bugi đánh lửa, màng lửa lan; phần khí xa bugi bỗng tự bùng. Không vẽ như bom nổ. Quay chậm."
+    },
+    {
+      "scene": 3,
+      "id": "3.5",
+      "cue": "Nhờ vậy",
+      "type": "ANIMATION-CODE",
+      "headline": "Nén mạnh hơn",
+      "description": "Pít-tông nén khí vào khoang nhỏ hơn một chút; mũi tên \"hiệu quả\" đi lên, không ghi số."
+    },
+    {
+      "scene": 4,
+      "id": "4.1",
+      "cue": "Nhưng phun",
+      "type": "ANIMATION-CODE",
+      "headline": "Cái giá phải trả",
+      "description": "Trở lại kim hổ phách phun; đồng hồ cát chỉ còn ít cát (\"ít thời gian hòa trộn\")."
+    },
+    {
+      "scene": 4,
+      "id": "4.2",
+      "cue": "Trong xi-lanh có",
+      "type": "ANIMATION-CODE",
+      "headline": "Pít-tông",
+      "description": "Pít-tông sáng viền, nhãn \"pít-tông\"; vài giọt chạm đỉnh pít-tông và thành xi-lanh."
+    },
+    {
+      "scene": 4,
+      "id": "4.3",
+      "cue": "Chỗ đó",
+      "type": "ANIMATION-CODE",
+      "headline": "Hạt muội nhỏ",
+      "description": "Chỗ bị ướt cháy dở, sinh chấm muội xám theo khí xả."
+    },
+    {
+      "scene": 4,
+      "id": "4.4",
+      "cue": "Còn một chuyện",
+      "type": "ANIMATION-CODE",
+      "headline": "Xu-páp không được rửa",
+      "description": "Cận cảnh xu-páp nạp khi chỉ phun trực tiếp: chỉ có khí đi qua, không có xăng."
+    },
+    {
+      "scene": 4,
+      "id": "4.5",
+      "cue": "Cặn bẩn",
+      "type": "ANIMATION-CODE",
+      "headline": "Cặn bám dần",
+      "description": "Hạt từ hơi dầu và khí thải hồi về bám dần lên lưng xu-páp (tua nhanh, có nhãn \"theo thời gian\")."
+    },
+    {
+      "scene": 4,
+      "id": "4.6",
+      "cue": "Vậy có cách",
+      "type": "ĐỒ HỌA",
+      "headline": "Lấy ưu điểm cả hai?",
+      "description": "Hai đường phun đặt cạnh nhau, kéo lại gần nhau."
+    },
+    {
+      "scene": 5,
+      "id": "5.1",
+      "cue": "Có. Hãy",
+      "type": "ĐỒ HỌA",
+      "headline": "Ví dụ: Audi",
+      "description": "Thẻ \"Audi EA888 thế hệ 3 — bản có phun kép\" (chữ, không logo). Chú thích này giữ ở chân khung đến hết Cảnh 6."
+    },
+    {
+      "scene": 5,
+      "id": "5.2",
+      "cue": "Máy đã ấm",
+      "type": "ANIMATION-CODE",
+      "headline": "Máy ấm, ga nhẹ",
+      "description": "Đèn báo \"máy ấm\"; kim tải ở vùng nhẹ/vừa; kim xanh sáng và phun, kim hổ phách tắt."
+    },
+    {
+      "scene": 5,
+      "id": "5.3",
+      "cue": "Xăng trộn đều",
+      "type": "ANIMATION-CODE",
+      "headline": "Ít hạt muội hơn",
+      "description": "Hỗn hợp đều màu; số hạt muội ÍT đi (cỡ hạt giữ nguyên), vẫn còn vài hạt."
+    },
+    {
+      "scene": 5,
+      "id": "5.4",
+      "cue": "Kim trực tiếp cần",
+      "type": "ANIMATION-CODE",
+      "headline": "Bơm cao áp lấy sức máy",
+      "description": "Bơm cao áp được trục cam dẫn, đường ống tới kim hổ phách; mũi tên \"sức máy\" chảy vào bơm."
+    },
+    {
+      "scene": 5,
+      "id": "5.5",
+      "cue": "Khi dùng kim",
+      "type": "ANIMATION-CODE",
+      "headline": "Bơm đỡ tốn sức",
+      "description": "Mũi tên \"sức máy\" vào bơm thu nhỏ. Bơm vẫn quay theo trục, không vẽ bơm dừng."
+    },
+    {
+      "scene": 5,
+      "id": "5.6",
+      "cue": "Xăng đi qua",
+      "type": "ANIMATION-CODE",
+      "headline": "Rửa bớt cặn",
+      "description": "Tia kim xanh đi qua xu-páp, một phần cặn trôi đi, còn lại một ít."
+    },
+    {
+      "scene": 5,
+      "id": "5.7",
+      "cue": "Audi cho biết",
+      "type": "ĐỒ HỌA",
+      "headline": "Đỡ xăng, giảm muội",
+      "description": "Hai thẻ: \"đỡ tốn xăng\", \"giảm hạt muội\"; dòng nhỏ \"theo Audi\". Không ghi số."
+    },
+    {
+      "scene": 5,
+      "id": "5.8",
+      "cue": "Nhất là",
+      "type": "ĐỒ HỌA",
+      "headline": "Giới hạn số hạt",
+      "description": "Thẻ \"châu Âu: giới hạn SỐ hạt (xe phun trực tiếp)\". Không ghi con số."
+    },
+    {
+      "scene": 6,
+      "id": "6.1",
+      "cue": "Còn kim",
+      "type": "ĐỒ HỌA",
+      "headline": "Còn kim trực tiếp?",
+      "description": "Kim hổ phách phóng to, dấu hỏi."
+    },
+    {
+      "scene": 6,
+      "id": "6.2",
+      "cue": "Ở máy Audi",
+      "type": "ANIMATION-CODE",
+      "headline": "Khởi động, máy lạnh",
+      "description": "Hai thẻ tình huống \"khởi động\", \"máy lạnh\" gắn vào vị trí; kim hổ phách sáng."
+    },
+    {
+      "scene": 6,
+      "id": "6.3",
+      "cue": "Khi bạn cần",
+      "type": "ANIMATION-CODE",
+      "headline": "Cần nhiều sức",
+      "description": "Kim tải quét lên vùng cao; thẻ thứ ba \"cần nhiều sức\"; kim hổ phách sáng."
+    },
+    {
+      "scene": 6,
+      "id": "6.4",
+      "cue": "Lúc đó",
+      "type": "ANIMATION-CODE",
+      "headline": "Làm mát, đỡ kích nổ",
+      "description": "Hơi xăng làm vùng khí dịu màu như shot 3.2; nhãn \"giảm nguy cơ kích nổ\"."
+    },
+    {
+      "scene": 6,
+      "id": "6.5",
+      "cue": "Kim trực tiếp còn",
+      "type": "ANIMATION-CODE",
+      "headline": "Nghỉ lâu: bám cặn",
+      "description": "Kim xanh làm việc, kim hổ phách nghỉ; cận đầu kim hổ phách, lớp cặn cứng dày lên (nhãn \"theo thời gian\")."
+    },
+    {
+      "scene": 6,
+      "id": "6.6",
+      "cue": "Nên thỉnh",
+      "type": "ANIMATION-CODE",
+      "headline": "Bật lại một chút",
+      "description": "Một xung phun ngắn từ kim hổ phách, cặn ở đầu kim thôi dày thêm."
+    },
+    {
+      "scene": 7,
+      "id": "7.1",
+      "cue": "Một số động cơ",
+      "type": "ĐỒ HỌA",
+      "headline": "Toyota: chia việc khác",
+      "description": "Sơ đồ riêng, nhãn \"ví dụ Toyota 2GR-FSE, khởi động lạnh\": cả hai kim cùng phun."
+    },
+    {
+      "scene": 7,
+      "id": "7.2",
+      "cue": "Và không phải",
+      "type": "ĐỒ HỌA",
+      "headline": "Không phải máy nào cũng cần",
+      "description": "Một xi-lanh chỉ có một kim vẫn chạy, đặt cạnh xi-lanh hai kim."
+    },
+    {
+      "scene": 7,
+      "id": "7.3",
+      "cue": "Hóa ra là vậy",
+      "type": "ĐỒ HỌA",
+      "headline": "Hóa ra là vậy",
+      "description": "Hai kim ghép lại; mỗi bên che chỗ yếu của bên kia (hai mảnh khớp nhau)."
+    },
+    {
+      "scene": 7,
+      "id": "7.4",
+      "cue": "Máy tính",
+      "type": "ĐỒ HỌA",
+      "headline": "Đúng người, đúng lúc",
+      "description": "Hộp \"máy tính\" bật qua lại hai đường phun; kết bằng tên kênh."
+    }
+  ],
+  "sfx": [
+    {
+      "id": "A01",
+      "shot": "1.2",
+      "layer": "chuyen-dong",
+      "sound": "\"click\" kim loại nhỏ, khô",
+      "trigger": "kim phun bật vào vị trí",
+      "offset_s": 0.4,
+      "dur_s": 0.12,
+      "level": "nhe",
+      "file": "audio/sfx/click.wav"
+    },
+    {
+      "id": "A02",
+      "shot": "1.3",
+      "layer": "chuyen-dong",
+      "sound": "hai \"click\" cùng họ với A01, tiếng sau cao hơn một chút",
+      "trigger": "từng kim bật vào vị trí",
+      "offset_s": 0.3,
+      "dur_s": 0.9,
+      "level": "nhe",
+      "file": "audio/sfx/click.wav + audio/sfx/click-cao.wav"
+    },
+    {
+      "id": "A03",
+      "shot": "2.1",
+      "layer": "chuyen-dong",
+      "sound": "\"xịt\" mềm, ngắn, áp thấp",
+      "trigger": "tia kim xanh bắt đầu phun",
+      "offset_s": 0.8,
+      "dur_s": 0.25,
+      "level": "nhe",
+      "file": "audio/sfx/phun-mem.wav"
+    },
+    {
+      "id": "A04",
+      "shot": "2.3",
+      "layer": "chuyen-dong",
+      "sound": "\"tộc\" nhẹ rồi gió hút ngắn",
+      "trigger": "xu-páp mở, khí đi vào",
+      "offset_s": 0.2,
+      "dur_s": 0.7,
+      "level": "nhe",
+      "file": "audio/sfx/van-mo-gio-hut.wav"
+    },
+    {
+      "id": "A05",
+      "shot": "3.1",
+      "layer": "chuyen-dong",
+      "sound": "\"xịt\" gắt hơn, cao và gọn hơn A03",
+      "trigger": "tia kim hổ phách phun vào xi-lanh",
+      "offset_s": 0.5,
+      "dur_s": 0.2,
+      "level": "vua",
+      "file": "audio/sfx/phun-gat.wav"
+    },
+    {
+      "id": "A06",
+      "shot": "3.2",
+      "layer": "chuyen-dong",
+      "sound": "hơi thoảng, tắt dần",
+      "trigger": "giọt xăng tan, vùng khí đổi sang xanh",
+      "offset_s": 0.3,
+      "dur_s": 0.8,
+      "level": "nen",
+      "file": "audio/sfx/hoi-thoang.wav"
+    },
+    {
+      "id": "A07",
+      "shot": "3.4",
+      "layer": "chuyen-dong",
+      "sound": "\"keng keng\" kim loại đục, hai nhịp, không phải tiếng nổ",
+      "trigger": "phần khí xa bugi tự bùng",
+      "offset_s": 1.6,
+      "dur_s": 0.35,
+      "level": "vua",
+      "file": "audio/sfx/go-kim-loai.wav"
+    },
+    {
+      "id": "A08",
+      "shot": "4.2",
+      "layer": "chuyen-dong",
+      "sound": "\"tách\" ướt, hai lần rất nhỏ",
+      "trigger": "giọt xăng chạm đỉnh pít-tông",
+      "offset_s": 1.2,
+      "dur_s": 0.3,
+      "level": "nhe",
+      "file": "audio/sfx/giot-cham.wav"
+    },
+    {
+      "id": "A09",
+      "shot": "5.1",
+      "layer": "chuyen-dong",
+      "sound": "\"whoosh\" ngắn, êm",
+      "trigger": "chuyển sang phần ví dụ Audi",
+      "offset_s": 0,
+      "dur_s": 0.4,
+      "level": "nhe",
+      "file": "audio/sfx/whoosh.wav"
+    },
+    {
+      "id": "A10",
+      "shot": "5.2",
+      "layer": "moi-truong",
+      "sound": "tiếng máy nổ cầm chừng đều, rất nhỏ; fade vào/ra 0,3 s",
+      "trigger": "máy ấm đang chạy; tắt khi hết shot 5.3",
+      "offset_s": 0,
+      "dur_s": 6,
+      "level": "nen",
+      "file": "audio/moi-truong/may-cam-chung.wav"
+    },
+    {
+      "id": "A11",
+      "shot": "5.4",
+      "layer": "chuyen-dong",
+      "sound": "\"cạch\" cơ khí trầm",
+      "trigger": "bơm cao áp gắn vào trục dẫn",
+      "offset_s": 0.3,
+      "dur_s": 0.15,
+      "level": "nhe",
+      "file": "audio/sfx/cach-co-khi.wav"
+    },
+    {
+      "id": "A12",
+      "shot": "6.2",
+      "layer": "chuyen-dong",
+      "sound": "\"click\" như A01",
+      "trigger": "thẻ tình huống gắn vào vị trí",
+      "offset_s": 0.5,
+      "dur_s": 0.12,
+      "level": "nhe",
+      "file": "audio/sfx/click.wav"
+    },
+    {
+      "id": "A13",
+      "shot": "6.6",
+      "layer": "chuyen-dong",
+      "sound": "\"xịt\" như A05, một xung",
+      "trigger": "kim trực tiếp được bật lại",
+      "offset_s": 0.9,
+      "dur_s": 0.2,
+      "level": "nhe",
+      "file": "audio/sfx/phun-gat.wav"
+    },
+    {
+      "id": "A14",
+      "shot": "7.1",
+      "layer": "chuyen-dong",
+      "sound": "\"whoosh\" như A09",
+      "trigger": "chuyển sang sơ đồ Toyota",
+      "offset_s": 0,
+      "dur_s": 0.4,
+      "level": "nhe",
+      "file": "audio/sfx/whoosh.wav"
+    },
+    {
+      "id": "A15",
+      "shot": "7.3",
+      "layer": "chuyen-dong",
+      "sound": "\"khớp\" gọn, có chút ngân",
+      "trigger": "hai mảnh khớp vào nhau",
+      "offset_s": 0.6,
+      "dur_s": 0.5,
+      "level": "vua",
+      "file": "audio/sfx/khop-manh.wav"
+    },
+    {
+      "id": "B01",
+      "shot": "1.1",
+      "layer": "chuyen-dong",
+      "sound": "whoosh",
+      "trigger": "khối máy chuyển vào mặt cắt",
+      "level": "nhe",
+      "file": "audio/sfx/whoosh.wav"
+    },
+    {
+      "id": "B02",
+      "shot": "2.1",
+      "layer": "chuyen-dong",
+      "sound": "whoosh",
+      "trigger": "chuyển vào đường nạp",
+      "level": "nhe",
+      "file": "audio/sfx/whoosh.wav"
+    },
+    {
+      "id": "B03",
+      "shot": "3.3",
+      "layer": "chuyen-dong",
+      "sound": "ha-nhiet",
+      "trigger": "nhiệt kế hạ",
+      "level": "nhe",
+      "file": "audio/sfx/ha-nhiet.wav"
+    },
+    {
+      "id": "B04",
+      "shot": "3.4",
+      "layer": "chuyen-dong",
+      "sound": "tia-lua",
+      "trigger": "bugi đánh lửa",
+      "level": "nhe",
+      "file": "audio/sfx/tia-lua.wav"
+    },
+    {
+      "id": "B05",
+      "shot": "3.5",
+      "layer": "chuyen-dong",
+      "sound": "nen-len",
+      "trigger": "pít-tông nén",
+      "level": "nhe",
+      "file": "audio/sfx/nen-len.wav"
+    },
+    {
+      "id": "B06",
+      "shot": "4.3",
+      "layer": "chuyen-dong",
+      "sound": "lua-lan",
+      "trigger": "cháy không hết",
+      "level": "nhe",
+      "file": "audio/sfx/lua-lan.wav"
+    },
+    {
+      "id": "B07",
+      "shot": "4.5",
+      "layer": "chuyen-dong",
+      "sound": "tach-nho",
+      "trigger": "cặn bám",
+      "level": "nhe",
+      "file": "audio/sfx/tach-nho.wav"
+    },
+    {
+      "id": "B08",
+      "shot": "5.2",
+      "layer": "chuyen-dong",
+      "sound": "phun-mem",
+      "trigger": "kim gián tiếp phun",
+      "level": "nhe",
+      "file": "audio/sfx/phun-mem.wav"
+    },
+    {
+      "id": "B09",
+      "shot": "5.7",
+      "layer": "chuyen-dong",
+      "sound": "click",
+      "trigger": "thẻ thứ nhất hiện",
+      "level": "nhe",
+      "file": "audio/sfx/click.wav"
+    },
+    {
+      "id": "B10",
+      "shot": "5.7",
+      "layer": "chuyen-dong",
+      "sound": "click-cao",
+      "trigger": "thẻ thứ hai hiện",
+      "level": "nhe",
+      "file": "audio/sfx/click-cao.wav"
+    },
+    {
+      "id": "B11",
+      "shot": "5.8",
+      "layer": "chuyen-dong",
+      "sound": "cach-co-khi",
+      "trigger": "con dấu đóng xuống",
+      "level": "vua",
+      "file": "audio/sfx/cach-co-khi.wav"
+    },
+    {
+      "id": "B12",
+      "shot": "6.5",
+      "layer": "chuyen-dong",
+      "sound": "tach-nho",
+      "trigger": "cặn cứng ở đầu kim",
+      "level": "nhe",
+      "file": "audio/sfx/tach-nho.wav"
+    },
+    {
+      "id": "B13",
+      "shot": "7.4",
+      "layer": "chuyen-dong",
+      "sound": "chuong",
+      "trigger": "chữ tên kênh hiện",
+      "level": "nhe",
+      "file": "audio/sfx/chuong.wav"
+    }
+  ]
+}

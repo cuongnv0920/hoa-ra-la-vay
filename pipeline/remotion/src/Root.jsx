@@ -10,6 +10,8 @@ import { Video003V3C } from './v003v3c/Video003V3C';
 import { TL as TL_V31 } from './v003v3c/timeline';
 import { Video003V3D } from './v003v3d/Video003V3D';
 import { TL as TL_V32 } from './v003v3d/timeline';
+import { TL as TL_005, Video005 } from './v005/Video005';
+import { Sample005, SAMPLE005_FRAMES } from './v005/Sample005';
 
 export const Root = () => (
   <>
@@ -21,5 +23,8 @@ export const Root = () => (
     <Composition id="Video003V3C" component={Video003V3C} durationInFrames={TL_V31.total} fps={FPS} width={VW} height={VH} />
     <Composition id="Video003V3D" component={Video003V3D} durationInFrames={TL_V32.total} fps={FPS} width={VW} height={VH} />
     <Composition id="Video003V32Dang" component={Video003V3D} durationInFrames={TL_V32.total} fps={FPS} width={VW} height={VH} defaultProps={{ episode: 'Tập 1' }} />
+    <Composition id="Video005" component={Video005} durationInFrames={TL_005.total} fps={FPS} width={VW} height={VH} />
+    <Composition id="Video005Dang" component={Video005} durationInFrames={TL_005.total} fps={FPS} width={VW} height={VH} defaultProps={{ episode: '' }} />
+    <Composition id="Sample005" component={Sample005} durationInFrames={SAMPLE005_FRAMES} fps={FPS} width={VW} height={VH} defaultProps={{ showSafe: false }} />
   </>
 );
