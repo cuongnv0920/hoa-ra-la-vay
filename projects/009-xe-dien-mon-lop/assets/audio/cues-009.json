@@ -1,0 +1,380 @@
+{
+ "fps": 30,
+ "total_frames": 3779,
+ "master": 0.89,
+ "scenes": [
+  {
+   "scene": 1,
+   "start": 0,
+   "audio": "audio/eleven_v4/nhanh/scene-01.wav",
+   "audioFrom": 6
+  },
+  {
+   "scene": 2,
+   "start": 383,
+   "audio": "audio/eleven_v4/nhanh/scene-02.wav",
+   "audioFrom": 6
+  },
+  {
+   "scene": 3,
+   "start": 965,
+   "audio": "audio/eleven_v4/nhanh/scene-03.wav",
+   "audioFrom": 6
+  },
+  {
+   "scene": 4,
+   "start": 1653,
+   "audio": "audio/eleven_v4/nhanh/scene-04.wav",
+   "audioFrom": 6
+  },
+  {
+   "scene": 5,
+   "start": 2269,
+   "audio": "audio/eleven_v4/nhanh/scene-05.wav",
+   "audioFrom": 6
+  },
+  {
+   "scene": 6,
+   "start": 2937,
+   "audio": "audio/eleven_v4/nhanh/scene-06.wav",
+   "audioFrom": 6
+  },
+  {
+   "scene": 7,
+   "start": 3408,
+   "audio": "audio/eleven_v4/nhanh/scene-07.wav",
+   "audioFrom": 6
+  }
+ ],
+ "cues": [
+  {
+   "id": "A01",
+   "shot": "1.1",
+   "frame": 14,
+   "file": "audio/sfx/click-tram.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A02",
+   "shot": "1.2",
+   "frame": 172,
+   "file": "audio/sfx/cop-duc.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A03",
+   "shot": "1.3",
+   "frame": 246,
+   "file": "audio/sfx/click-cao.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A04",
+   "shot": "1.4",
+   "frame": 277,
+   "file": "audio/sfx/whoosh.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A05.1",
+   "shot": "2.1",
+   "frame": 406,
+   "file": "audio/sfx/click.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A05.2",
+   "shot": "2.1",
+   "frame": 433,
+   "file": "audio/sfx/click.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A05.3",
+   "shot": "2.1",
+   "frame": 451,
+   "file": "audio/sfx/click.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A06",
+   "shot": "2.2",
+   "frame": 509,
+   "file": "audio/sfx/ting.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A07.1",
+   "shot": "2.3",
+   "frame": 645,
+   "file": "audio/sfx/cao-su-truot.wav",
+   "volume": 0.0801
+  },
+  {
+   "id": "A07.2",
+   "shot": "2.3",
+   "frame": 651,
+   "file": "audio/sfx/cao-su-truot.wav",
+   "volume": 0.0801
+  },
+  {
+   "id": "A07.3",
+   "shot": "2.3",
+   "frame": 656,
+   "file": "audio/sfx/cao-su-truot.wav",
+   "volume": 0.0801
+  },
+  {
+   "id": "A08",
+   "shot": "2.5",
+   "frame": 824,
+   "file": "audio/sfx/cop-duc.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A09.1",
+   "shot": "2.6",
+   "frame": 909,
+   "file": "audio/sfx/cao-su-truot.wav",
+   "volume": 0.0801
+  },
+  {
+   "id": "A09.2",
+   "shot": "2.6",
+   "frame": 934,
+   "file": "audio/sfx/cao-su-truot.wav",
+   "volume": 0.0801
+  },
+  {
+   "id": "A10",
+   "shot": "3.1",
+   "frame": 987,
+   "file": "audio/sfx/thich-dap.wav",
+   "volume": 0.35600000000000004
+  },
+  {
+   "id": "A11",
+   "shot": "3.2",
+   "frame": 1047,
+   "file": "audio/sfx/whoosh.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A12",
+   "shot": "3.3",
+   "frame": 1196,
+   "file": "audio/sfx/click-cao.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A13a",
+   "shot": "3.4",
+   "frame": 1266,
+   "file": "audio/sfx/tick.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A13b",
+   "shot": "3.4",
+   "frame": 1293,
+   "file": "audio/sfx/click.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A14",
+   "shot": "3.5",
+   "frame": 1413,
+   "file": "audio/sfx/click-tram.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A15a",
+   "shot": "3.6",
+   "frame": 1583,
+   "file": "audio/sfx/cao-su-truot.wav",
+   "volume": 0.0801
+  },
+  {
+   "id": "A15b.1",
+   "shot": "3.6",
+   "frame": 1598,
+   "file": "audio/sfx/cao-su-truot-day.wav",
+   "volume": 0.0801
+  },
+  {
+   "id": "A15b.2",
+   "shot": "3.6",
+   "frame": 1604,
+   "file": "audio/sfx/cao-su-truot-day.wav",
+   "volume": 0.0801
+  },
+  {
+   "id": "A16",
+   "shot": "4.1",
+   "frame": 1677,
+   "file": "audio/sfx/cop-duc.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A17",
+   "shot": "4.2",
+   "frame": 1902,
+   "file": "audio/sfx/can-kim.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A18",
+   "shot": "4.3",
+   "frame": 2035,
+   "file": "audio/sfx/can-kim.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A19",
+   "shot": "4.4",
+   "frame": 2101,
+   "file": "audio/sfx/ting.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A20",
+   "shot": "4.5",
+   "frame": 2188,
+   "file": "audio/sfx/click.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A21",
+   "shot": "5.1",
+   "frame": 2315,
+   "file": "audio/sfx/tick.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A22",
+   "shot": "5.2",
+   "frame": 2422,
+   "file": "audio/sfx/whoosh.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A23a",
+   "shot": "5.3",
+   "frame": 2514,
+   "file": "audio/sfx/click-tram.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A23b",
+   "shot": "5.3",
+   "frame": 2579,
+   "file": "audio/sfx/ket-lop.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A24",
+   "shot": "5.4",
+   "frame": 2628,
+   "file": "audio/sfx/cao-su-truot.wav",
+   "volume": 0.0801
+  },
+  {
+   "id": "A25",
+   "shot": "5.5",
+   "frame": 2691,
+   "file": "audio/sfx/ket-lop.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A26",
+   "shot": "6.1",
+   "frame": 3047,
+   "file": "audio/sfx/cop-duc.wav",
+   "volume": 0.35600000000000004
+  },
+  {
+   "id": "A27.1",
+   "shot": "6.2",
+   "frame": 3061,
+   "file": "audio/sfx/tick.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A27.2",
+   "shot": "6.2",
+   "frame": 3081,
+   "file": "audio/sfx/tick.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A27.3",
+   "shot": "6.2",
+   "frame": 3108,
+   "file": "audio/sfx/tick.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A27.4",
+   "shot": "6.2",
+   "frame": 3132,
+   "file": "audio/sfx/tick.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A27.5",
+   "shot": "6.2",
+   "frame": 3153,
+   "file": "audio/sfx/tick.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A28",
+   "shot": "6.3",
+   "frame": 3264,
+   "file": "audio/sfx/click-cao.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A29",
+   "shot": "6.4",
+   "frame": 3299,
+   "file": "audio/sfx/click-cao.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A30",
+   "shot": "6.5",
+   "frame": 3353,
+   "file": "audio/sfx/click-cao.wav",
+   "volume": 0.19936
+  },
+  {
+   "id": "A31",
+   "shot": "7.1",
+   "frame": 3413,
+   "file": "audio/sfx/khop-manh.wav",
+   "volume": 0.35600000000000004
+  },
+  {
+   "id": "A32a",
+   "shot": "7.3",
+   "frame": 3518,
+   "file": "audio/sfx/cao-su-truot.wav",
+   "volume": 0.0801
+  },
+  {
+   "id": "A32b",
+   "shot": "7.3",
+   "frame": 3549,
+   "file": "audio/sfx/cao-su-truot-day.wav",
+   "volume": 0.0801
+  },
+  {
+   "id": "A33",
+   "shot": "7.5",
+   "frame": 3740,
+   "file": "audio/sfx/chuong.wav",
+   "volume": 0.19936
+  }
+ ]
+}

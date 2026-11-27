@@ -161,3 +161,79 @@ export const Cover005 = ({ showSafe = false }) => (
     </g>
   </Cover>
 );
+
+// ---------- 009: xe điện mòn lốp ----------
+// Lốp lớn chạm đường (khối đặc): gai ở mép sau vùng tiếp xúc tô hổ phách (trượt), bụi cao su bay ra phía sau,
+// mâm xanh có tia sét = xe điện. Đúng cơ chế trong video: vùng trượt ở mép sau, xe chạy sang phải.
+const TireCover = () => {
+  const cx = 540;
+  const road = 1400;
+  const R = 300;
+  const sink = 34;
+  const cy = road - R + sink;
+  const half = Math.sqrt(R * R - (R - sink) ** 2);
+  const n = 34;
+  const blocks = [];
+  for (let i = 0; i < n; i++) {
+    const th = (i / n) * 2 * Math.PI + 0.05;
+    const x = cx + R * Math.cos(th);
+    const inPatch = Math.sin(th) > 0 && Math.abs(x - cx) < half;
+    if (inPatch) {
+      const u = (cx + half - x) / (2 * half);
+      const slide = u > 0.55;
+      const d = Math.min(26 * 2 * u, 26 * 4 * u * (1 - u)) * 1.2;
+      blocks.push(
+        <polygon key={i} points={`${x - 22},${road - 54} ${x + 22},${road - 54} ${x + 22 + d},${road} ${x - 22 + d},${road}`} fill={slide ? AMBER : '#3A4456'} />,
+      );
+    } else if (!(Math.sin(th) > 0 && Math.abs(x - cx) < half + 40)) {
+      // bỏ khối sát mép vùng tiếp xúc, để không chồng lên khối đang nằm trên đường
+      blocks.push(
+        <rect key={i} x={-22} y={R - 54} width={44} height={54} rx={6} fill="#3A4456" transform={`translate(${cx},${cy}) rotate(${(th * 180) / Math.PI - 90})`} />,
+      );
+    }
+  }
+  const dust = [
+    [cx - half - 40, road - 30, 14], [cx - half - 95, road - 60, 11], [cx - half - 150, road - 25, 12], [cx - half - 205, road - 70, 9],
+    [cx - half - 260, road - 40, 8], [cx - half - 120, road - 105, 7], [cx - half - 300, road - 85, 6], [cx - half - 60, road - 90, 9],
+  ];
+  return (
+    <g>
+      <rect x={0} y={road} width={1080} height={90} fill="#1B2433" />
+      <rect x={0} y={road} width={1080} height={8} fill="#4A5568" />
+      {/* thân lốp: hình tròn cắt phẳng ở đáy */}
+      <clipPath id="cover-tire-flat">
+        <rect x={0} y={0} width={1080} height={road - 54} />
+      </clipPath>
+      <circle cx={cx} cy={cy} r={R - 54} fill="#1E2533" clipPath="url(#cover-tire-flat)" />
+      {blocks}
+      {/* mâm */}
+      <circle cx={cx} cy={cy} r={150} fill="#0B1220" />
+      <circle cx={cx} cy={cy} r={128} fill={BLUE} />
+      <circle cx={cx} cy={cy} r={92} fill="#0B1220" />
+      <path d={`M${cx + 14} ${cy - 62} L${cx - 34} ${cy + 8} L${cx - 2} ${cy + 8} L${cx - 16} ${cy + 62} L${cx + 34} ${cy - 10} L${cx + 2} ${cy - 10} Z`} fill={GOLD} />
+      {/* vùng trượt dưới mép sau */}
+      <rect x={cx - half} y={road + 14} width={half * 0.9} height={18} rx={9} fill={AMBER} />
+      {dust.map(([x, y, r], i) => <circle key={i} cx={x} cy={y} r={r} fill="#9AA6B8" opacity={0.9 - i * 0.08} />)}
+      {/* chiều xe chạy */}
+      <rect x={760} y={road + 40} width={150} height={14} rx={7} fill={BLUE} />
+      <path d={`M935 ${road + 47} l-36 -24 v48 z`} fill={BLUE} />
+    </g>
+  );
+};
+
+export const Cover009 = ({ showSafe = false }) => (
+  <Cover
+    showSafe={showSafe}
+    glow={AMBER}
+    glowY={1180}
+    chips={[
+      { t: 'XE ĐIỆN', c: BLUE },
+      { t: 'LỐP', c: AMBER },
+    ]}
+    title={[[['Vì sao mòn lốp']], [['nhanh hơn?', GOLD]]]}
+    titleSize={120}
+    titleY={600}
+  >
+    <TireCover />
+  </Cover>
+);

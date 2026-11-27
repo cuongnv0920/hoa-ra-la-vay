@@ -1,7 +1,9 @@
 import { Composition, Still } from 'remotion';
-import { Cover005, Cover007, Cover008 } from './cover/covers';
+import { Cover005, Cover007, Cover008, Cover009 } from './cover/covers';
 import { TL as TL_008, Video008 } from './v008/Video008';
 import { Sample008A, Sample008B, SAMPLE008A_FRAMES, SAMPLE008B_FRAMES } from './v008/Sample008';
+import { Sample009A, SAMPLE009A_FRAMES } from './v009/Sample009';
+import { TL as TL_009, Video009 } from './v009/Video009';
 import { DEMO_FRAMES, Demo002 } from './Demo002';
 import { FPS, H, W } from './theme';
 import { VH, VW } from './vertical/layout';
@@ -38,8 +40,12 @@ export const Root = () => (
     <Composition id="Video008Dang" component={Video008} durationInFrames={TL_008.total} fps={FPS} width={VW} height={VH} defaultProps={{ episode: '' }} />
     <Composition id="Sample008A" component={Sample008A} durationInFrames={SAMPLE008A_FRAMES} fps={FPS} width={VW} height={VH} defaultProps={{ showSafe: false }} />
     <Composition id="Sample008B" component={Sample008B} durationInFrames={SAMPLE008B_FRAMES} fps={FPS} width={VW} height={VH} defaultProps={{ showSafe: false }} />
+    <Composition id="Sample009A" component={Sample009A} durationInFrames={SAMPLE009A_FRAMES} fps={FPS} width={VW} height={VH} defaultProps={{ showSafe: false }} />
+    <Composition id="Video009" component={Video009} durationInFrames={TL_009.total} fps={FPS} width={VW} height={VH} />
+    <Composition id="Video009Dang" component={Video009} durationInFrames={TL_009.total} fps={FPS} width={VW} height={VH} defaultProps={{ episode: '' }} />
     <Still id="Cover005" component={Cover005} width={VW} height={VH} defaultProps={{ showSafe: false }} />
     <Still id="Cover007" component={Cover007} width={VW} height={VH} defaultProps={{ showSafe: false }} />
     <Still id="Cover008" component={Cover008} width={VW} height={VH} defaultProps={{ showSafe: false }} />
+    <Still id="Cover009" component={Cover009} width={VW} height={VH} defaultProps={{ showSafe: false }} />
   </>
 );
