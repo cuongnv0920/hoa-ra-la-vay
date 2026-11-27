@@ -4,15 +4,16 @@ Kênh video tiếng Việt giải thích những điều quanh ta bằng cách k
 
 ## Cách làm hiện tại
 
-`research → script → fact-check → duyệt #1 → storyboard → tạo giọng/asset → dựng Remotion → xem và sửa → QA → duyệt #2 → đăng thủ công`
+`research → script → fact-check → duyệt #1 → storyboard → tạo giọng/asset → dựng Remotion → xem và sửa → QA → bài đọc → duyệt #2 → npm run xuat-ban (website + Facebook) → đăng thủ công TikTok/YouTube`
 
-Claude Code hỗ trợ viết mã và làm việc với tài liệu. Video được dựng bằng Remotion; giọng đọc được tạo qua script ElevenLabs trong repo. MCP và tự động hóa thêm chỉ được đưa vào khi giải quyết một nhu cầu cụ thể. Hai lần duyệt của người dùng không tự động hóa; không tự đăng video.
+Claude Code hỗ trợ viết mã và làm việc với tài liệu. Video được dựng bằng Remotion; giọng đọc được tạo qua script ElevenLabs trong repo. MCP và tự động hóa thêm chỉ được đưa vào khi giải quyết một nhu cầu cụ thể. Hai lần duyệt của người dùng không tự động hóa. Sau duyệt #2, người dùng chạy một lệnh để đăng bài lên website và Reel lên Facebook (xem [`docs/03-website-va-xuat-ban.md`](docs/03-website-va-xuat-ban.md)).
 
 ## Cấu trúc
 
 | Thư mục | Nội dung |
 |---|---|
 | `projects/NNN-ten-video/` | Nghiên cứu, kịch bản, storyboard và tài sản của từng video |
+| `web/` | Website của kênh (bài đọc kèm từng video) và lệnh `xuat-ban` |
 | `pipeline/remotion/` | Composition và thành phần dựng video |
 | `pipeline/tts.js` | Tạo giọng qua ElevenLabs API và lưu thời lượng |
 | `.claude/skills/`, `.agents/skills/` | Hướng dẫn cho các công việc nội dung |
@@ -30,6 +31,7 @@ Claude Code hỗ trợ viết mã và làm việc với tài liệu. Video đư�
 - Hướng dẫn chính cho Claude Code: [`CLAUDE.md`](CLAUDE.md)
 - Kế hoạch và trạng thái dự án: [`docs/00-ke-hoach-tong-the.md`](docs/00-ke-hoach-tong-the.md)
 - Dòng xe điện và xe xăng/dầu: [`docs/02-dong-xe-dien-vs-xe-xang.md`](docs/02-dong-xe-dien-vs-xe-xang.md)
+- Website và xuất bản: [`docs/03-website-va-xuat-ban.md`](docs/03-website-va-xuat-ban.md)
 - Nhánh Facebook phụ: [`docs/01-nhanh-facebook-khao-sat-doi-thu.md`](docs/01-nhanh-facebook-khao-sat-doi-thu.md)
 
 ## Bí mật

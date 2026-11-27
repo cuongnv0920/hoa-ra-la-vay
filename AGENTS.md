@@ -1,6 +1,8 @@
-# Hóa Ra Là Vậy — kênh YouTube do AI vận hành
+# Hóa Ra Là Vậy — kênh video do AI vận hành
 
 Kênh nghiêm túc, giải thích những điều quanh ta mà ít người để ý (tên và phạm vi chốt 2026-11-25). Mỗi video trả lời MỘT câu hỏi bằng cơ chế bên trong.
+
+Phân phối video trên **YouTube và TikTok**. Bản dọc 9:16 là bản gốc dùng chung; rà soát vùng an toàn giao diện và thông tin đăng riêng cho từng nền tảng. Cổng duyệt #2 áp dụng trước mọi lần đăng. Sau Cổng #2, người dùng chạy `npm run xuat-ban -- NNN` để đăng bài lên website của kênh và Reel lên Facebook; TikTok và YouTube đăng thủ công (chốt 2026-11-27, xem `docs/03-website-va-xuat-ban.md`).
 
 Lĩnh vực: ô tô, công nghệ thông tin, xây dựng, và các kiến thức đời sống khác. Mỗi lĩnh vực làm thành loạt riêng, chung một giọng và một kiểu giải thích.
 
@@ -22,7 +24,7 @@ Loạt đang có (ô tô), hai dòng nội dung:
 
 ## Nguyên tắc bất di bất dịch
 1. **Chính xác kỹ thuật trước tiên.** Mọi khẳng định kỹ thuật/lịch sử phải có nguồn và qua fact-checker.
-2. **Hai cổng duyệt của người:** #1 sau fact-check kịch bản, #2 trước khi đăng. Không bao giờ tự đăng.
+2. **Hai cổng duyệt của người:** #1 sau fact-check kịch bản, #2 trước khi đăng. Agent không bao giờ tự đánh dấu duyệt hay tự chạy lệnh đăng thật (chỉ `--thu`).
 3. **Mọi cơ chế (cơ khí, mạng, kết cấu…) = animation lập trình** (Remotion/Three.js). AI video chỉ cho cảnh điện ảnh/lịch sử/cảm xúc.
 4. **Tiết kiệm credits:** thử bằng ảnh/clip ngắn trước, chỉ sinh video dài khi storyboard đã duyệt.
 5. Bật nhãn "altered/synthetic content" khi đăng cảnh thực tế do AI tạo.
@@ -32,8 +34,9 @@ Loạt đang có (ô tô), hai dòng nội dung:
 - `.agents/skills/` — researcher, scriptwriter, fact-checker, storyboarder
 - `projects/NNN-ten-video/` — `research/`, `script/`, `assets/` cho từng video
 - `brand/` — nhận diện kênh (giọng, phong cách hình ảnh)
-- `pipeline/` — mã pipeline tự động (về sau)
+- `pipeline/` — Remotion, tạo giọng
+- `web/` — website của kênh và lệnh `xuat-ban`
 - `docs/` — kế hoạch và ghi chú
 
 ## Quy trình mỗi video
-research → script → fact-check → [DUYỆT #1] → storyboard → assets → giọng/nhạc → ráp → QA → [DUYỆT #2] → upload
+research → script → fact-check → [DUYỆT #1] → storyboard → assets → giọng/nhạc → ráp → QA → chuẩn bị bản đăng theo nền tảng → bài đọc → [DUYỆT #2] → `npm run xuat-ban` (website + Facebook) → đăng thủ công lên YouTube và TikTok

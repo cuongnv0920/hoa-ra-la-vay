@@ -13,7 +13,8 @@
 ## Độ chính xác và duyệt
 
 - Mọi khẳng định kỹ thuật/lịch sử cần nguồn và fact-check.
-- Có hai cổng duyệt của người: #1 sau fact-check kịch bản; #2 trước khi đăng. Không tự đánh dấu đã duyệt và không tự đăng.
+- Có hai cổng duyệt của người: #1 sau fact-check kịch bản; #2 trước khi đăng. Không tự đánh dấu đã duyệt (không ghi `"trang_thai": "duyet-2"` hay khối `duyet` trong `xuat-ban.json`).
+- Đăng tự động (chốt 2026-11-27): sau Cổng #2, **người dùng** chạy `npm run xuat-ban -- NNN` để đăng bài lên website và Reel lên Facebook. Claude chỉ được chạy bản thử `--thu`, không tự chạy lệnh đăng thật. TikTok và YouTube vẫn đăng thủ công. Chi tiết: `docs/03-website-va-xuat-ban.md`.
 - Chỉ sửa bản đã qua duyệt khi người dùng yêu cầu. Bản mới phải ghi rõ trạng thái, không ghi đè bản cũ.
 - Kiểm tra lại giá, chính sách và dữ liệu có thể đổi ngay trước khi tạo giọng hoặc đăng.
 - Làm ít nhưng có góc nhìn riêng; tiết kiệm credits, chỉ tạo asset sau khi storyboard được duyệt.
@@ -29,9 +30,9 @@
 
 ## Quy trình làm video
 
-`research → script → fact-check → [DUYỆT #1] → storyboard → tạo asset/giọng → dựng Remotion → xem và sửa → QA → [DUYỆT #2] → upload thủ công`
+`research → script → fact-check → [DUYỆT #1] → storyboard → tạo asset/giọng → dựng Remotion → xem và sửa → QA → bài đọc + fact-check bài đọc → [DUYỆT #2] → npm run xuat-ban (website + Facebook) → đăng thủ công TikTok/YouTube`
 
-Không xây website điều phối hay tự động hóa toàn bộ quy trình ở giai đoạn này. Ghi nhận điểm nghẽn qua vài video trước, rồi mới tự động hóa bước lặp lại.
+Website công khai của kênh (`web/`) là nơi đăng bài đọc kèm từng video, không phải website điều phối sản xuất. Các bước sản xuất vẫn làm thủ công có hỗ trợ; chỉ tự động hóa bước đăng sau Cổng #2.
 
 ## Thiết kế âm thanh cho animation (chốt 2026-11-26)
 
@@ -68,7 +69,8 @@ projects/NNN-ten-video/assets/audio/
 
 ## Cấu trúc repo
 
-- `projects/NNN-ten-video/`: research, script, assets của từng video.
+- `projects/NNN-ten-video/`: research, script, assets của từng video; `bai-doc/` (bài đọc cho website) và `xuat-ban.json` (manifest đăng bài).
+- `web/`: website công khai (React Router v7 prerender, Cloudflare Pages) và lệnh `xuat-ban`. Package riêng, không dùng chung `node_modules` với Remotion.
 - `pipeline/remotion/`: mã composition và thành phần dựng video.
 - `pipeline/tts.js`: gọi ElevenLabs và ghi thời lượng giọng.
 - `.claude/skills/`, `.agents/skills/`: hướng dẫn cho các công việc nội dung.
@@ -79,6 +81,7 @@ projects/NNN-ten-video/assets/audio/
 - Tóm tắt hiện hành: `README.md`.
 - Kế hoạch và trạng thái dự án: `docs/00-ke-hoach-tong-the.md`.
 - Dòng xe điện và xe xăng/dầu: `docs/02-dong-xe-dien-vs-xe-xang.md`.
+- Website và quy trình xuất bản: `docs/03-website-va-xuat-ban.md`.
 - Hướng dẫn của từng skill phải được đọc khi thực hiện đúng công việc đó.
 
 ## Skill Remotion (từ remotion-dev/skills)
