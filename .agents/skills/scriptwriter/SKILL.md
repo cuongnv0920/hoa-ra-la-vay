@@ -17,6 +17,7 @@ description: Viết kịch bản video tiếng Việt cho kênh Hóa Ra Là Vậ
 - Độ dài (chốt 2026-11-23): video dọc **1–3 phút**. Khoảng 220 từ cho mỗi phút video → **220–650 từ**. Chủ đề lớn → tách thành chuỗi, mỗi video một câu hỏi.
 - Video ngắn: lịch sử chỉ dùng khi phục vụ hook; mỗi 3–6 giây một ý mới để hình đổi theo.
 - **Nhịp đọc chuẩn:** đọc `brand/nhip-doc.md` mục 1 trước khi viết. Mỗi câu một ý, đích 4–7 âm tiết (trung vị ≤ 7), câu trên 10 âm tiết không quá 10% số câu. Không để mảnh câu quá ngắn dễ đọc sai thanh điệu. Tránh câu lồng nhiều mệnh đề.
+- Số và chữ viết tắt viết ra chữ trong lời đọc. Xem `brand/tu-hay-sai.json`: không cấm từ nào, nhưng tránh dồn nhiều từ hay sai vào một câu nếu có cách nói tự nhiên khác.
 - Trước khi giao bản nháp, đếm lại độ dài câu và ghi trung vị, số câu trên 10 âm tiết ở cuối `script.md`.
 - Thuật ngữ: lần đầu nhắc ghi cả tiếng Việt và tên gốc (vd: bánh răng hành tinh – planetary gear).
 - **Không thêm sự kiện ngoài research.md.** Cần thêm → quay lại researcher.

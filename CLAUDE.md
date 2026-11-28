@@ -13,8 +13,9 @@
 ## Giọng đọc và nhịp (chốt 2026-11-28, theo video 011 bản 3.5)
 
 - Quy chuẩn đầy đủ: `brand/nhip-doc.md`. Đọc trước khi viết kịch bản, tạo giọng hoặc dựng dòng thời gian.
-- Câu ngắn (đích 4–7 âm tiết); giọng Tung Dang bằng `eleven_turbo_v2_5`, thu cả bài một lần, rút nghỉ giữa câu rồi chậm 5%; nghỉ giữa cảnh 0,3 s.
+- Câu ngắn (đích 4–7 âm tiết); giọng Tung Dang bằng `eleven_v4` (không dùng turbo: đọc sai thanh điệu), thu cả bài một lần, rút nghỉ giữa câu và chỉnh tempo bằng hậu kỳ; nghỉ giữa cảnh 0,3 s.
 - Tạo và đo giọng bằng `pipeline/giong.js` (`doc` → `cat` → `do`). Người dùng nghe để chốt.
+- **Từ hay đọc sai:** sổ `brand/tu-hay-sai.json`. Mỗi khi người dùng báo đọc sai, nạp vào sổ bằng `pipeline/giong.js nhap` trước khi sửa; không bỏ qua bước này (xem `brand/nhip-doc.md` mục 5).
 
 ## Độ chính xác và duyệt
 

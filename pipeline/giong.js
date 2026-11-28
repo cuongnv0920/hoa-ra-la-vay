@@ -2,6 +2,8 @@
 // Dùng cho mọi video mới. Chạy từ gốc repo:
 //   node --env-file=.env pipeline/giong.js doc  <project-dir> [--script script.json] [--out giong] [--thu] [--force]
 //        Đọc CẢ KỊCH BẢN trong một lần thu rồi cắt thành từng cảnh. --thu: chỉ in cấu hình và số ký tự, không gọi API.
+//   node pipeline/giong.js chia <project-dir> [--script ...] [--out giong]
+//        Cắt lại tron-bai.mp3 thành từng cảnh tại khoảng lặng (không tốn credits). `doc` tự gọi bước này.
 //   node pipeline/giong.js cat  <project-dir> [--script script.json] [--out giong]
 //        Rút khoảng nghỉ giữa câu và chỉnh tempo (không tốn credits). Ra <out>/cat/ : bản dùng để dựng.
 //   node pipeline/giong.js do   <project-dir> [--script script.json] [--out giong]
@@ -10,19 +12,25 @@
 //        Tạo lại MỘT cảnh đọc sai với nhiều seed, ra <out>/thu/.
 //   node pipeline/giong.js chon <project-dir> <số cảnh> <file .mp3 trong <out>/thu/> [--out giong]
 //        Lấy bản đã nghe và chọn thay cảnh đó (bản cũ được giữ trong <out>/thu/). Chạy lại `cat` sau đó.
+//   node pipeline/giong.js trang <project-dir> [--script ...] [--out giong]
+//        Tạo trang nghe từng câu out/ra-giong-*.html, gắn nhãn từ hay sai (`cat` tự gọi bước này).
+//   node pipeline/giong.js nhap <file danh sách lỗi> [--model eleven_v4]
+//        Nạp lỗi người dùng nghe thấy vào sổ brand/tu-hay-sai.json.
 // File mp3 bị .gitignore; alignment và timings.json được commit. Không bao giờ in ra API key.
 const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
+const so = require('./tu-hay-sai');
+const { chiaCanh } = require('./cat-canh');
 
 // Mức chuẩn. Đổi ở đây thì cập nhật brand/nhip-doc.md.
 const CHUAN = {
-  model: 'eleven_turbo_v2_5', // eleven_v4 bỏ qua tham số speed
-  settings: { stability: 0.75, similarity_boost: 0.4, style: 0, speed: 1.15, use_speaker_boost: true },
+  model: 'eleven_v4', // turbo v2.5 đọc sai thanh điệu quá nhiều (brand/loi-doc/2026-11-28-turbo.txt)
+  settings: { stability: 0.5, similarity_boost: 0.4, style: 0, speed: 0.95, use_speaker_boost: true }, // v4 bỏ qua speed
   seed: 11,
   giu: 0.25, // nghỉ giữa câu sau khi rút (s)
   nguong: 0.4, // chỉ rút chỗ nghỉ dài hơn mức này (s)
-  tempo: 0.95, // chậm 5%, giữ cao độ
+  dich: 4.55, // tốc độ trong câu cần đạt (âm tiết/s); tempo ffmpeg tính theo bản thu, giữ cao độ
 };
 
 const args = process.argv.slice(2);
@@ -31,7 +39,7 @@ const opt = (n, d) => { const i = args.indexOf('--' + n); return i >= 0 ? args[i
 const pos = args.filter((a, i) => !a.startsWith('--') && !(i > 0 && args[i - 1].startsWith('--') && !['--thu', '--force'].includes(args[i - 1])));
 const [lenh, projectDir, sceneArg, extraArg] = pos;
 const die = (m) => { console.error(m); process.exit(1); };
-if (!['doc', 'cat', 'do', 'canh', 'chon'].includes(lenh) || !projectDir) die('Cú pháp: node pipeline/giong.js <doc|cat|do|canh|chon> <project-dir> ...  (xem đầu file)');
+if (!['doc', 'chia', 'cat', 'do', 'canh', 'chon', 'trang', 'nhap'].includes(lenh) || !projectDir) die('Cú pháp: node pipeline/giong.js <doc|cat|do|canh|chon|trang|nhap> <project-dir hoặc file> ...  (xem đầu file)');
 
 const ROOT = path.join(__dirname, '..');
 const FF = path.join(ROOT, 'node_modules', '@remotion', 'compositor-win32-x64-msvc', 'ffmpeg.exe');
@@ -75,7 +83,14 @@ async function doc() {
   const range = script.scenes.map((s) => { text += (text ? ' ' : '') + s.voiceover; return [text.length - s.voiceover.length, text.length]; });
   const st = CHUAN.settings;
   console.log(`${CHUAN.model} | speed ${st.speed} stability ${st.stability} similarity ${st.similarity_boost} seed ${CHUAN.seed} | ${script.scenes.length} cảnh, ${text.length} ký tự → ${OUT}`);
-  if (flag('thu')) return console.log('Bản thử: không gọi ElevenLabs.');
+  for (const s of script.scenes) {
+    for (const cau of s.voiceover.match(/[^.?!]+[.?!]*/g) || []) {
+      const tu = so.canChuY(cau);
+      if (/\d|\b[A-ZĐ]{2,}\b/.test(cau)) console.log(`  Cảnh ${label(s)}: có số hoặc chữ viết tắt, nên viết ra chữ: ${cau.trim()}`);
+      if (tu.length) console.log(`  Cảnh ${label(s)} [${tu.join(', ')}]: ${cau.trim()}`);
+    }
+  }
+  if (flag('thu')) return console.log('Bản thử: không gọi ElevenLabs. Các câu liệt kê ở trên cần nghe kỹ sau khi tạo.');
   if (fs.existsSync(path.join(OUT, 'tron-bai.mp3')) && !flag('force')) die('Đã có bản thu trong thư mục này. Dùng --out khác (giữ bản cũ) hoặc --force.');
   fs.mkdirSync(OUT, { recursive: true });
   const res = await elevenlabs(voiceId, { text, seed: CHUAN.seed });
@@ -84,33 +99,44 @@ async function doc() {
   const al = res.alignment;
   writeJson(path.join(OUT, 'tron-bai.alignment.json'), al);
   if (al.characters.join('') !== text) die('alignment không khớp lời đọc');
-  const timings = { model: CHUAN.model, mode: 'single', settings: st, seed: CHUAN.seed, scenes: {} };
-  script.scenes.forEach((s, i) => {
-    const [a, b] = range[i];
-    const t0 = Math.max(0, al.character_start_times_seconds[a] - 0.05);
-    const t1 = al.character_end_times_seconds[b - 1] + 0.08;
-    ffmpeg(['-i', full, '-filter_complex', `[0:a]atrim=start=${t0.toFixed(4)}:end=${t1.toFixed(4)},asetpts=PTS-STARTPTS[o]`, '-map', '[o]', ...MP3, sceneFile(OUT, s.scene, 'mp3')]);
-    const sub = {
-      characters: al.characters.slice(a, b),
-      character_start_times_seconds: al.character_start_times_seconds.slice(a, b).map((t) => +(t - t0).toFixed(4)),
-      character_end_times_seconds: al.character_end_times_seconds.slice(a, b).map((t) => +(t - t0).toFixed(4)),
-    };
-    fs.writeFileSync(sceneFile(OUT, s.scene, 'alignment.json'), JSON.stringify(sub));
-    const seconds = +sub.character_end_times_seconds.at(-1).toFixed(2);
-    timings.scenes[s.scene] = { file: `scene-${pad(s.scene)}.mp3`, seconds, chars: s.voiceover.length, words: s.voiceover.split(/\s+/).filter(Boolean).length, generated: new Date().toISOString() };
-    console.log(`Cảnh ${label(s)}: ${seconds} s`);
+  chia();
+  console.log('Tiếp: node pipeline/giong.js cat <project-dir>');
+}
+
+// Cắt lại bản thu liền thành từng cảnh (không gọi API).
+function chia() {
+  const script = readScript();
+  const al = readJson(path.join(OUT, 'tron-bai.alignment.json'));
+  let text = '';
+  const ranges = script.scenes.map((x) => { text += (text ? ' ' : '') + x.voiceover; return [text.length - x.voiceover.length, text.length]; });
+  if (al.characters.join('') !== text) die('tron-bai.alignment.json không khớp kịch bản');
+  const seconds = chiaCanh({ full: path.join(OUT, 'tron-bai.mp3'), al, scenes: script.scenes, ranges, ffmpeg, MP3, sceneFile: (n, ext) => sceneFile(OUT, n, ext), tmp: path.join(OUT, '_pcm.wav') });
+  const timings = { model: CHUAN.model, mode: 'single', settings: CHUAN.settings, seed: CHUAN.seed, scenes: {} };
+  script.scenes.forEach((x, k) => {
+    timings.scenes[x.scene] = { file: `scene-${pad(x.scene)}.mp3`, seconds: seconds[k], chars: x.voiceover.length, words: x.voiceover.split(/\s+/).filter(Boolean).length, generated: new Date().toISOString() };
+    console.log(`Cảnh ${label(x)}: ${seconds[k]} s`);
   });
   writeJson(path.join(OUT, 'timings.json'), timings);
-  console.log('Tiếp: node pipeline/giong.js cat <project-dir>');
 }
 
 function cat() {
   const script = readScript();
   const timings = readJson(path.join(OUT, 'timings.json'));
   fs.mkdirSync(CAT, { recursive: true });
-  const out = { ...timings, trim: { keep_s: CHUAN.giu, threshold_s: CHUAN.nguong, tempo: CHUAN.tempo }, scenes: {} };
+  const out = { ...timings, trim: { keep_s: CHUAN.giu, threshold_s: CHUAN.nguong, tempo: null }, scenes: {} };
   const report = [];
   let sum = 0;
+  // tempo chung cho cả bài, tính từ tốc độ trong câu của bản thu
+  let syl = 0, speech = 0;
+  for (const sc of script.scenes) {
+    for (const x of sentencesOf(readJson(sceneFile(OUT, sc.scene, 'alignment.json')))) {
+      syl += x.text.split(/[\s-]+/).filter((w) => /[\p{L}\p{N}]/u.test(w)).length;
+      speech += x.t1 - x.t0;
+    }
+  }
+  const tempo = +(CHUAN.dich / (syl / speech)).toFixed(4);
+  out.trim.tempo = tempo;
+  console.log(`Bản thu ${(syl / speech).toFixed(2)} âm tiết/s → tempo ${tempo}`);
   for (const sc of script.scenes) {
     const al = readJson(sceneFile(OUT, sc.scene, 'alignment.json'));
     const st = al.character_start_times_seconds;
@@ -120,9 +146,9 @@ function cat() {
     const cuts = [];
     for (let i = 1; i < sents.length; i++) {
       const gap = sents[i].t0 - sents[i - 1].t1;
-      if (gap <= CHUAN.nguong) continue;
-      const remove = gap - CHUAN.giu;
-      const from = sents[i - 1].t1 + CHUAN.giu / 2;
+      if (gap <= CHUAN.nguong * tempo) continue;
+      const remove = gap - CHUAN.giu * tempo;
+      const from = sents[i - 1].t1 + (CHUAN.giu * tempo) / 2;
       cuts.push({ from, to: from + remove, remove });
       report.push({ scene: label(sc), at_s: +sents[i - 1].t1.toFixed(2), gap_s: +gap.toFixed(2), after_s: CHUAN.giu });
     }
@@ -133,21 +159,31 @@ function cat() {
     const src = sceneFile(OUT, sc.scene, 'mp3');
     const dst = sceneFile(CAT, sc.scene, 'mp3');
     const parts = keep.map(([a, b], i) => `[0:a]atrim=start=${a.toFixed(4)}:end=${b.toFixed(4)},asetpts=PTS-STARTPTS[p${i}]`).join(';');
-    const joined = keep.map((_, i) => `[p${i}]`).join('') + `concat=n=${keep.length}:v=0:a=1[c];[c]atempo=${CHUAN.tempo}[o]`;
+    const joined = keep.map((_, i) => `[p${i}]`).join('') + `concat=n=${keep.length}:v=0:a=1[c];[c]atempo=${tempo}[o]`;
     if (cuts.length) ffmpeg(['-i', src, '-filter_complex', `${parts};${joined}`, '-map', '[o]', ...MP3, dst]);
-    else ffmpeg(['-i', src, '-af', `atempo=${CHUAN.tempo}`, ...MP3, dst]);
+    else ffmpeg(['-i', src, '-af', `atempo=${tempo}`, ...MP3, dst]);
     const shift = (t) => t - cuts.reduce((d, c) => d + (t >= c.to ? c.remove : t > c.from ? t - c.from : 0), 0);
-    const scale = (t) => +(shift(t) / CHUAN.tempo).toFixed(4);
+    const scale = (t) => +(shift(t) / tempo).toFixed(4);
     fs.writeFileSync(sceneFile(CAT, sc.scene, 'alignment.json'), JSON.stringify({ ...al, character_start_times_seconds: st.map(scale), character_end_times_seconds: en.map(scale) }));
     const removed = cuts.reduce((a, c) => a + c.remove, 0);
-    const seconds = +((total - removed) / CHUAN.tempo).toFixed(2);
+    const seconds = +((total - removed) / tempo).toFixed(2);
     sum += seconds;
     out.scenes[sc.scene] = { ...timings.scenes[sc.scene], seconds, cuts: cuts.length, removed_s: +removed.toFixed(2) };
     console.log(`Cảnh ${label(sc)}: ${total} s → ${seconds} s | cắt ${cuts.length} chỗ`);
   }
   writeJson(path.join(CAT, 'timings.json'), out);
   writeJson(path.join(CAT, 'bao-cao-nghi.json'), report);
+  fs.writeFileSync(path.join(CAT, 'alignments.json'), JSON.stringify(script.scenes.map((x) => readJson(sceneFile(CAT, x.scene, 'alignment.json')))) + '\n');
+  // Bản nghe liền cả bài, nghỉ 0,3 s giữa cảnh như khi dựng (để người dùng nghe duyệt).
+  const files = script.scenes.map((s) => sceneFile(CAT, s.scene, 'mp3'));
+  const padded = files.map((_, i) => `[${i}:a]apad=pad_dur=0.3[a${i}]`).join(';');
+  ffmpeg([...files.flatMap((f) => ['-i', f]), '-filter_complex', `${padded};${files.map((_, i) => `[a${i}]`).join('')}concat=n=${files.length}:v=0:a=1[o]`, '-map', '[o]', ...MP3, path.join(OUT, 'nghe-thu.mp3')]);
   console.log(`Cắt ${report.length} chỗ; tổng giọng ${sum.toFixed(1)} s → ${CAT}`);
+  trang();
+}
+
+function trang() {
+  so.trang({ projectDir, scenes: readScript().scenes, catDir: CAT, sentencesOf });
 }
 
 function doNhip() {
@@ -212,4 +248,5 @@ function chon() {
   console.log(`Đã thay cảnh ${sceneArg}; bản cũ ở ${backup}. Chạy lại: node pipeline/giong.js cat ${projectDir}`);
 }
 
-Promise.resolve({ doc, cat, do: doNhip, canh, chon }[lenh]()).catch((e) => die('Lỗi: ' + e.message));
+const nhap = () => so.nhap(projectDir, opt('model', CHUAN.model));
+Promise.resolve({ doc, chia, cat, do: doNhip, canh, chon, trang, nhap }[lenh]()).catch((e) => die('Lỗi: ' + e.message));
