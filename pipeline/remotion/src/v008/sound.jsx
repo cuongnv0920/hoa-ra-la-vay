@@ -60,14 +60,14 @@ const SFX = [
   ['A30', '9.5', 'chuong', 'nhe', () => M.name95()],
 ];
 
-const shotById = (id) => {
+const shotById = (TL, id) => {
   const s = TL.shots.find((x) => x.id === id);
   if (!s) throw new Error('Không có shot ' + id);
   return s;
 };
 
-export const CUES = SFX.flatMap(([id, shotId, file, level, when, rates, rate = 1]) => {
-  const s = shotById(shotId);
+const makeCues = (tl) => SFX.flatMap(([id, shotId, file, level, when, rates, rate = 1]) => {
+  const s = shotById(tl, shotId);
   const w = when(s.at, s.dur);
   const frames = Array.isArray(w) ? w : [w];
   return frames.map((f, i) => {
@@ -76,8 +76,10 @@ export const CUES = SFX.flatMap(([id, shotId, file, level, when, rates, rate = 1
   });
 });
 
-export const SfxLayer = () =>
-  CUES.map((c) => (
+export const CUES = makeCues(TL);
+
+export const SfxLayer = ({ tl = TL }) =>
+  makeCues(tl).map((c) => (
     <Sequence key={c.id} from={c.frame} name={'sfx ' + c.id}>
       <Audio src={staticFile(c.file)} volume={c.volume} playbackRate={c.rate} />
     </Sequence>

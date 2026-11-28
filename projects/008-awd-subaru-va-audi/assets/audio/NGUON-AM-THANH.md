@@ -31,3 +31,15 @@ Giọng đã làm sạch (2026-11-26, sau góp ý "tiếng đọc ở 1:12–1:1
 | `sfx/truot-banh.wav` | chuyển động | bánh trượt trên mặt trơn, "xẹt" ngắn | A18 | tự tổng hợp (mới, hàm `wheelSlip`) |
 
 Không có nhạc nền, không có âm thanh môi trường (theo storyboard đã duyệt).
+
+## Giọng đọc nhịp mới (2026-11-28, bản v1.4, chờ người dùng nghe)
+
+- `giong/` (bản dùng để dựng: `giong/cat/`; nghe liền: `giong/nghe-thu.mp3`). ElevenLabs, giọng Tung Dang (voice_id `3VnrjnYrskPMDsapTr8X`), giọng tạo bằng AI trên gói Starter trả phí.
+- Lời: `script/script-v1.4-nhip.json`. Lệnh: `node --env-file=.env pipeline/giong.js doc projects/008-awd-subaru-va-audi --script script-v1.4-nhip.json`, rồi `cat` và `do`. Cấu hình theo `brand/nhip-doc.md`.
+- Chưa dựng vào video. Giọng cũ giữ nguyên.
+
+## Giọng `eleven_v4` (2026-11-28, chờ người dùng nghe)
+
+- `giong-v4/` (nghe liền: `giong-v4/nghe-thu.mp3`). Lời `script/script-v1.4-nhip.json`, giọng Tung Dang, tạo bằng AI trên gói trả phí; `pipeline/giong.js doc|cat|do ... --out giong-v4`. Thay cho bản turbo ở `giong/` (đọc sai nhiều chữ).
+
+**2026-11-28:** người dùng xem, nghe bản xem thử `demo/video-008-giong-v4-xem-thu.mp4` và nhắn "Ổn cả bốn". Đây chưa phải duyệt Cổng #2 để đăng.

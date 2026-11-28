@@ -1,4 +1,6 @@
 // Dòng thời gian demo v3.2: script-v3.2.json + storyboard-v3.2.json + alignment ElevenLabs (giọng speed 0.90).
+import aligns from '../../../../projects/003-tien-xang-di-dau/assets/audio/giong-v4/cat/alignments.json';
+import { nhipMoi } from '../giongmoi/nhip';
 import script from '../../../../projects/003-tien-xang-di-dau/script/script-v3.2.json';
 import board from '../../../../projects/003-tien-xang-di-dau/assets/storyboard-v3.2.json';
 import a1 from '../../../../projects/003-tien-xang-di-dau/assets/audio/v3.2/scene-01.alignment.json';
@@ -68,30 +70,33 @@ function chunksOf(words, frames) {
   }));
 }
 
-function build() {
+function build(v = {}) {
+  const lead = v.lead ?? LEAD;
+  const tail = v.tail ?? TAIL;
+  const align = v.align || ALIGN;
   const scenes = [];
   let t = 0;
   script.scenes.forEach((s, i) => {
-    const al = ALIGN[i];
+    const al = align[i];
     if (al.characters.join('') !== s.voiceover) throw new Error(`Cảnh ${s.scene}: audio không khớp lời đọc v3, tạo lại giọng`);
     const voiceSec = al.character_end_times_seconds[al.character_end_times_seconds.length - 1];
-    const frames = LEAD + Math.ceil(voiceSec * FPS) + TAIL + (i === script.scenes.length - 1 ? OUTRO : 0);
+    const frames = lead + Math.ceil(voiceSec * FPS) + tail + (i === script.scenes.length - 1 ? OUTRO : 0);
     const starts = board.shots
       .filter((x) => x.scene === s.scene)
       .map((x) => {
         const at = s.voiceover.indexOf(x.cue);
         if (at < 0) throw new Error(`Shot ${x.id}: không thấy cue "${x.cue}"`);
-        return { ...x, start: at === 0 ? 0 : LEAD + Math.round(al.character_start_times_seconds[at] * FPS) };
+        return { ...x, start: at === 0 ? 0 : lead + Math.round(al.character_start_times_seconds[at] * FPS) };
       });
     const shots = starts.map((x, k) => ({ id: x.id, headline: x.headline, start: x.start, dur: (k < starts.length - 1 ? starts[k + 1].start : frames) - x.start }));
     scenes.push({
       scene: s.scene,
       start: t,
       frames,
-      audio: `${board.voice.dir}/scene-${String(s.scene).padStart(2, '0')}.mp3`,
-      audioFrom: LEAD,
+      audio: v.audio ? v.audio(s.scene) : `${board.voice.dir}/scene-${String(s.scene).padStart(2, '0')}.mp3`,
+      audioFrom: lead,
       shots,
-      chunks: chunksOf(wordsOf(al), frames),
+      chunks: v.chunks ? v.chunks(i, frames) : chunksOf(wordsOf(al), frames),
     });
     t += frames;
   });
@@ -107,9 +112,12 @@ function build() {
     const i = script.scenes.findIndex((x) => x.scene === scene);
     const c = script.scenes[i].voiceover.indexOf(phrase);
     if (c < 0) throw new Error(`Cảnh ${scene}: không thấy "${phrase}"`);
-    return scenes[i].start + LEAD + Math.round(ALIGN[i].character_start_times_seconds[c] * FPS);
+    return scenes[i].start + lead + Math.round(align[i].character_start_times_seconds[c] * FPS);
   };
   return { scenes, total: t, T, at };
 }
 
 export const TL = build();
+
+// Biến thể giọng nhịp mới (2026-11-28): cùng chữ, giờ lấy từ giong-v4.
+export const TLM = build(nhipMoi({ oldScript: script, aligns, keep: KEEP }));

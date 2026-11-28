@@ -1,0 +1,63 @@
+{
+  "video": "005-hai-kim-phun",
+  "version": "v1.5",
+  "status": "v1.5-nhip-moi-nhap-chua-duyet",
+  "source": "script/script-v1.5-nhip.md",
+  "voice": {
+    "provider": "elevenlabs",
+    "name": "Tung Dang",
+    "voice_id": "3VnrjnYrskPMDsapTr8X"
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "title": "Hai đường đưa xăng vào",
+      "voiceover": "Trong động cơ có các xi-lanh. Đó là những khoang nơi xăng cháy để tạo lực. Thường mỗi xi-lanh chỉ cần một kim phun. Nhưng có động cơ dùng tới hai. Một kim phun xăng vào đường dẫn khí. Một kim phun thẳng vào xi-lanh. Vì sao phải có cả hai?",
+      "visual": "Mặt cắt một xi-lanh; vẽ hai đường đi bằng hai màu, lần lượt sáng lên.",
+      "sources": "S1, S3"
+    },
+    {
+      "scene": 2,
+      "title": "Đường vòng: phun gián tiếp",
+      "voiceover": "Kim thứ nhất gọi là phun gián tiếp. Nó phun xăng vào đường nạp. Tức đường dẫn không khí vào máy. Chỗ phun nằm ngay trước xu-páp nạp. Đó là chiếc van. Cho không khí đi vào xi-lanh. Van mở. Xăng và không khí cùng đi vào. Xăng có thêm thời gian. Hòa với không khí trước khi cháy.",
+      "visual": "Nhãn \"phun gián tiếp\", \"đường nạp\", \"xu-páp nạp\". Tia xăng hòa vào luồng khí; xu-páp mở, hỗn hợp đi vào xi-lanh.",
+      "sources": "S1, S7"
+    },
+    {
+      "scene": 3,
+      "title": "Đường thẳng: phun trực tiếp",
+      "voiceover": "Kim thứ hai gọi là phun trực tiếp. Nó phun thẳng xăng vào xi-lanh. Với áp suất rất cao. Xăng bay hơi ngay bên trong và lấy bớt nhiệt. Giống như cồn bay hơi trên da. Làm ta thấy mát. Khí mát hơn thì khó bị kích nổ. Kích nổ là khi phần xăng gió chưa kịp cháy. Bỗng tự bùng lên. Nhờ vậy. Động cơ có thể nén mạnh hơn. Và làm việc hiệu quả hơn.",
+      "visual": "Nhãn \"phun trực tiếp\". Tia xăng đi thẳng vào xi-lanh, hạt bay hơi, vùng khí dịu màu. Kích nổ vẽ bằng một đợt cháy bất thường ở phần khí ngọn lửa từ bugi chưa lan tới; không dùng biểu tượng nổ như bom.",
+      "sources": "S1, S9, S26, S27, F2"
+    },
+    {
+      "scene": 4,
+      "title": "Cái giá của phun trực tiếp",
+      "voiceover": "Nhưng phun trực tiếp có cái giá của nó. Xăng có ít thời gian hòa với không khí. Trong xi-lanh có pít-tông. Một khối chạy lên xuống. Một phần xăng có thể chạm vào pít-tông. Hoặc thành xi-lanh. Chỗ đó cháy không hết. Dễ tạo ra hạt muội nhỏ. Còn một chuyện nữa. Xăng không đi qua xu-páp nạp. Nên không rửa được nó. Cặn bẩn từ hơi dầu và khí thải. Có thể bám dần ở đó. Vậy có cách nào. Tận dụng ưu điểm của cả hai kiểu phun không?",
+      "visual": "Giọt xăng chạm đỉnh pít-tông, sinh chấm muội; cặn bám dần lên lưng xu-páp nạp.",
+      "sources": "S7, S18, S26, S27"
+    },
+    {
+      "scene": 5,
+      "title": "Giữ cả hai",
+      "voiceover": "Có. Hãy xem một đời động cơ tăng áp của Audi. Ở bản có hai kim. Máy đã ấm. Bạn đi ga nhẹ hoặc vừa. Lúc này kim gián tiếp làm việc. Xăng trộn đều hơn. Và ít hạt muội hơn. Kim trực tiếp cần một bơm cao áp. Để tạo áp suất lớn. Bơm này lấy sức từ động cơ. Khi dùng kim gián tiếp. Bơm đỡ tốn sức máy hơn. Xăng đi qua xu-páp còn giúp rửa bớt cặn. Audi cho biết. Cách này vừa đỡ tốn xăng, vừa giảm hạt muội. Nhất là khi châu Âu giới hạn cả số hạt. Mà xe phun trực tiếp thải ra.",
+      "visual": "Nhãn \"Audi EA888 thế hệ 3 — bản có phun kép\". Máy ấm, tải nhẹ/vừa, kim gián tiếp sáng. Số hạt muội **ít đi** (không vẽ hạt nhỏ lại), không biến mất hết.",
+      "sources": "S1, S6, S7, S16, S26, S27, F1, F3"
+    },
+    {
+      "scene": 6,
+      "title": "Lúc nào đổi kim?",
+      "voiceover": "Còn kim trực tiếp thì sao? Ở máy Audi này. Nó làm việc khi khởi động và lúc máy còn lạnh. Khi bạn cần nhiều sức. Máy cũng chuyển sang kim trực tiếp. Lúc đó. Xăng bay hơi trong xi-lanh giúp làm mát. Giảm nguy cơ kích nổ. Kim trực tiếp còn một nỗi khổ. Nếu nghỉ quá lâu. Đầu kim dễ bám cặn cứng. Nên thỉnh thoảng. Máy lại bật nó phun một chút.",
+      "visual": "Nhãn \"Audi EA888 — bản có phun kép\". Bản đồ đơn giản theo ba tình huống: máy lạnh, cần nhiều sức, kim trực tiếp được bật lại.",
+      "sources": "S1, S26"
+    },
+    {
+      "scene": 7,
+      "title": "Kết",
+      "voiceover": "Một số động cơ Toyota cũng dùng cả hai kiểu phun. Nhưng cách phối hợp không giống Audi. Và không phải động cơ nào cũng cần như vậy. Hóa ra là vậy: đây không phải thừa một kim. Mỗi kim bù vào chỗ yếu của kim kia. Máy tính chỉ việc chọn đúng người, đúng lúc.",
+      "visual": "Hai đường phun sáng luân phiên; sơ đồ Toyota tách riêng, không dùng lại quy luật của Audi.",
+      "sources": "S1, S2, S3, S26"
+    }
+  ],
+  "note": "Từ script.json (v1.4): chỉ đổi dấu câu và viết hoa cho nhịp đọc mới (brand/nhip-doc.md), giữ nguyên từng chữ."
+}

@@ -7,9 +7,10 @@ import { M, VH, VW } from '../vertical/layout';
 import { Footnote, Header, Headline, KaraokeSubtitle } from '../vertical/Text';
 import { CoinMeter } from '../v003v3/coins';
 import { S1, S2, S3, S4, S5, S6, S7, S8 } from './scenes';
-import { TL } from './timeline';
+import { MASTER, SfxLayer } from './sound';
+import { TL, TLM } from './timeline';
 
-export { TL };
+export { TL, TLM };
 const SCENES = { 1: S1, 2: S2, 3: S3, 4: S4, 5: S5, 6: S6, 7: S7, 8: S8 };
 const hSize = (h) => (h.length > 22 ? 58 : h.length > 18 ? 66 : h.length > 13 ? 76 : 92);
 const clamp = { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' };
@@ -27,8 +28,8 @@ function soft(sc, f) {
 }
 
 // Trạng thái đồng hồ 10 đồng theo lời đọc (ẩn ở các cảnh xe điện 5–7).
-function meter(f) {
-  const { T, at, scenes } = TL;
+function meter(f, tl) {
+  const { T, at, scenes } = tl;
   const s5 = scenes[4].start;
   const s8 = scenes[7].start;
   const o = f < s5 ? interpolate(f, [s5 - MIX, s5 - 1], [1, 0], clamp) : interpolate(f, [s8, s8 + MIX], [0, 1], clamp);
@@ -56,19 +57,19 @@ function meter(f) {
 }
 
 // episode: chữ góc phải header. Mặc định ghi rõ là demo; bản đăng truyền "Tập 1" (composition Video003V32Dang).
-export const Video003V3D = ({ episode = 'DEMO v3.2 · chưa duyệt' }) => {
+export const Video003V3D = ({ tl = TL, episode = 'DEMO v3.2 · chưa duyệt', sfx = false }) => {
   const f = useCurrentFrame();
-  const m = meter(f);
-  const s5 = TL.scenes[4].start;
-  const s8 = TL.scenes[7].start;
+  const m = meter(f, tl);
+  const s5 = tl.scenes[4].start;
+  const s8 = tl.scenes[7].start;
   const evBg = interpolate(f, [s5 - MIX, s5 + MIX, s8 - MIX, s8 + MIX], [0, 1, 1, 0], clamp);
-  const sceneNo = TL.scenes.filter((s) => f >= s.start).length;
+  const sceneNo = tl.scenes.filter((s) => f >= s.start).length;
   return (
     <Background>
       <AbsoluteFill style={{ backgroundColor: '#08182A', opacity: 0.8 * evBg }} />
       <Header series="Xăng hay Điện" episode={episode} />
       <svg width={VW} height={VH} style={{ position: 'absolute' }}>
-        {TL.scenes.map((sc) => {
+        {tl.scenes.map((sc) => {
           const S = SCENES[sc.scene];
           const t = soft(sc, f);
           return (
@@ -81,7 +82,7 @@ export const Video003V3D = ({ episode = 'DEMO v3.2 · chưa duyệt' }) => {
         })}
         <CoinMeter states={m.states} caption={m.caption} captionColor={m.color} o={m.o} />
       </svg>
-      {TL.scenes.map((sc) => {
+      {tl.scenes.map((sc) => {
         const t = soft(sc, f);
         return (
           <AbsoluteFill key={'h' + sc.scene} style={{ opacity: t.opacity, transform: `translateX(${t.x}px)` }}>
@@ -93,12 +94,13 @@ export const Video003V3D = ({ episode = 'DEMO v3.2 · chưa duyệt' }) => {
           </AbsoluteFill>
         );
       })}
-      {TL.scenes.map((sc) => (
+      {sfx && <SfxLayer tl={tl} />}
+      {tl.scenes.map((sc) => (
         <Sequence key={'a' + sc.scene} from={sc.start + sc.audioFrom} durationInFrames={sc.frames - sc.audioFrom}>
-          <Audio src={staticFile(sc.audio)} />
+          <Audio src={staticFile(sc.audio)} volume={sfx ? MASTER : 1} />
         </Sequence>
       ))}
-      {TL.scenes.map((sc) => (
+      {tl.scenes.map((sc) => (
         <Sequence key={'sub' + sc.scene} from={sc.start} durationInFrames={sc.frames}>
           <KaraokeSubtitle chunks={sc.chunks} />
         </Sequence>
@@ -111,3 +113,6 @@ export const Video003V3D = ({ episode = 'DEMO v3.2 · chưa duyệt' }) => {
     </Background>
   );
 };
+
+// Giọng nhịp mới (brand/nhip-doc.md), có hiệu ứng âm thanh.
+export const Video003M = ({ episode = 'BẢN NHÁP · chưa duyệt' }) => <Video003V3D tl={TLM} episode={episode} sfx />;

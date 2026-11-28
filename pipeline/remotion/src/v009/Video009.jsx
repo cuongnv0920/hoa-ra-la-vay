@@ -6,9 +6,9 @@ import { Footnote, Header, Headline, KaraokeSubtitle } from '../vertical/Text';
 import { EV, GOLD, ICE, SLIDE } from './parts';
 import { SHOTS } from './scenes';
 import { MASTER, SfxLayer } from './sound';
-import { TL } from './timeline';
+import { TL, TLM } from './timeline';
 
-export { TL };
+export { TL, TLM };
 
 const hSize = (h) => (h.length > 28 ? 54 : h.length > 24 ? 60 : h.length > 19 ? 68 : h.length > 14 ? 78 : 92);
 // Từ tô màu trong tiêu đề: [shot]: [cụm, màu]
@@ -52,24 +52,24 @@ const ShotArt = ({ shot }) => {
 };
 
 // voice / sfx: tắt riêng từng lớp tiếng khi cần soát.
-export const Video009 = ({ episode = 'BẢN NHÁP · chưa duyệt', voice = true, sfx = true }) => (
+export const Video009 = ({ tl = TL, episode = 'BẢN NHÁP · chưa duyệt', voice = true, sfx = true }) => (
   <Background>
     <Header series="Hóa Ra Là Vậy" episode={episode} />
-    {TL.shots.map((shot) => (
+    {tl.shots.map((shot) => (
       <Sequence key={shot.id} from={shot.start} durationInFrames={shot.dur} layout="none">
         <ShotArt shot={shot} />
         {shot.id !== '7.5' && <Headline parts={parts(shot.id, shot.headline)} size={hSize(shot.headline)} />}
         {shot.id !== '7.5' && shot.id !== '7.1' && <Footnote text={footnote(shot)} />}
       </Sequence>
     ))}
-    {sfx && <SfxLayer />}
+    {sfx && <SfxLayer tl={tl} />}
     {voice &&
-      TL.scenes.map((sc) => (
+      tl.scenes.map((sc) => (
         <Sequence key={'a' + sc.scene} from={sc.start + sc.audioFrom} durationInFrames={sc.frames - sc.audioFrom}>
           <Audio src={staticFile(sc.audio)} volume={MASTER} />
         </Sequence>
       ))}
-    {TL.scenes.map((sc) => (
+    {tl.scenes.map((sc) => (
       <Sequence key={'s' + sc.scene} from={sc.start} durationInFrames={sc.frames}>
         <KaraokeSubtitle chunks={sc.chunks} />
       </Sequence>
@@ -77,3 +77,6 @@ export const Video009 = ({ episode = 'BẢN NHÁP · chưa duyệt', voice = tru
     <AbsoluteFill />
   </Background>
 );
+
+// Giọng nhịp mới (brand/nhip-doc.md).
+export const Video009M = (props) => <Video009 {...props} tl={TLM} />;

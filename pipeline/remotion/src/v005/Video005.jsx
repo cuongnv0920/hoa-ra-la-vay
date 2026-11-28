@@ -7,9 +7,9 @@ import { Footnote, Header, Headline, KaraokeSubtitle } from '../vertical/Text';
 import { GDI, PFI } from './EngineSection';
 import { SHOTS } from './scenes';
 import { AmbienceLayer, MASTER, SfxLayer } from './sound';
-import { TL } from './timeline';
+import { TL, TLM } from './timeline';
 
-export { TL };
+export { TL, TLM };
 
 const hSize = (h) => (h.length > 22 ? 58 : h.length > 18 ? 66 : h.length > 13 ? 76 : 92);
 // Từ tô màu trong tiêu đề: [shot]: [cụm, màu]
@@ -44,24 +44,24 @@ const ShotArt = ({ shot }) => {
 };
 
 // voice / sfx / ambience: tắt riêng từng lớp tiếng khi cần soát.
-export const Video005 = ({ episode = 'BẢN NHÁP · chưa duyệt', voice = true, sfx = true, ambience = true }) => (
+export const Video005 = ({ tl = TL, episode = 'BẢN NHÁP · chưa duyệt', voice = true, sfx = true, ambience = true }) => (
   <Background>
     <Header series="Hóa Ra Là Vậy" episode={episode} />
-    {TL.shots.map((shot) => (
+    {tl.shots.map((shot) => (
       <Sequence key={shot.id} from={shot.start} durationInFrames={shot.dur} layout="none">
         <ShotArt shot={shot} />
         <Headline parts={parts(shot.id, shot.headline)} size={hSize(shot.headline)} />
         <Footnote text={footnote(shot)} />
       </Sequence>
     ))}
-    {sfx && <SfxLayer />}
-    {ambience && <AmbienceLayer />}
-    {voice && TL.scenes.map((sc) => (
+    {sfx && <SfxLayer tl={tl} />}
+    {ambience && <AmbienceLayer tl={tl} />}
+    {voice && tl.scenes.map((sc) => (
       <Sequence key={'a' + sc.scene} from={sc.start + sc.audioFrom} durationInFrames={sc.frames - sc.audioFrom}>
         <Audio src={staticFile(sc.audio)} volume={MASTER} />
       </Sequence>
     ))}
-    {TL.scenes.map((sc) => (
+    {tl.scenes.map((sc) => (
       <Sequence key={'s' + sc.scene} from={sc.start} durationInFrames={sc.frames}>
         <KaraokeSubtitle chunks={sc.chunks} />
       </Sequence>
@@ -69,3 +69,6 @@ export const Video005 = ({ episode = 'BẢN NHÁP · chưa duyệt', voice = tru
     <AbsoluteFill />
   </Background>
 );
+
+// Giọng nhịp mới (brand/nhip-doc.md).
+export const Video005M = (props) => <Video005 {...props} tl={TLM} />;

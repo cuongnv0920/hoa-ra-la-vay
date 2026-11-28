@@ -43,19 +43,21 @@ const SFX = [
   ['B13', '7.4', 'chuong', 'nhe', (at) => at('đúng lúc')],
 ];
 
-const shotById = (id) => {
+const shotById = (TL, id) => {
   const s = TL.shots.find((x) => x.id === id);
   if (!s) throw new Error('Không có shot ' + id);
   return s;
 };
 
-export const CUES = SFX.map(([id, shotId, file, level, when]) => {
-  const s = shotById(shotId);
+const makeCues = (tl) => SFX.map(([id, shotId, file, level, when]) => {
+  const s = shotById(tl, shotId);
   return { id, frame: s.start + when(s.at, s.dur), file: `audio/sfx/${file}.wav`, volume: LEVEL[level] * MASTER };
 });
 
-export const SfxLayer = () =>
-  CUES.map((c) => (
+export const CUES = makeCues(TL);
+
+export const SfxLayer = ({ tl = TL }) =>
+  makeCues(tl).map((c) => (
     <Sequence key={c.id} from={c.frame} name={'sfx ' + c.id}>
       <Audio src={staticFile(c.file)} volume={c.volume} />
     </Sequence>
@@ -67,10 +69,10 @@ const BEDS = [
   // Không đặt tiếng xì kéo dài khi kim phun: người dùng thấy át giọng đọc. Tia phun chỉ có tiếng ngắn lúc bắt đầu.
 ];
 
-export const AmbienceLayer = () =>
+export const AmbienceLayer = ({ tl = TL }) =>
   BEDS.map(([id, first, last, file, level, delay]) => {
-    const a = shotById(first);
-    const b = shotById(last);
+    const a = shotById(tl, first);
+    const b = shotById(tl, last);
     const from = a.start + delay;
     const dur = b.start + b.dur - from;
     return (

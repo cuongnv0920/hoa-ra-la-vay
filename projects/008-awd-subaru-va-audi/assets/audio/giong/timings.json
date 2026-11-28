@@ -1,0 +1,77 @@
+{
+  "model": "eleven_turbo_v2_5",
+  "mode": "single",
+  "settings": {
+    "stability": 0.75,
+    "similarity_boost": 0.4,
+    "style": 0,
+    "speed": 1.15,
+    "use_speaker_boost": true
+  },
+  "seed": 11,
+  "scenes": {
+    "1": {
+      "file": "scene-01.mp3",
+      "seconds": 14.49,
+      "chars": 261,
+      "words": 56,
+      "generated": "2026-11-28T08:06:45.928Z"
+    },
+    "2": {
+      "file": "scene-02.mp3",
+      "seconds": 13.46,
+      "chars": 269,
+      "words": 61,
+      "generated": "2026-11-28T08:06:46.055Z"
+    },
+    "3": {
+      "file": "scene-03.mp3",
+      "seconds": 12.61,
+      "chars": 211,
+      "words": 47,
+      "generated": "2026-11-28T08:06:46.172Z"
+    },
+    "4": {
+      "file": "scene-04.mp3",
+      "seconds": 20.59,
+      "chars": 328,
+      "words": 71,
+      "generated": "2026-11-28T08:06:46.329Z"
+    },
+    "5": {
+      "file": "scene-05.mp3",
+      "seconds": 15.83,
+      "chars": 278,
+      "words": 61,
+      "generated": "2026-11-28T08:06:46.503Z"
+    },
+    "6": {
+      "file": "scene-06.mp3",
+      "seconds": 17.48,
+      "chars": 271,
+      "words": 63,
+      "generated": "2026-11-28T08:06:46.711Z"
+    },
+    "7": {
+      "file": "scene-07.mp3",
+      "seconds": 12.17,
+      "chars": 228,
+      "words": 47,
+      "generated": "2026-11-28T08:06:46.906Z"
+    },
+    "8": {
+      "file": "scene-08.mp3",
+      "seconds": 18.73,
+      "chars": 331,
+      "words": 71,
+      "generated": "2026-11-28T08:06:47.126Z"
+    },
+    "9": {
+      "file": "scene-09.mp3",
+      "seconds": 12.88,
+      "chars": 225,
+      "words": 52,
+      "generated": "2026-11-28T08:06:47.331Z"
+    }
+  }
+}

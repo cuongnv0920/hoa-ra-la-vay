@@ -1,0 +1,63 @@
+{
+  "video": "007-subaru-may-boxer",
+  "version": "v2.3",
+  "status": "v2.3-nhip-moi-nhap-chua-duyet",
+  "source": "script/script-v2.3-nhip.md",
+  "voice": {
+    "provider": "elevenlabs",
+    "name": "Tung Dang",
+    "voice_id": "3VnrjnYrskPMDsapTr8X"
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "title": "Máy nằm ngang",
+      "voiceover": "Mở nắp ca-pô phần lớn ô tô. Ta thường thấy các xi-lanh đứng thành hàng. Nhưng ở hầu hết xe Subaru chạy xăng. Chúng nằm ngang sang hai bên. Vì sao Subaru vẫn giữ kiểu động cơ này?",
+      "visual": "Hai khối máy cạnh nhau: máy thẳng hàng 4 xi-lanh đứng và máy boxer nằm ngang. Xi-lanh sáng lên lần lượt.",
+      "sources": "S1, S18"
+    },
+    {
+      "scene": 2,
+      "title": "Hai võ sĩ đấm găng",
+      "voiceover": "Kiểu máy này gọi là boxer. Hay động cơ đối đỉnh nằm ngang. Các xi-lanh nằm hai bên trục khuỷu. Tức trục quay ở giữa động cơ. Hai piston đối diện chuyển động đối xứng: cùng tiến vào. Rồi cùng lùi ra. Trông như hai võ sĩ đấm găng. Porsche 911 cũng dùng động cơ boxer sáu xi-lanh.",
+      "visual": "Nhìn từ trên xuống: trục khuỷu ở giữa, hai cặp piston chạy đối xứng. Nhãn \"trục khuỷu (crankshaft)\". Có thể lồng ghép hình hai găng đấm hướng vào nhau, không vẽ piston chạm nhau.",
+      "sources": "S1, S5, S6, S16, S18"
+    },
+    {
+      "scene": 3,
+      "title": "Giảm rung, không hết rung",
+      "voiceover": "Piston chạy qua lại. Và đổi chiều rất nhiều lần mỗi giây. Mỗi lần đổi chiều. Nó giật khối máy theo hướng của nó. Ở máy boxer. Hai piston đối diện luôn đi ngược chiều nhau. Cú giật bên này bù phần lớn cú giật bên kia. Máy thẳng hàng 4 xi-lanh còn một kiểu rung khó dập. Máy lớn đôi khi phải thêm trục cân bằng. Máy boxer 4 xi-lanh thì không cần. Nhưng không phải mọi rung động đều biến mất. Khối máy vẫn còn rung nhẹ.",
+      "visual": "Mũi tên lực ở hai piston đối diện, bằng nhau và ngược chiều, gần như triệt tiêu. So với máy thẳng hàng: bốn mũi tên cùng nhịp tạo rung, hiện một trục cân bằng nhỏ. Quay lại máy boxer: khối máy rung rất nhẹ. Không vẽ máy đứng yên tuyệt đối.",
+      "sources": "S5, S13, S16, S17, S18"
+    },
+    {
+      "scene": 4,
+      "title": "Thấp hơn",
+      "voiceover": "Máy nằm ngang nên khối động cơ có dáng thấp. Nó có thể được đặt thấp trong khoang máy. Góp phần hạ trọng tâm xe. Nhưng trọng tâm cả chiếc xe còn phụ thuộc. Vào thân xe, gầm xe và nhiều bộ phận khác. Một chiếc Subaru gầm cao vẫn là xe gầm cao. Động cơ chỉ là một phần của câu chuyện.",
+      "visual": "Mặt cắt ngang đầu xe: khối boxer đặt thấp; sau đó hiện cả thân xe và vị trí trọng tâm tổng thể, kèm nhãn thân xe, gầm, hệ treo. Không ghi con số.",
+      "sources": "S1, S2, S13, S16"
+    },
+    {
+      "scene": 5,
+      "title": "Ngắn nên đặt dọc được",
+      "voiceover": "Với Subaru, còn một lý do nữa: chiều dài. Máy boxer ngắn theo chiều trước sau. Subaru giải thích: nó ngắn hơn máy thẳng hàng. Khi cùng đặt dọc thân xe. Năm 1966. Chiếc Subaru 1000 đã dùng máy boxer đặt dọc. Subaru xem bố cục ấy là nền móng. Cho hệ dẫn động bốn bánh về sau. Trên các xe Subaru sau này. Hộp số nối ngay phía sau động cơ.",
+      "visual": "Nhìn từ trên xuống: so độ dài trước sau của máy thẳng hàng đặt dọc (dài, lấn chỗ) và máy boxer (gọn), nhãn \"theo Subaru\". Chuyển sang hình Subaru 1000 với nhãn \"1966\", máy đặt dọc. Quay lại xe đời sau: hộp số \"click\" vào ngay sau máy.",
+      "sources": "S2, S3, S16"
+    },
+    {
+      "scene": 6,
+      "title": "Cái giá",
+      "voiceover": "Nhưng máy boxer cũng bè rộng sang hai bên. Nó có hai nắp máy. Khiến việc chế tạo phức tạp hơn. Ở một số mẫu xe. Bugi nằm chật bên hông máy. Khiến việc thay thế khó hơn.",
+      "visual": "Máy boxer nở rộng sang hai bên khoang máy; hai nắp máy sáng lên. Bugi nằm chật bên hông, minh họa thao tác tiếp cận khó.",
+      "sources": "S4, S13, S14, S15, S16, S18"
+    },
+    {
+      "scene": 7,
+      "title": "Kết",
+      "voiceover": "Hóa ra là vậy. Subaru giữ máy boxer. Không phải vì nó hơn mọi kiểu động cơ ở mọi mặt. Mà vì nó hợp với cách hãng bố trí xe. Lựa chọn ấy đã đi cùng Subaru suốt nhiều thập kỷ. Còn hệ dẫn động bốn bánh ấy hoạt động ra sao. Và khác gì quattro của Audi? Tập sau.",
+      "visual": "Thu nhỏ từ máy boxer ra bố cục xe nhìn từ trên: máy, hộp số, trục truyền ra phía sau. Mờ dần, chừa chỗ cho tập sau.",
+      "sources": "S1, S2, S3"
+    }
+  ],
+  "note": "Từ script.json (v2.2): chỉ đổi dấu câu và viết hoa cho nhịp đọc mới (brand/nhip-doc.md), giữ nguyên từng chữ."
+}

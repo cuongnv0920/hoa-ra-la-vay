@@ -1,5 +1,10 @@
 import { Composition, Still } from 'remotion';
-import { Cover005, Cover007, Cover008, Cover009, Cover011 } from './cover/covers';
+import { Cover003, Cover005, Cover007, Cover008, Cover009, Cover011 } from './cover/covers';
+import { TLM as TLM_005, Video005M } from './v005/Video005';
+import { TLM as TLM_007, Video007M } from './v007/Video007';
+import { TLM as TLM_008, Video008M } from './v008/Video008';
+import { TLM as TLM_009, Video009M } from './v009/Video009';
+import { TLM as TLM_003, Video003M } from './v003v3d/Video003V3D';
 import { TL as TL_008, Video008 } from './v008/Video008';
 import { Sample008A, Sample008B, SAMPLE008A_FRAMES, SAMPLE008B_FRAMES } from './v008/Sample008';
 import { Sample009A, SAMPLE009A_FRAMES } from './v009/Sample009';
@@ -51,6 +56,17 @@ export const Root = () => (
     <Composition id="Video011V35Dang" component={Video011V35} durationInFrames={TL_011_35.total} fps={FPS} width={VW} height={VH} defaultProps={{ episode: '' }} />
     <Composition id="Video009" component={Video009} durationInFrames={TL_009.total} fps={FPS} width={VW} height={VH} />
     <Composition id="Video009Dang" component={Video009} durationInFrames={TL_009.total} fps={FPS} width={VW} height={VH} defaultProps={{ episode: '' }} />
+    <Composition id="Video003M" component={Video003M} durationInFrames={TLM_003.total} fps={FPS} width={VW} height={VH} />
+    <Composition id="Video003MDang" component={Video003M} durationInFrames={TLM_003.total} fps={FPS} width={VW} height={VH} defaultProps={{ episode: 'Tập 1' }} />
+    <Composition id="Video005M" component={Video005M} durationInFrames={TLM_005.total} fps={FPS} width={VW} height={VH} />
+    <Composition id="Video005MDang" component={Video005M} durationInFrames={TLM_005.total} fps={FPS} width={VW} height={VH} defaultProps={{ episode: '' }} />
+    <Composition id="Video007M" component={Video007M} durationInFrames={TLM_007.total} fps={FPS} width={VW} height={VH} />
+    <Composition id="Video007MDang" component={Video007M} durationInFrames={TLM_007.total} fps={FPS} width={VW} height={VH} defaultProps={{ episode: '' }} />
+    <Composition id="Video008M" component={Video008M} durationInFrames={TLM_008.total} fps={FPS} width={VW} height={VH} />
+    <Composition id="Video008MDang" component={Video008M} durationInFrames={TLM_008.total} fps={FPS} width={VW} height={VH} defaultProps={{ episode: '' }} />
+    <Composition id="Video009M" component={Video009M} durationInFrames={TLM_009.total} fps={FPS} width={VW} height={VH} />
+    <Composition id="Video009MDang" component={Video009M} durationInFrames={TLM_009.total} fps={FPS} width={VW} height={VH} defaultProps={{ episode: '' }} />
+    <Still id="Cover003" component={Cover003} width={VW} height={VH} defaultProps={{ showSafe: false }} />
     <Still id="Cover005" component={Cover005} width={VW} height={VH} defaultProps={{ showSafe: false }} />
     <Still id="Cover007" component={Cover007} width={VW} height={VH} defaultProps={{ showSafe: false }} />
     <Still id="Cover008" component={Cover008} width={VW} height={VH} defaultProps={{ showSafe: false }} />

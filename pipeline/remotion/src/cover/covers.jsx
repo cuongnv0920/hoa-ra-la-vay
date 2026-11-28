@@ -289,3 +289,38 @@ export const Cover011 = ({ showSafe = false }) => (
     <RegenCover />
   </Cover>
 );
+
+// ---------- 003: tiền xăng đi đâu — mười đồng, hai đồng tới bánh xe ----------
+const HEAT = '#FF5A36';
+const CoinSolid = ({ x, y, kept }) => (
+  <g>
+    <circle cx={x} cy={y} r={74} fill={kept ? GOLD : HEAT} />
+    <circle cx={x} cy={y} r={52} fill="none" stroke={kept ? '#8A5A00' : '#7A1F0E'} strokeWidth={12} />
+    <text x={x} y={y + 24} fontSize={68} fontWeight={900} fontFamily="Segoe UI, Arial, sans-serif" textAnchor="middle" fill={kept ? '#5A3B00' : '#4A1208'}>
+      đ
+    </text>
+  </g>
+);
+
+export const Cover003 = ({ showSafe = false }) => (
+  <Cover
+    showSafe={showSafe}
+    glow={HEAT}
+    glowY={1130}
+    chips={[{ t: 'Ô TÔ XĂNG', c: GOLD }]}
+    title={[[['Tiền xăng']], [['đi đâu?', GOLD]]]}
+    titleSize={150}
+    titleY={620}
+  >
+    {/* hai hàng năm đồng: 2 đồng tới bánh xe (vàng), 8 đồng mất đi (đỏ nhiệt) */}
+    {Array.from({ length: 10 }, (_, i) => (
+      <CoinSolid key={i} x={172 + (i % 5) * 184} y={960 + Math.floor(i / 5) * 190} kept={i < 2} />
+    ))}
+    <g fontFamily="Segoe UI, Arial, sans-serif" fontWeight={900} textAnchor="middle">
+      <rect x={90} y={1300} width={900} height={150} rx={40} fill="#16213A" />
+      <text x={540} y={1400} fontSize={76} fill={C.white}>
+        Khoảng <tspan fill={GOLD}>2/10</tspan> tới bánh xe
+      </text>
+    </g>
+  </Cover>
+);

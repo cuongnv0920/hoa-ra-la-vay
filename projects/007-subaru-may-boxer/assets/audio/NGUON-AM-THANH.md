@@ -30,3 +30,15 @@ File `.wav` bị `.gitignore`; chạy lại lệnh trên sẽ tạo ra đúng c�
 Nhạc nền: không dùng.
 
 Giọng đọc (`eleven_v4/`) là file ElevenLabs, giọng Tung Dang; điều khoản giọng xem `brand/README.md`.
+
+## Giọng đọc nhịp mới (2026-11-28, bản v2.3, chờ người dùng nghe)
+
+- `giong/` (bản dùng để dựng: `giong/cat/`; nghe liền: `giong/nghe-thu.mp3`). ElevenLabs, giọng Tung Dang (voice_id `3VnrjnYrskPMDsapTr8X`), giọng tạo bằng AI trên gói Starter trả phí.
+- Lời: `script/script-v2.3-nhip.json`. Lệnh: `node --env-file=.env pipeline/giong.js doc projects/007-subaru-may-boxer --script script-v2.3-nhip.json`, rồi `cat` và `do`. Cấu hình theo `brand/nhip-doc.md`.
+- Chưa dựng vào video. Giọng cũ giữ nguyên.
+
+## Giọng `eleven_v4` (2026-11-28, chờ người dùng nghe)
+
+- `giong-v4/` (nghe liền: `giong-v4/nghe-thu.mp3`). Lời `script/script-v2.3-nhip.json`, giọng Tung Dang, tạo bằng AI trên gói trả phí; `pipeline/giong.js doc|cat|do ... --out giong-v4`. Thay cho bản turbo ở `giong/` (đọc sai nhiều chữ).
+
+**2026-11-28:** người dùng xem, nghe bản xem thử `demo/video-007-giong-v4-xem-thu.mp4` và nhắn "Ổn cả bốn". Đây chưa phải duyệt Cổng #2 để đăng.
