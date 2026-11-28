@@ -1,0 +1,20 @@
+{
+  "model": "eleven_turbo_v2_5",
+  "scenes": {
+    "1": {
+      "file": "scene-01.mp3",
+      "seconds": 7.34,
+      "chars": 104,
+      "words": 23,
+      "words_per_min": 188,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.5,
+        "style": 0,
+        "speed": 0.9,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T03:02:33.977Z"
+    }
+  }
+}

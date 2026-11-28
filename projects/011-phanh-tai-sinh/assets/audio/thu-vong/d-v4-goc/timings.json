@@ -1,0 +1,20 @@
+{
+  "model": "eleven_v4",
+  "scenes": {
+    "1": {
+      "file": "scene-01.mp3",
+      "seconds": 6.56,
+      "chars": 104,
+      "words": 23,
+      "words_per_min": 210,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0,
+        "speed": 0.9,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T03:02:36.678Z"
+    }
+  }
+}

@@ -1,0 +1,242 @@
+[
+ {
+  "scene": "1",
+  "at_s": 1.2,
+  "gap_s": 0.79,
+  "after_s": 0.25
+ },
+ {
+  "scene": "1",
+  "at_s": 2.65,
+  "gap_s": 0.5,
+  "after_s": 0.25
+ },
+ {
+  "scene": "1",
+  "at_s": 4.48,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "2",
+  "at_s": 0.76,
+  "gap_s": 0.67,
+  "after_s": 0.25
+ },
+ {
+  "scene": "2",
+  "at_s": 2.66,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "2",
+  "at_s": 4.56,
+  "gap_s": 1.08,
+  "after_s": 0.25
+ },
+ {
+  "scene": "2",
+  "at_s": 7.11,
+  "gap_s": 0.58,
+  "after_s": 0.25
+ },
+ {
+  "scene": "2",
+  "at_s": 8.92,
+  "gap_s": 0.67,
+  "after_s": 0.25
+ },
+ {
+  "scene": "3",
+  "at_s": 2.25,
+  "gap_s": 0.58,
+  "after_s": 0.25
+ },
+ {
+  "scene": "3",
+  "at_s": 4.25,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "3",
+  "at_s": 5.38,
+  "gap_s": 0.5,
+  "after_s": 0.25
+ },
+ {
+  "scene": "3",
+  "at_s": 9.75,
+  "gap_s": 0.79,
+  "after_s": 0.25
+ },
+ {
+  "scene": "4",
+  "at_s": 0.69,
+  "gap_s": 0.5,
+  "after_s": 0.25
+ },
+ {
+  "scene": "4",
+  "at_s": 2.42,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "4",
+  "at_s": 4.28,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "6a",
+  "at_s": 0.85,
+  "gap_s": 0.58,
+  "after_s": 0.25
+ },
+ {
+  "scene": "6a",
+  "at_s": 3.46,
+  "gap_s": 0.67,
+  "after_s": 0.25
+ },
+ {
+  "scene": "6a",
+  "at_s": 5.24,
+  "gap_s": 0.5,
+  "after_s": 0.25
+ },
+ {
+  "scene": "6b",
+  "at_s": 4.67,
+  "gap_s": 0.5,
+  "after_s": 0.25
+ },
+ {
+  "scene": "6b",
+  "at_s": 7.01,
+  "gap_s": 0.5,
+  "after_s": 0.25
+ },
+ {
+  "scene": "6b",
+  "at_s": 8.28,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "6b",
+  "at_s": 10.62,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "6b",
+  "at_s": 12.14,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "7",
+  "at_s": 0.48,
+  "gap_s": 0.58,
+  "after_s": 0.25
+ },
+ {
+  "scene": "7",
+  "at_s": 2.44,
+  "gap_s": 0.58,
+  "after_s": 0.25
+ },
+ {
+  "scene": "7",
+  "at_s": 5.71,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "7",
+  "at_s": 7.92,
+  "gap_s": 0.58,
+  "after_s": 0.25
+ },
+ {
+  "scene": "7",
+  "at_s": 9.8,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "7",
+  "at_s": 12.16,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "7",
+  "at_s": 13.63,
+  "gap_s": 0.58,
+  "after_s": 0.25
+ },
+ {
+  "scene": "7",
+  "at_s": 15.62,
+  "gap_s": 0.67,
+  "after_s": 0.25
+ },
+ {
+  "scene": "8",
+  "at_s": 1.54,
+  "gap_s": 0.79,
+  "after_s": 0.25
+ },
+ {
+  "scene": "9",
+  "at_s": 1.37,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "9",
+  "at_s": 3.31,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "9",
+  "at_s": 6.61,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "9",
+  "at_s": 8.82,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "Kết",
+  "at_s": 0.71,
+  "gap_s": 0.58,
+  "after_s": 0.25
+ },
+ {
+  "scene": "Kết",
+  "at_s": 2.19,
+  "gap_s": 0.67,
+  "after_s": 0.25
+ },
+ {
+  "scene": "Kết",
+  "at_s": 3.75,
+  "gap_s": 0.93,
+  "after_s": 0.25
+ },
+ {
+  "scene": "Kết",
+  "at_s": 5.9,
+  "gap_s": 0.67,
+  "after_s": 0.25
+ }
+]

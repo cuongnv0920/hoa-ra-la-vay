@@ -1,0 +1,179 @@
+{
+  "model": "eleven_turbo_v2_5",
+  "mode": "stitch",
+  "settings": {
+    "stability": 0.75,
+    "similarity_boost": 0.4,
+    "style": 0,
+    "speed": 1.15,
+    "use_speaker_boost": true
+  },
+  "seed": 11,
+  "scenes": {
+    "1": {
+      "file": "scene-01.mp3",
+      "seconds": 5.9,
+      "chars": 104,
+      "words": 23,
+      "words_per_min": 234,
+      "settings": {
+        "stability": 0.75,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.15,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:51:57.098Z"
+    },
+    "2": {
+      "file": "scene-02.mp3",
+      "seconds": 10.26,
+      "chars": 172,
+      "words": 36,
+      "words_per_min": 210,
+      "settings": {
+        "stability": 0.75,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.15,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:51:58.737Z"
+    },
+    "3": {
+      "file": "scene-03.mp3",
+      "seconds": 11.84,
+      "chars": 213,
+      "words": 46,
+      "words_per_min": 233,
+      "settings": {
+        "stability": 0.75,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.15,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:51:59.791Z"
+    },
+    "4": {
+      "file": "scene-04.mp3",
+      "seconds": 9.52,
+      "chars": 153,
+      "words": 33,
+      "words_per_min": 208,
+      "settings": {
+        "stability": 0.75,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.15,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:52:00.627Z"
+    },
+    "5": {
+      "file": "scene-05.mp3",
+      "seconds": 9.47,
+      "chars": 177,
+      "words": 38,
+      "words_per_min": 241,
+      "settings": {
+        "stability": 0.75,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.15,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:52:01.411Z"
+    },
+    "6": {
+      "file": "scene-06.mp3",
+      "seconds": 7.25,
+      "chars": 132,
+      "words": 28,
+      "words_per_min": 232,
+      "settings": {
+        "stability": 0.75,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.15,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:52:02.155Z"
+    },
+    "7": {
+      "file": "scene-07.mp3",
+      "seconds": 13.79,
+      "chars": 260,
+      "words": 56,
+      "words_per_min": 244,
+      "settings": {
+        "stability": 0.75,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.15,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:52:03.249Z"
+    },
+    "8": {
+      "file": "scene-08.mp3",
+      "seconds": 17.23,
+      "chars": 306,
+      "words": 66,
+      "words_per_min": 230,
+      "settings": {
+        "stability": 0.75,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.15,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:52:04.754Z"
+    },
+    "9": {
+      "file": "scene-09.mp3",
+      "seconds": 10.08,
+      "chars": 215,
+      "words": 47,
+      "words_per_min": 280,
+      "settings": {
+        "stability": 0.75,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.15,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:52:05.620Z"
+    },
+    "10": {
+      "file": "scene-10.mp3",
+      "seconds": 11.61,
+      "chars": 221,
+      "words": 50,
+      "words_per_min": 258,
+      "settings": {
+        "stability": 0.75,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.15,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:52:06.812Z"
+    },
+    "11": {
+      "file": "scene-11.mp3",
+      "seconds": 8.31,
+      "chars": 143,
+      "words": 32,
+      "words_per_min": 231,
+      "settings": {
+        "stability": 0.75,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.15,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:52:07.375Z"
+    }
+  }
+}

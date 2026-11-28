@@ -1,0 +1,20 @@
+{
+  "model": "eleven_flash_v2_5",
+  "scenes": {
+    "7": {
+      "file": "scene-07.mp3",
+      "seconds": 14.3,
+      "chars": 261,
+      "words": 56,
+      "words_per_min": 235,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.2,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:22:41.240Z"
+    }
+  }
+}
