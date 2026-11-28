@@ -10,6 +10,12 @@
 - Giai đoạn hiện tại: giọng Tung Dang + hình minh họa; không có người dẫn. Xem `brand/README.md`.
 - Cơ chế kỹ thuật phải được minh họa bằng animation lập trình (Remotion/Three.js). AI video chỉ dùng cho cảnh điện ảnh, lịch sử hoặc cảm xúc.
 
+## Giọng đọc và nhịp (chốt 2026-11-28, theo video 011 bản 3.5)
+
+- Quy chuẩn đầy đủ: `brand/nhip-doc.md`. Đọc trước khi viết kịch bản, tạo giọng hoặc dựng dòng thời gian.
+- Câu ngắn (đích 4–7 âm tiết); giọng Tung Dang bằng `eleven_turbo_v2_5`, thu cả bài một lần, rút nghỉ giữa câu rồi chậm 5%; nghỉ giữa cảnh 0,3 s.
+- Tạo và đo giọng bằng `pipeline/giong.js` (`doc` → `cat` → `do`). Người dùng nghe để chốt.
+
 ## Độ chính xác và duyệt
 
 - Mọi khẳng định kỹ thuật/lịch sử cần nguồn và fact-check.
@@ -23,7 +29,7 @@
 
 - Claude Code là coding agent chính để sửa mã và tài liệu trong repo; không cần chia nhiều agent theo mặc định.
 - Remotion đang được dựng và render tại chỗ trong `pipeline/remotion/`.
-- Giọng đọc được tạo bằng `pipeline/tts.js`, gọi ElevenLabs API từ máy của người dùng; không cần MCP ElevenLabs cho luồng này.
+- Giọng đọc được tạo bằng `pipeline/giong.js` (chuẩn từ video 011; `pipeline/tts.js` là công cụ của các video trước), gọi ElevenLabs API từ máy của người dùng; không cần MCP ElevenLabs cho luồng này.
 - MCP chỉ là cầu nối để agent gọi trực tiếp một dịch vụ. Chỉ đề xuất hoặc dùng MCP khi có tác vụ cần thao tác dịch vụ đó; không thêm MCP, workflow tự động hoặc dịch vụ mới chỉ vì chúng tồn tại.
 - Skill là hướng dẫn tái sử dụng; prompt là yêu cầu cho một việc cụ thể; workflow là thứ tự các bước sản xuất. Các skill nội dung của kênh nằm trong `.claude/skills/` và `.agents/skills/`.
 - Trước khi thêm thư viện hoặc lấy template bên ngoài, xác định vấn đề cụ thể, kiểm tra tương thích với Remotion hiện tại và chỉ lấy phần cần thiết.
@@ -52,7 +58,7 @@ Thư mục (tạo khi cần, nằm trong `--public-dir` của video):
 
 ```
 projects/NNN-ten-video/assets/audio/
-  <model-giọng>/      # giọng đọc (pipeline/tts.js)
+  giong/              # giọng đọc (pipeline/giong.js); bản dựng ở giong/cat/
   sfx/                # hiệu ứng chuyển động
   moi-truong/         # âm thanh môi trường
   nhac/               # nhạc nền
@@ -72,7 +78,8 @@ projects/NNN-ten-video/assets/audio/
 - `projects/NNN-ten-video/`: research, script, assets của từng video; `bai-doc/` (bài đọc cho website) và `xuat-ban.json` (manifest đăng bài).
 - `web/`: website công khai (React Router v7 prerender, Cloudflare Pages) và lệnh `xuat-ban`. Package riêng, không dùng chung `node_modules` với Remotion.
 - `pipeline/remotion/`: mã composition và thành phần dựng video.
-- `pipeline/tts.js`: gọi ElevenLabs và ghi thời lượng giọng.
+- `pipeline/giong.js`: tạo, cắt nghỉ, đo nhịp giọng theo `brand/nhip-doc.md`.
+- `pipeline/tts.js`: tạo giọng từng cảnh, dùng cho các video trước 011.
 - `.claude/skills/`, `.agents/skills/`: hướng dẫn cho các công việc nội dung.
 - `brand/`: giọng đọc và nhận diện; `docs/`: kế hoạch và ghi chú.
 

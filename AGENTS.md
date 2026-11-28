@@ -14,9 +14,10 @@ Loạt đang có (ô tô), hai dòng nội dung:
 ## Quyết định đã chốt
 - Ngôn ngữ: **tiếng Việt** cho khán giả Việt (có thể thêm tiếng Anh sau — viết kịch bản theo cấu trúc dễ dịch).
 - Giai đoạn đầu: **giọng đọc + hình minh họa**, không có nhân vật dẫn.
-- Độ dài (chốt 2026-11-23, thay mức 5–15 phút cũ): **1–3 phút** mỗi video. Nhịp đọc thật của Tung Dang ~210 từ/phút → **khoảng 200–600 từ**. Chủ đề lớn thì tách thành chuỗi nhiều video.
+- Độ dài (chốt 2026-11-23, thay mức 5–15 phút cũ): **1–3 phút** mỗi video. Khoảng 220 từ cho mỗi phút video → **khoảng 220–650 từ**. Chủ đề lớn thì tách thành chuỗi nhiều video.
 - Khung hình (chốt 2026-11-23): **dọc 9:16 (1080×1920)** vì người xem chủ yếu dùng điện thoại. Mọi bố cục, phụ đề, thành phần Remotion thiết kế cho màn hình dọc trước.
 - Gói dịch vụ: Higgsfield **Starter**, ElevenLabs **Starter** → tiết kiệm credits, nâng cấp khi dự án tiến triển.
+- Nhịp đọc chuẩn (chốt 2026-11-28, theo video 011): xem `brand/nhip-doc.md`; tạo giọng bằng `pipeline/giong.js`.
 - Giọng đọc: **Tung Dang** (ElevenLabs, nam, giọng Bắc, trầm ấm) — xem `brand/README.md`. Kịch bản viết **để nghe**: câu ngắn, có câu hỏi treo, kể chuyện có nhân vật, không liệt kê dồn dập năm tháng.
 - Thứ tự video loạt ô tô (chốt 2026-11-23): **bắt đầu từ bộ phận đơn giản**, phức tạp dần.
   - Video đăng đầu tiên (chốt 2026-11-23): **"Tiền xăng của bạn đi đâu?"** (`projects/003-tien-xang-di-dau`, đã qua Cổng duyệt #1). Phanh đĩa chưa thuyết phục người duyệt → `projects/002-phanh-dia` giữ làm kho tư liệu (research, fact-check, thành phần animation).

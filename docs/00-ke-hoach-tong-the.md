@@ -15,9 +15,9 @@ Kênh video tiếng Việt giải thích những điều quanh ta mà ít ngư�
 
 - Ngôn ngữ: tiếng Việt; viết có cấu trúc rõ để có thể dịch sau này.
 - Hình: dọc 9:16, 1080×1920; thiết kế cho điện thoại trước.
-- Thời lượng: 1–3 phút. Mốc 200–600 từ chỉ là khoảng tham khảo; ưu tiên dễ nghe, dễ hiểu hơn đủ số từ.
+- Thời lượng: 1–3 phút. Khoảng 220 từ mỗi phút video (220–650 từ) chỉ là mức tham khảo; ưu tiên dễ nghe, dễ hiểu hơn đủ số từ.
 - Giai đoạn đầu: giọng đọc và hình minh họa, không có nhân vật dẫn.
-- Giọng hiện chọn: Tung Dang (ElevenLabs), nam, giọng Bắc, trầm ấm. Xem `brand/README.md`.
+- Giọng hiện chọn: Tung Dang (ElevenLabs), nam, giọng Bắc, trầm ấm. Xem `brand/README.md`; nhịp đọc chuẩn ở `brand/nhip-doc.md`.
 - Kịch bản viết để nghe: câu ngắn, mỗi câu một ý, giải thích thuật ngữ, có nhịp nghỉ; tránh liệt kê nhiều con số liên tiếp.
 
 ## 3. Nguyên tắc sản xuất
@@ -40,7 +40,7 @@ Kênh video tiếng Việt giải thích những điều quanh ta mà ít ngư�
 - Sau Cổng #2, người dùng đăng thủ công TikTok và YouTube (API của hai nền tảng chỉ cho đăng video riêng tư khi app chưa được duyệt). Không lên lịch tự động.
 - Quy cách upload, giới hạn và tùy chọn gắn nhãn của TikTok có thể thay đổi; kiểm tra trong giao diện đăng tại thời điểm xuất bản.
 
-Ở giai đoạn này, Claude Code hỗ trợ làm việc trong repo; Remotion dựng video tại chỗ; `pipeline/tts.js` gọi ElevenLabs API để tạo giọng. MCP, agent bổ sung, workflow tự động hoặc website điều phối sản xuất **không phải điều kiện để làm video**. Chỉ thêm công cụ khi đã xác định được việc lặp lại mà nó giải quyết.
+Ở giai đoạn này, Claude Code hỗ trợ làm việc trong repo; Remotion dựng video tại chỗ; `pipeline/giong.js` gọi ElevenLabs API để tạo giọng. MCP, agent bổ sung, workflow tự động hoặc website điều phối sản xuất **không phải điều kiện để làm video**. Chỉ thêm công cụ khi đã xác định được việc lặp lại mà nó giải quyết.
 
 ## 5. Thứ tự và trạng thái dự án ô tô
 
@@ -58,7 +58,7 @@ Thứ tự gợi ý đã chốt: bắt đầu từ bộ phận đơn giản, tă
 ## 6. Công cụ và tự động hóa
 
 - Mã dựng hiện ở `pipeline/remotion/`; phụ thuộc Remotion được khai báo trong `package.json`.
-- Tạo giọng qua ElevenLabs bằng `pipeline/tts.js`; khóa API để trong `.env`, không commit.
+- Tạo giọng qua ElevenLabs bằng `pipeline/giong.js`; khóa API để trong `.env`, không commit.
 - Các skill researcher, scriptwriter, fact-checker, storyboarder hỗ trợ công việc nội dung. Chúng không phải các agent bắt buộc phải chạy cùng lúc.
 - Làm thủ công có hỗ trợ trước. Sau vài video, ghi lại điểm nghẽn rồi mới chọn bước để tự động hóa.
 - Chưa xây website điều phối sản xuất, hệ thống hàng đợi hay nhiều agent chuyên biệt.

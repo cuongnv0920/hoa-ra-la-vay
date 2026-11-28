@@ -16,6 +16,9 @@ description: Chuyển kịch bản đã duyệt thành storyboard theo cảnh, q
 ## Mỗi cảnh ghi
 `cảnh | thời lượng | loại hình | prompt/mô tả chi tiết | tham chiếu phong cách (brand/style.md) | credits ước tính`
 
+## Nhịp
+Theo `brand/nhip-doc.md` mục 3: nghỉ giữa cảnh 0,3 s (0,4 s trước chỗ chuyển ý lớn), phụ đề ≤ 7 chữ mỗi cụm. Thời lượng trong storyboard là ước tính; mốc thật lấy từ alignment của `assets/audio/giong/cat/`. Mỗi shot ghi `cue_phrase` là cụm lời đọc làm shot bắt đầu.
+
 ## Cue âm thanh
 Đọc mục "Thiết kế âm thanh cho animation" trong `CLAUDE.md` trước. Sau bảng cảnh, `storyboard.md` có mục **Âm thanh** gồm bảng cue và danh sách asset còn thiếu.
 

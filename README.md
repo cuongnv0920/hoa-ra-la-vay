@@ -15,7 +15,8 @@ Claude Code hỗ trợ viết mã và làm việc với tài liệu. Video đư�
 | `projects/NNN-ten-video/` | Nghiên cứu, kịch bản, storyboard và tài sản của từng video |
 | `web/` | Website của kênh (bài đọc kèm từng video) và lệnh `xuat-ban` |
 | `pipeline/remotion/` | Composition và thành phần dựng video |
-| `pipeline/tts.js` | Tạo giọng qua ElevenLabs API và lưu thời lượng |
+| `pipeline/giong.js` | Tạo giọng, cắt nghỉ, đo nhịp theo [`brand/nhip-doc.md`](brand/nhip-doc.md) |
+| `pipeline/tts.js` | Tạo giọng từng cảnh (các video trước 011) |
 | `.claude/skills/`, `.agents/skills/` | Hướng dẫn cho các công việc nội dung |
 | `brand/` | Giọng đọc và nhận diện kênh |
 | `docs/` | Kế hoạch và ghi chú theo từng dòng nội dung |
