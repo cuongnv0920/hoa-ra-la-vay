@@ -237,3 +237,55 @@ export const Cover009 = ({ showSafe = false }) => (
     <TireCover />
   </Cover>
 );
+
+// ---------- 011: phanh tái sinh — mô-tơ đổi vai, nạp điện về pin ----------
+const GEN = '#7DE3A8';
+const RegenCover = () => {
+  const cy = 1150;
+  const mx = 310;
+  const bx = 800;
+  return (
+    <g>
+      {/* mô-tơ: vành sáng, ruột tối, cánh quạt rotor, tia sét vàng ở giữa */}
+      <circle cx={mx} cy={cy} r={215} fill={GEN} opacity={0.18} />
+      <circle cx={mx} cy={cy} r={190} fill="#0B1220" stroke={GEN} strokeWidth={22} />
+      {[0, 60, 120, 180, 240, 300].map((a) => (
+        <line key={a} x1={mx} y1={cy} x2={mx + 150 * Math.cos((a * Math.PI) / 180)} y2={cy + 150 * Math.sin((a * Math.PI) / 180)} stroke={GEN} strokeWidth={22} strokeLinecap="round" opacity={0.85} />
+      ))}
+      <circle cx={mx} cy={cy} r={84} fill="#0B1220" stroke={GEN} strokeWidth={14} />
+      <path d={`M${mx + 18} ${cy - 66} L${mx - 40} ${cy + 10} L${mx - 2} ${cy + 10} L${mx - 20} ${cy + 66} L${mx + 40} ${cy - 12} L${mx + 2} ${cy - 12} Z`} fill={GOLD} />
+      {/* dải năng lượng: ba chấm vàng và mũi tên chạy từ mô-tơ sang pin */}
+      {[0, 1].map((i) => (
+        <circle key={i} cx={mx + 240 + i * 36} cy={cy} r={16 - i * 2} fill={GOLD} />
+      ))}
+      <path d={`M${bx - 190} ${cy - 40} l46 40 l-46 40 z`} fill={GOLD} />
+      {/* pin: khối xanh đặc, ba ô đầy một ô còn trống */}
+      <rect x={bx - 110} y={cy - 100} width={220} height={200} rx={34} fill={BLUE} />
+      <rect x={bx + 110} y={cy - 36} width={26} height={72} rx={9} fill={BLUE} />
+      {[0, 1, 2].map((i) => (
+        <rect key={i} x={bx - 86 + i * 54} y={cy - 74} width={42} height={148} rx={10} fill="#0B1220" opacity={0.9 - 0 * i} />
+      ))}
+      {[0, 1].map((i) => (
+        <rect key={i} x={bx - 86 + i * 54 + 6} y={cy - 68} width={30} height={136} rx={7} fill={BLUE} />
+      ))}
+      <rect x={bx - 86 + 2 * 54 + 6} y={cy + 20} width={30} height={48} rx={7} fill={BLUE} />
+    </g>
+  );
+};
+
+export const Cover011 = ({ showSafe = false }) => (
+  <Cover
+    showSafe={showSafe}
+    glow={GEN}
+    glowY={1150}
+    chips={[
+      { t: 'XE ĐIỆN', c: BLUE },
+      { t: 'PHANH', c: GOLD },
+    ]}
+    title={[[['Phanh mà']], [['ra điện?', GOLD]]]}
+    titleSize={130}
+    titleY={600}
+  >
+    <RegenCover />
+  </Cover>
+);

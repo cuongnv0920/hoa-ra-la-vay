@@ -1,14 +1,14 @@
 {
   "video": "011-phanh-tai-sinh",
-  "version": "v3.2",
-  "status": "v3.2-approved-gate-1-by-user-2026-11-27",
-  "source": "script/script-v3.2.md",
+  "version": "v3.3",
+  "status": "v3.3-approved-gate-1-by-user-2026-11-28",
+  "source": "script/script-v3.3.md",
   "voice": {
     "provider": "elevenlabs",
     "name": "Tung Dang",
     "voice_id": "3VnrjnYrskPMDsapTr8X"
   },
-  "note": "scene là số thứ tự cho pipeline/tts.js (số nguyên); script_label là tên cảnh trong script-v3.2.md (6a, 6b, Kết).",
+  "note": "scene là số thứ tự cho pipeline/tts.js (số nguyên); script_label là tên cảnh trong script-v3.2.md (6a, 6b, Kết). Bản 3.2 (đã qua Cổng #1) giữ ở script-v3.2.md và script-v3.2.json. Bản 3.3 người dùng duyệt Cổng #1 ngày 2026-11-28.",
   "scenes": [
     {
       "scene": 1,
@@ -41,7 +41,7 @@
       "scene": 4,
       "script_label": "4",
       "title": "Bánh xe thành bên kéo",
-      "voiceover": "Lúc tăng tốc, mô-tơ kéo bánh xe quay. Khi bạn nhả ga hay đạp phanh để xe chậm lại, mô-tơ vẫn quay theo bánh xe. Nhưng giờ, bánh xe mới là bên kéo. Năng lượng đi theo chiều ngược lại, từ bánh xe về mô-tơ.",
+      "voiceover": "Lúc tăng tốc, mô-tơ kéo bánh xe quay. Khi bạn nhả ga hay đạp phanh để xe chậm lại, mô-tơ vẫn quay theo bánh xe. Nhưng giờ, chính bánh xe kéo mô-tơ quay. Năng lượng đi theo chiều ngược lại, từ bánh xe về mô-tơ.",
       "visual": "Nhìn xuyên thân xe: mô-tơ nối với bánh qua một khối truyền động vẽ đơn giản. Bánh xe vẫn lăn cùng chiều. Chỉ mũi tên năng lượng đổi hướng: trước là pin → mô-tơ → bánh, sau là bánh → mô-tơ.",
       "type": "ANIMATION-CODE",
       "sources": "S2, S13, S18"
@@ -50,8 +50,8 @@
       "scene": 5,
       "script_label": "5",
       "title": "Phát điện thì tốn sức",
-      "voiceover": "Lúc này, mô-tơ có thể chuyển sang làm máy phát điện. Mà phát điện thì phải tốn sức, giống chiếc đinamô kia. Chính sức cản ấy làm xe chậm lại. Cách hãm này gọi là phanh tái sinh, tiếng Anh là regenerative braking.",
-      "visual": "Biểu tượng mô-tơ lật mặt: \"kéo xe\" → \"phát điện\". Ở bánh xe hiện mũi tên lực hãm ngược chiều chạy, to lên đúng lúc câu \"chính sức cản ấy\".",
+      "voiceover": "Lúc này, mô-tơ có thể chuyển sang làm máy phát điện. Mà phát điện thì phải tốn sức, giống chiếc đinamô kia. Chính sức cản ấy làm xe chậm lại. Cách hãm này gọi là phanh tái sinh.",
+      "visual": "Biểu tượng mô-tơ lật mặt: \"kéo xe\" → \"phát điện\". Ở bánh xe hiện mũi tên lực hãm ngược chiều chạy, to lên đúng lúc câu \"chính sức cản ấy\". Tên tiếng Anh \"regenerative braking\" chỉ hiện nhỏ trên hình, không đọc.",
       "type": "ANIMATION-CODE",
       "sources": "S1, S2, S12, S18"
     },
@@ -68,8 +68,8 @@
       "scene": 7,
       "script_label": "6b",
       "title": "Biến tần: người phiên dịch hai chiều",
-      "voiceover": "Đứng giữa hai bên là biến tần, tiếng Anh là inverter. Khi xe tăng tốc, nó đổi điện một chiều của pin thành xoay chiều để quay mô-tơ. Khi xe phanh, nó làm ngược lại, nắn điện xoay chiều thành một chiều để nạp pin. Máy tính điều khiển biến tần, nên xe chỉnh được mô-tơ hãm mạnh hay nhẹ.",
-      "visual": "Khối \"biến tần\" lấp vào khoảng trống của cảnh 6a. Lượt 1 (tăng tốc): đường thẳng từ pin đi vào biến tần, ra thành sóng, chạy tới mô-tơ. Lượt 2 (phanh): sóng từ mô-tơ đi vào biến tần, ra thành đường thẳng, chạy về pin. Vài hạt sáng mờ đi trên đường (hao). Vạch pin nhích lên. Một biểu tượng \"máy tính\" nhỏ phía trên nối dây xuống biến tần; khi lời đọc nói \"mạnh hay nhẹ\", mũi tên lực hãm ở bánh xe to lên rồi nhỏ lại theo.",
+      "voiceover": "Đứng giữa hai bên là biến tần. Khi xe tăng tốc, nó đổi điện một chiều của pin thành xoay chiều để quay mô-tơ. Khi xe phanh, nó làm ngược lại, nắn điện xoay chiều thành một chiều để nạp pin. Máy tính điều khiển biến tần, nên xe chỉnh được mô-tơ hãm mạnh hay nhẹ.",
+      "visual": "Khối \"biến tần\" lấp vào khoảng trống của cảnh 6a. Lượt 1 (tăng tốc): đường thẳng từ pin đi vào biến tần, ra thành sóng, chạy tới mô-tơ. Lượt 2 (phanh): sóng từ mô-tơ đi vào biến tần, ra thành đường thẳng, chạy về pin. Vài hạt sáng mờ đi trên đường (hao). Vạch pin nhích lên. Một biểu tượng \"máy tính\" nhỏ phía trên nối dây xuống biến tần; khi lời đọc nói \"mạnh hay nhẹ\", mũi tên lực hãm ở bánh xe to lên rồi nhỏ lại theo. Tên tiếng Anh \"inverter\" chỉ hiện nhỏ trên hình, không đọc.",
       "type": "ANIMATION-CODE",
       "sources": "S26 (DC→AC khi chạy, nắn AC→DC để nạp pin; ECU điều khiển transistor của biến tần và phanh tái sinh), S27 (MG2 phát điện khi phanh tái sinh, mạch công suất hai chiều), S28 (điện tử công suất điều khiển mô-men và năng lượng thu hồi), S25 (có tổn hao)"
     },
@@ -95,7 +95,7 @@
       "scene": 10,
       "script_label": "9",
       "title": "Xe hybrid cũng vậy",
-      "voiceover": "Xe hybrid, loại vừa có động cơ xăng vừa có mô-tơ điện, cũng làm như vậy, cũng có biến tần ở giữa. Pin của nó còn được động cơ xăng nạp thêm. Loại hybrid cắm sạc thì nạp được cả từ ổ điện.",
+      "voiceover": "Xe hybrid cũng làm như vậy. Đó là loại xe vừa có động cơ xăng, vừa có mô-tơ điện. Giữa mô-tơ và pin cũng có biến tần. Pin của nó còn được động cơ xăng nạp thêm. Loại hybrid cắm sạc thì nạp được cả từ ổ điện.",
       "visual": "Hai xe cạnh nhau, xe điện và xe hybrid. Cùng một đường sáng bánh → mô-tơ → biến tần → pin. Xe hybrid có thêm khối động cơ xăng nối vào pin bằng đường sáng thứ hai. Xe hybrid cắm sạc hiện thêm dây sạc.",
       "type": "ANIMATION-CODE",
       "sources": "S1, S9, S14, S20, S26"

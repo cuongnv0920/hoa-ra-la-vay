@@ -1,0 +1,113 @@
+{
+  "video": "011-phanh-tai-sinh",
+  "version": "v3.2",
+  "status": "v3.2-approved-gate-1-by-user-2026-11-27",
+  "source": "script/script-v3.2.md",
+  "voice": {
+    "provider": "elevenlabs",
+    "name": "Tung Dang",
+    "voice_id": "3VnrjnYrskPMDsapTr8X"
+  },
+  "note": "scene là số thứ tự cho pipeline/tts.js (số nguyên); script_label là tên cảnh trong script-v3.2.md (6a, 6b, Kết).",
+  "scenes": [
+    {
+      "scene": 1,
+      "script_label": "1",
+      "title": "Phanh mà ra điện?",
+      "voiceover": "Bạn đạp phanh một chiếc xe điện. Xe chậm lại, và pin được nạp thêm một chút. Phanh sao lại ra điện được?",
+      "visual": "Xe chung chung, không logo, nhìn ngang, đang lăn. Chân đạp phanh. Biểu tượng pin góc màn hình nhích lên một vạch nhỏ, kèm dấu hỏi. Không ghi phần trăm.",
+      "type": "ANIMATION-CODE",
+      "sources": "S1, S18, S20"
+    },
+    {
+      "scene": 2,
+      "script_label": "2",
+      "title": "Phanh thường: thành nhiệt",
+      "voiceover": "Ở xe thông thường, phanh làm việc bằng ma sát. Má phanh ép vào đĩa phanh đang quay. Chuyển động của xe biến thành nhiệt. Nhiệt ấy tỏa vào không khí. Xe không dùng lại được.",
+      "visual": "Phóng vào bánh xe: má phanh kẹp đĩa, đĩa ửng đỏ nhẹ, dải sáng năng lượng tan thành làn nhiệt bay lên. Không ghi nhiệt độ.",
+      "type": "ANIMATION-CODE",
+      "sources": "S6, S10"
+    },
+    {
+      "scene": 3,
+      "script_label": "3",
+      "title": "Chiếc đèn đinamô",
+      "voiceover": "Thử nghĩ tới chiếc đèn xe đạp chạy bằng đinamô. Bánh xe quay làm đinamô phát điện. Muốn đèn sáng, đinamô phải lấy bớt một chút sức từ bánh xe. Xe điện dùng ý tưởng gần giống vậy. Chỉ khác là điện được cất vào pin.",
+      "visual": "Bánh xe đạp, đinamô tì vào lốp, đèn bật sáng. Chuyển cảnh: đinamô mờ đi, thay bằng bánh ô tô và mô-tơ.",
+      "type": "ANIMATION-CODE",
+      "sources": "bảo toàn năng lượng; S2"
+    },
+    {
+      "scene": 4,
+      "script_label": "4",
+      "title": "Bánh xe thành bên kéo",
+      "voiceover": "Lúc tăng tốc, mô-tơ kéo bánh xe quay. Khi bạn nhả ga hay đạp phanh để xe chậm lại, mô-tơ vẫn quay theo bánh xe. Nhưng giờ, bánh xe mới là bên kéo. Năng lượng đi theo chiều ngược lại, từ bánh xe về mô-tơ.",
+      "visual": "Nhìn xuyên thân xe: mô-tơ nối với bánh qua một khối truyền động vẽ đơn giản. Bánh xe vẫn lăn cùng chiều. Chỉ mũi tên năng lượng đổi hướng: trước là pin → mô-tơ → bánh, sau là bánh → mô-tơ.",
+      "type": "ANIMATION-CODE",
+      "sources": "S2, S13, S18"
+    },
+    {
+      "scene": 5,
+      "script_label": "5",
+      "title": "Phát điện thì tốn sức",
+      "voiceover": "Lúc này, mô-tơ có thể chuyển sang làm máy phát điện. Mà phát điện thì phải tốn sức, giống chiếc đinamô kia. Chính sức cản ấy làm xe chậm lại. Cách hãm này gọi là phanh tái sinh, tiếng Anh là regenerative braking.",
+      "visual": "Biểu tượng mô-tơ lật mặt: \"kéo xe\" → \"phát điện\". Ở bánh xe hiện mũi tên lực hãm ngược chiều chạy, to lên đúng lúc câu \"chính sức cản ấy\".",
+      "type": "ANIMATION-CODE",
+      "sources": "S1, S2, S12, S18"
+    },
+    {
+      "scene": 6,
+      "script_label": "6a",
+      "title": "Mô-tơ và pin \"nói\" hai kiểu điện",
+      "voiceover": "Nhưng có một vấn đề. Điện mô-tơ phát ra là điện xoay chiều, dòng điện đảo chiều liên tục. Còn pin chỉ cất được điện một chiều.",
+      "visual": "Bên trái mô-tơ: một đường sóng lên xuống đều (xoay chiều). Bên phải pin: một đường thẳng phẳng (một chiều). Giữa hai bên là một khoảng trống có dấu hỏi. Không ghi chữ \"AC/DC\" hay số pha.",
+      "type": "ANIMATION-CODE",
+      "sources": "S26 (mô-tơ/máy phát dùng điện xoay chiều ba pha, pin dùng một chiều); S29"
+    },
+    {
+      "scene": 7,
+      "script_label": "6b",
+      "title": "Biến tần: người phiên dịch hai chiều",
+      "voiceover": "Đứng giữa hai bên là biến tần, tiếng Anh là inverter. Khi xe tăng tốc, nó đổi điện một chiều của pin thành xoay chiều để quay mô-tơ. Khi xe phanh, nó làm ngược lại, nắn điện xoay chiều thành một chiều để nạp pin. Máy tính điều khiển biến tần, nên xe chỉnh được mô-tơ hãm mạnh hay nhẹ.",
+      "visual": "Khối \"biến tần\" lấp vào khoảng trống của cảnh 6a. Lượt 1 (tăng tốc): đường thẳng từ pin đi vào biến tần, ra thành sóng, chạy tới mô-tơ. Lượt 2 (phanh): sóng từ mô-tơ đi vào biến tần, ra thành đường thẳng, chạy về pin. Vài hạt sáng mờ đi trên đường (hao). Vạch pin nhích lên. Một biểu tượng \"máy tính\" nhỏ phía trên nối dây xuống biến tần; khi lời đọc nói \"mạnh hay nhẹ\", mũi tên lực hãm ở bánh xe to lên rồi nhỏ lại theo.",
+      "type": "ANIMATION-CODE",
+      "sources": "S26 (DC→AC khi chạy, nắn AC→DC để nạp pin; ECU điều khiển transistor của biến tần và phanh tái sinh), S27 (MG2 phát điện khi phanh tái sinh, mạch công suất hai chiều), S28 (điện tử công suất điều khiển mô-men và năng lượng thu hồi), S25 (có tổn hao)"
+    },
+    {
+      "scene": 8,
+      "script_label": "7",
+      "title": "Khi pin không nhận đủ",
+      "voiceover": "Có điều, pin không phải lúc nào cũng nhận. Pin vừa sạc đầy, quá lạnh hay quá nóng, xe có thể giảm phanh tái sinh. Lúc ấy, phanh thường vẫn hãm như bình thường. Khi bạn cần dừng gấp hơn sức mô-tơ, má phanh cũng vào cuộc. Máy tính chia lực giữa hai loại phanh, để xe chậm lại đúng như bạn đạp.",
+      "visual": "Hai thanh lực hãm nối nhau: xanh là mô-tơ, cam là má phanh. Biểu tượng pin đầy, nhiệt kế, chân đạp mạnh lần lượt hiện; thanh xanh ngắn lại, thanh cam dài ra. Tổng chiều dài không đổi. Không ghi phần trăm. Chú thích nhỏ: \"Tùy mẫu xe và điều kiện\".",
+      "type": "ANIMATION-CODE",
+      "sources": "S17, S16, S11, S3; S10, S5, S6; S5, S19"
+    },
+    {
+      "scene": 9,
+      "script_label": "8",
+      "title": "Chỉ một phần",
+      "voiceover": "Phần việc do má phanh làm vẫn thành nhiệt. Điện đi từ mô-tơ qua biến tần vào pin cũng hao một phần dọc đường. Vì vậy, phanh tái sinh chỉ lấy lại một phần năng lượng, không phải tất cả. Nó không tạo ra điện miễn phí.",
+      "visual": "Dải sáng ở cảnh 1 tách ba nhánh theo lời đọc: nhánh thành nhiệt ở má phanh, vài hạt mờ đi trên đường mô-tơ → biến tần → pin, và nhánh còn lại vào pin. Không ghi số.",
+      "type": "ANIMATION-CODE",
+      "sources": "S6, S10 (ma sát thành nhiệt); S25 (tổn hao); S1, S29 (thu lại một phần)"
+    },
+    {
+      "scene": 10,
+      "script_label": "9",
+      "title": "Xe hybrid cũng vậy",
+      "voiceover": "Xe hybrid, loại vừa có động cơ xăng vừa có mô-tơ điện, cũng làm như vậy, cũng có biến tần ở giữa. Pin của nó còn được động cơ xăng nạp thêm. Loại hybrid cắm sạc thì nạp được cả từ ổ điện.",
+      "visual": "Hai xe cạnh nhau, xe điện và xe hybrid. Cùng một đường sáng bánh → mô-tơ → biến tần → pin. Xe hybrid có thêm khối động cơ xăng nối vào pin bằng đường sáng thứ hai. Xe hybrid cắm sạc hiện thêm dây sạc.",
+      "type": "ANIMATION-CODE",
+      "sources": "S1, S9, S14, S20, S26"
+    },
+    {
+      "scene": 11,
+      "script_label": "Kết",
+      "title": "Kết",
+      "voiceover": "Hóa ra là vậy. Mỗi lần xe chậm lại, mô-tơ đổi vai. Một phần năng lượng không còn thành nhiệt, mà quay về pin.",
+      "visual": "Trở lại cảnh xe ở cảnh 1, xe dừng hẳn. Đường sáng bánh → mô-tơ → biến tần → pin sáng lần cuối. Tên kênh.",
+      "type": "ANIMATION-CODE",
+      "sources": "S1, S2"
+    }
+  ]
+}

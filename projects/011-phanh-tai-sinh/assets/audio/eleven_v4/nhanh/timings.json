@@ -1,0 +1,172 @@
+{
+  "model": "eleven_v4",
+  "scenes": {
+    "1": {
+      "file": "scene-01.mp3",
+      "seconds": 6.34,
+      "chars": 104,
+      "words": 23,
+      "words_per_min": 217,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T03:45:01.577Z"
+    },
+    "2": {
+      "file": "scene-02.mp3",
+      "seconds": 10.11,
+      "chars": 172,
+      "words": 36,
+      "words_per_min": 213,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T03:45:05.840Z"
+    },
+    "3": {
+      "file": "scene-03.mp3",
+      "seconds": 13.51,
+      "chars": 213,
+      "words": 46,
+      "words_per_min": 205,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T03:45:10.100Z"
+    },
+    "4": {
+      "file": "scene-04.mp3",
+      "seconds": 14.34,
+      "chars": 209,
+      "words": 45,
+      "words_per_min": 189,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T03:45:14.446Z"
+    },
+    "5": {
+      "file": "scene-05.mp3",
+      "seconds": 11.7,
+      "chars": 177,
+      "words": 38,
+      "words_per_min": 195,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T03:45:18.794Z"
+    },
+    "6": {
+      "file": "scene-06.mp3",
+      "seconds": 8.6,
+      "chars": 126,
+      "words": 27,
+      "words_per_min": 189,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T03:45:21.717Z"
+    },
+    "7": {
+      "file": "scene-07.mp3",
+      "seconds": 16,
+      "chars": 261,
+      "words": 56,
+      "words_per_min": 210,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T03:45:27.529Z"
+    },
+    "8": {
+      "file": "scene-08.mp3",
+      "seconds": 18.04,
+      "chars": 291,
+      "words": 63,
+      "words_per_min": 210,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T03:45:34.119Z"
+    },
+    "9": {
+      "file": "scene-09.mp3",
+      "seconds": 12.68,
+      "chars": 215,
+      "words": 47,
+      "words_per_min": 223,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T03:45:38.701Z"
+    },
+    "10": {
+      "file": "scene-10.mp3",
+      "seconds": 13.36,
+      "chars": 207,
+      "words": 48,
+      "words_per_min": 215,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T03:45:43.583Z"
+    },
+    "11": {
+      "file": "scene-11.mp3",
+      "seconds": 7.17,
+      "chars": 109,
+      "words": 24,
+      "words_per_min": 200,
+      "settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 0.95,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T03:45:46.645Z"
+    }
+  },
+  "tempo": 1.06,
+  "note": "Tăng nhịp 1.06× bằng ffmpeg atempo từ bản gốc; seconds và words_per_min đã quy đổi."
+}

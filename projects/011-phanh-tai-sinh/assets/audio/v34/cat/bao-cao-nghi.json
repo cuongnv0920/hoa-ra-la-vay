@@ -1,0 +1,188 @@
+[
+ {
+  "scene": "1",
+  "at_s": 1.2,
+  "gap_s": 0.79,
+  "after_s": 0.25
+ },
+ {
+  "scene": "1",
+  "at_s": 2.65,
+  "gap_s": 0.5,
+  "after_s": 0.25
+ },
+ {
+  "scene": "1",
+  "at_s": 4.48,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "2",
+  "at_s": 0.76,
+  "gap_s": 0.67,
+  "after_s": 0.25
+ },
+ {
+  "scene": "2",
+  "at_s": 2.66,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "2",
+  "at_s": 4.56,
+  "gap_s": 1.08,
+  "after_s": 0.25
+ },
+ {
+  "scene": "2",
+  "at_s": 7.11,
+  "gap_s": 0.58,
+  "after_s": 0.25
+ },
+ {
+  "scene": "2",
+  "at_s": 8.92,
+  "gap_s": 0.67,
+  "after_s": 0.25
+ },
+ {
+  "scene": "3",
+  "at_s": 1.96,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "3",
+  "at_s": 3.99,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "3",
+  "at_s": 5.16,
+  "gap_s": 0.67,
+  "after_s": 0.25
+ },
+ {
+  "scene": "3",
+  "at_s": 8.06,
+  "gap_s": 0.67,
+  "after_s": 0.25
+ },
+ {
+  "scene": "4",
+  "at_s": 0.69,
+  "gap_s": 0.5,
+  "after_s": 0.25
+ },
+ {
+  "scene": "4",
+  "at_s": 10.19,
+  "gap_s": 0.58,
+  "after_s": 0.25
+ },
+ {
+  "scene": "6a",
+  "at_s": 1.01,
+  "gap_s": 0.5,
+  "after_s": 0.25
+ },
+ {
+  "scene": "6a",
+  "at_s": 3.37,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "6b",
+  "at_s": 1.23,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "6b",
+  "at_s": 2.45,
+  "gap_s": 0.5,
+  "after_s": 0.25
+ },
+ {
+  "scene": "6b",
+  "at_s": 5.9,
+  "gap_s": 0.5,
+  "after_s": 0.25
+ },
+ {
+  "scene": "6b",
+  "at_s": 7.06,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "6b",
+  "at_s": 8.22,
+  "gap_s": 0.5,
+  "after_s": 0.25
+ },
+ {
+  "scene": "6b",
+  "at_s": 11.92,
+  "gap_s": 0.58,
+  "after_s": 0.25
+ },
+ {
+  "scene": "7",
+  "at_s": 0.6,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "7",
+  "at_s": 4.81,
+  "gap_s": 0.5,
+  "after_s": 0.25
+ },
+ {
+  "scene": "7",
+  "at_s": 7.31,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "7",
+  "at_s": 9.13,
+  "gap_s": 0.43,
+  "after_s": 0.25
+ },
+ {
+  "scene": "7",
+  "at_s": 12.64,
+  "gap_s": 0.79,
+  "after_s": 0.25
+ },
+ {
+  "scene": "7",
+  "at_s": 14.77,
+  "gap_s": 0.58,
+  "after_s": 0.25
+ },
+ {
+  "scene": "8",
+  "at_s": 1.54,
+  "gap_s": 0.79,
+  "after_s": 0.25
+ },
+ {
+  "scene": "9",
+  "at_s": 7.2,
+  "gap_s": 0.67,
+  "after_s": 0.25
+ },
+ {
+  "scene": "9",
+  "at_s": 9.9,
+  "gap_s": 0.5,
+  "after_s": 0.25
+ }
+]

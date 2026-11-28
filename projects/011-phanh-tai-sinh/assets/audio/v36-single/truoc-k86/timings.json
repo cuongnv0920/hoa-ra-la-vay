@@ -1,0 +1,180 @@
+{
+  "model": "eleven_turbo_v2_5",
+  "mode": "single",
+  "settings": {
+    "stability": 0.75,
+    "similarity_boost": 0.4,
+    "style": 0,
+    "speed": 1.15,
+    "use_speaker_boost": true
+  },
+  "seed": 11,
+  "scenes": {
+    "1": {
+      "file": "scene-01.mp3",
+      "seconds": 5.69,
+      "chars": 104,
+      "words": 23,
+      "words_per_min": 243,
+      "settings": {
+        "stability": 0.75,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.15,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:52:10.949Z"
+    },
+    "2": {
+      "file": "scene-02.mp3",
+      "seconds": 10.12,
+      "chars": 172,
+      "words": 36,
+      "words_per_min": 214,
+      "settings": {
+        "stability": 0.75,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.15,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:52:11.124Z"
+    },
+    "3": {
+      "file": "scene-03.mp3",
+      "seconds": 12.29,
+      "chars": 213,
+      "words": 46,
+      "words_per_min": 225,
+      "settings": {
+        "stability": 0.75,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.15,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:52:11.299Z"
+    },
+    "4": {
+      "file": "scene-04.mp3",
+      "seconds": 10.19,
+      "chars": 153,
+      "words": 33,
+      "words_per_min": 194,
+      "settings": {
+        "stability": 0.75,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.15,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:52:11.475Z"
+    },
+    "5": {
+      "file": "scene-05.mp3",
+      "seconds": 11.38,
+      "chars": 177,
+      "words": 38,
+      "words_per_min": 200,
+      "settings": {
+        "stability": 0.75,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.15,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:52:11.677Z"
+    },
+    "6": {
+      "file": "scene-06.mp3",
+      "seconds": 8.22,
+      "chars": 132,
+      "words": 28,
+      "words_per_min": 204,
+      "settings": {
+        "stability": 0.75,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.15,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:52:11.873Z"
+    },
+    "7": {
+      "file": "scene-07.mp3",
+      "seconds": 16.66,
+      "chars": 260,
+      "words": 56,
+      "words_per_min": 202,
+      "settings": {
+        "stability": 0.75,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.15,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:52:12.144Z"
+    },
+    "8": {
+      "file": "scene-08.mp3",
+      "seconds": 19.76,
+      "chars": 306,
+      "words": 66,
+      "words_per_min": 200,
+      "settings": {
+        "stability": 0.75,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.15,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:52:12.462Z"
+    },
+    "9": {
+      "file": "scene-09.mp3",
+      "seconds": 10.86,
+      "chars": 215,
+      "words": 47,
+      "words_per_min": 260,
+      "settings": {
+        "stability": 0.75,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.15,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:52:12.732Z"
+    },
+    "10": {
+      "file": "scene-10.mp3",
+      "seconds": 9.1,
+      "chars": 162,
+      "words": 36,
+      "words_per_min": 237,
+      "settings": {
+        "stability": 0.75,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.15,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:52:13.010Z",
+      "note": "Thay bằng bản H61 (tạo riêng cảnh, seed 61) ngày 2026-11-28 theo lời cảnh 9 người dùng viết lại; bản cũ ở truoc-h61/"
+    },
+    "11": {
+      "file": "scene-11.mp3",
+      "seconds": 8.62,
+      "chars": 143,
+      "words": 32,
+      "words_per_min": 223,
+      "settings": {
+        "stability": 0.75,
+        "similarity_boost": 0.4,
+        "style": 0,
+        "speed": 1.15,
+        "use_speaker_boost": true
+      },
+      "generated": "2026-11-28T05:52:13.291Z"
+    }
+  }
+}
